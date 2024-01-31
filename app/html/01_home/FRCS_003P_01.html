@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+	<title>휴대폰안심 서비스</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+	
+	<!-- font -->
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=block" rel="stylesheet" />
+	
+	<!-- css -->
+	<link rel="stylesheet" href="../../css/reset.css" />
+	<link rel="stylesheet" href="../../css/phonesafe.css" />
+	<!-- <link rel="stylesheet" href="../../css/Global.css" /> -->
+	<link rel="stylesheet" href="../../css/slick.css" />
+</head>
+<body>
+
+<div class="wrap">
+
+	<div class="header_wrap">
+		<div class="temp">
+			<button type="button"><span><img src="../../images/temp/btn_top_back.png" alt="이전"></span></button>
+			<h1>휴대폰안심</h1>
+			<button type="button"><span><img src="../../images/temp/btn_top_more.png" alt="더보기"></span></button>
+		</div>
+		<!-- // temp 삭제 -->
+	</div>
+	<!-- // header_wrap -->
+
+	<div class="container_wrap">
+
+		<section class="container">
+
+			<div class="content_wrap divide">
+
+				<div class="content_top">
+					<div class="subResurtTit">
+						<p class="tit">
+							<strong>이용 안내</strong>
+						</p>
+					</div>
+				</div>
+				<!-- // content_top -->
+
+				<div class="content_mid">
+
+					<div class="guide_wrap">
+						<div class="guide_info_wrap">
+							<p class="txt">모바일 환경에 최적화 된 휴대폰안심 서비스를 통해 
+								보안 위협으로 부터 내 폰을 안전하게 보호해 보세요.</p>
+						</div>
+						<!-- // guide_info_wrap -->
+
+						<div class="guide_content">
+							<div class="content_center">
+
+								<div class="error">
+									<div class="img"><img src="../../images/common/ico_notice.png" alt="아이콘"></div>
+									<div class="tit">서비스 이용에<br>
+										불편을 드려 죄송합니다.</div>
+									<p class="txt">서비스 연결이 원활하지 않으니<br>
+										잠시 후 다시 시도해 주세요.</p>
+									<button type="button" class="refresh">
+										<span>새로고침</span>
+									</button>
+								</div>
+		
+							</div>
+						</div>
+					</div>
+					<!-- // guide_wrap -->
+					
+				</div>
+
+			</div><!-- // content_wrap -->
+			
+		</section><!-- // container -->
+		
+	</div><!-- // container_wrap -->
+
+
+	<!-- <div class="footer_wrap">
+		<div class="btnGroup">
+			<div>
+				<button type="button" class="btn line" disabled=""><span>취소</span></button>
+			</div>
+			<div>
+				<button type="button" class="btn fill"><span>확인</span></button>
+			</div>
+		</div>
+	</div> -->
+	<!-- // footer_wrap (하단 고정 영역) -->
+
+</div><!-- // wrap -->
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="../../js/slick.js"></script>
+<script src="../../js/temp.js"></script>
+
+
+<script>
+$(document).ready(function(){
+	/* gallery main */
+	function guideSlick(){
+		$('.ddd').slick({
+			dots: true,
+			dotsClass: "guide_slide_dot",
+			infinite: true,
+			arrows: false,
+			// centerMode: true,
+			// centerPadding : '18px'
+		});
+	}
+	guideSlick();
+})
+/* 공지사항, 자주 묻는 질문 */
+let noticeWrap = document.querySelector(".notice_arcodian_wrap")
+if(noticeWrap) {
+	let listItems = document.querySelectorAll(".list .item");
+	listItems.forEach(function(item){
+		item.addEventListener("click", function(){
+			item.classList.toggle("active");
+		})
+	})
+}
+/* // 공지사항, 자주 묻는 질문 */
+
+</script>
+
+</body>
+</html>

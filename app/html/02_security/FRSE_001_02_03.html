@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+	<title>휴대폰안심 서비스</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+	
+	<!-- font -->
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=block" rel="stylesheet" />
+	
+	<!-- css -->
+	<link rel="stylesheet" href="../../css/reset.css" />
+	<link rel="stylesheet" href="../../css/phonesafe.css" />
+	<!-- <link rel="stylesheet" href="../../css/Global.css" /> -->
+	<!-- <link rel="stylesheet" href="../../css/slick.css" /> -->
+</head>
+<body>
+
+<div class="wrap">
+
+	<div class="header_wrap">
+		<div class="temp">
+			<button type="button"><span><img src="../../images/temp/btn_top_back.png" alt="이전"></span></button>
+			<h1>휴대폰안심</h1>
+			<button type="button"><span><img src="../../images/temp/btn_top_more.png" alt="더보기"></span></button>
+		</div>
+		<!-- // temp 삭제 -->
+		
+		<nav>
+			<div class="scroll-wrapper">
+				<ul class="scroll">
+					<li class="item"><button type="button"><span>홈</span></button></li>
+					<li class="item"><button type="button" class="active"><span>보안 검사</span></button></li>
+					<li class="item"><button type="button"><span>네트워크 검사</span></button></li>
+					<li class="item"><button type="button"><span>웹 검사</span></button></li>
+				</ul>
+			</div>
+			<button type="button" class="more"><span>더보기</span></button>
+		</nav>
+		<!-- // nav-->
+
+		<div class="tab_wrap">
+			<button type="button" class="active"><span>휴대폰 검사</span></button>
+			<button type="button"><span>휴대폰 최적화</span></button>
+			<button type="button"><span>App 검사</span></button>
+		</div>
+		<!-- // tab_wrap -->
+	</div>
+	<!-- // header_wrap -->
+
+	<div class="container_wrap">
+
+		<section class="container">
+
+			<div class="content_wrap divide">
+
+				<div class="content_top">
+					<div class="sectionMainTop">
+						<div class="img">
+							<img src="../../images/temp/img_checklist_no.png" alt="검사내역 찾지 못함">
+						</div>
+						<div class="txt">
+							<p>00월 00일 검사를 완료했어요.</p>
+							<p>현재 고객님의 휴대폰에 <strong class="c_danger">위험</strong>이 감지 되었어요.<br />
+								발견된 위험을 확인해 보세요.
+								</p>
+						</div>
+						<button type="button"><span>검사 하기</span></button>
+					</div>
+					<!-- // sectionMainTop -->
+				</div>
+				<!-- // content_top -->
+
+				<div class="content_mid">
+
+					<div class="subResurtTit">
+						<p class="tit">
+							<strong>휴대폰 검사 결과</strong>
+						</p>
+						<div class="info">
+							<div class="txt_wrap">
+								<span class="txt">2023.02.01 11:10:12</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="reusrt_table_device">
+						<div class="list">
+							<div class="row">
+								<dl>
+									<dt><strong class="tit">모델명</strong></dt>
+									<dd>
+										<span>SM-F711N</span>
+									</dd>
+								</dl>
+							</div>
+							<div class="row">
+								<dl>
+									<dt><strong class="tit">OS</strong></dt>
+									<!-- <dd>
+										<span>00개</span>
+									</dd> -->
+								</dl>
+							</div>
+							<div class="row">
+								<dl>
+									<dt><span class="tit">버전</span></dt>
+									<dd>
+										<span>13</span>
+									</dd>
+								</dl>
+							</div>
+							<div class="row">
+								<dl>
+									<dt><span class="tit">보안패치 날짜</span></dt>
+									<dd>
+										<span>2023.02.01</span>
+									</dd>
+								</dl>
+							</div>
+							<div class="row">
+								<dl>
+									<dt><span class="tit">취약한 OS 버전</span></dt>
+									<dd>
+										<span>아니오</span>
+									</dd>
+								</dl>
+							</div>
+							<!-- <div class="row">
+								<p>OS 취약점 노출되는 영역입니다.</p>
+							</div> -->
+							<div class="row">
+								<dl>
+									<dt><strong class="tit">기기 루팅 정보</strong></dt>
+									<dd>
+										<span>없음</span>
+									</dd>
+								</dl>
+							</div>
+							<div class="row">
+								<dl>
+									<dt><strong class="tit">USB 디버그 모드</strong></dt>
+									<dd>
+										<span>미사용</span>
+									</dd>
+								</dl>
+							</div>
+							<div class="row">
+								<dl>
+									<dt><strong class="tit">개발자 모드</strong><span class="bg_alert bg_safe">안전</span></dt>
+									<dd>
+										<span>사용</span>
+									</dd>
+								</dl>
+							</div>
+							<div class="row">
+								<dl>
+									<dt><strong class="tit">화면 잠금</strong><span class="bg_alert bg_danger">위험</span></dt>
+									<dd>
+										<span>미사용</span>
+									</dd>
+								</dl>
+							</div>
+							<div class="row">
+								<dl>
+									<dt><span class="tit">감지된 일시</span></dt>
+									<dd>
+										<span>2023.04.09 02:33:02</span>
+									</dd>
+								</dl>
+							</div>
+						</div>
+						<!-- // list -->
+					</div>
+
+				</div>
+
+				<div class="content_btm"></div>
+
+			</div><!-- // content_wrap -->
+			
+		</section><!-- // container -->
+		
+	</div><!-- // container_wrap -->
+
+
+	<!-- <div class="footer_wrap">
+		<div class="btnGroup">
+			<div>
+				<button type="button" class="btn line" disabled=""><span>취소</span></button>
+			</div>
+			<div>
+				<button type="button" class="btn fill"><span>확인</span></button>
+			</div>
+		</div>
+	</div> -->
+	<!-- // footer_wrap (하단 고정 영역) -->
+
+</div><!-- // wrap -->
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- <script src="../../js/slick.js"></script> -->
+<script src="../../js/temp.js"></script>
+
+
+</body>
+</html>

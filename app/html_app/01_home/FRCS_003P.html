@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+	<title>휴대폰안심 서비스</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+	
+	<!-- font -->
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=block" rel="stylesheet" />
+	
+	<!-- css -->
+	<link rel="stylesheet" href="../../css/reset.css" />
+	<link rel="stylesheet" href="../../css/phonesafe_app.css" />
+	<!-- <link rel="stylesheet" href="../../css/Global.css" /> -->
+	<link rel="stylesheet" href="../../css/slick.css" />
+</head>
+<body>
+
+<div class="wrap">
+
+	<div class="header_wrap">
+		<div class="temp_native">
+			<button type="button"><span><img src="../../images/temp/btn_top_home.png" alt="홈으로가기"></span></button>
+			<h1>휴대폰안심(native)</h1>
+			<button type="button"><span><img src="../../images/temp/ico_alert.png" alt="알림"></span></button>
+		</div>
+		<!-- // temp_native 삭제 -->
+	</div>
+	<!-- // header_wrap -->
+
+	<div class="container_wrap">
+
+		<section class="container">
+
+			<div class="content_wrap divide">
+
+				<div class="content_top">
+					<div class="subResurtTit">
+						<button type="button" class="btn_back"><span><img src="../../images/temp/btn_top_back.png" alt="이전"></span></button>
+						<p class="tit">
+							<strong>이용 안내</strong>
+						</p>
+					</div>
+					
+				</div>
+				<!-- // content_top -->
+
+				<div class="content_mid">
+
+					<div class="guide_wrap">
+						<div class="guide_info_wrap">
+							<p class="txt">모바일 환경에 최적화 된 휴대폰안심 서비스를 통해 
+								보안 위협으로 부터 내 폰을 안전하게 보호해 보세요.</p>
+						</div>
+						<!-- // guide_info_wrap -->
+
+						<div class="guide_content">
+							<div class="guide_wrap_slick">
+								<div class="guide_slick">
+									<div class="guide_item">
+										<div class="tit"><strong>보안 검사</strong></div>
+										<div class="img">
+											<img src="../../images/security/img_app_safe.png" alt="이미지">
+										</div>
+										<div class="txt_wrap">
+											<strong>보안검사를 통해 감지된 위험 알림</strong>
+											<p>단말 보안상태, RAM최적화,<br />
+												설치된 App의 위험 여부를 확인해 보세요.</p>
+										</div>
+									</div>
+									
+									<div class="guide_item">
+										<div class="tit"><strong>네트워크 검사</strong></div>
+										<div class="img">
+											<img src="../../images/network/img_wifi_safe.png" alt="이미지">
+										</div>
+										<div class="txt_wrap">
+											<strong>네트워크 보안 상태 알림</strong>
+											<p>공공, 개인 Wi-Fi 위험도 검사하고<br />
+												위험에 노출된 Wi-Fi 정보 확인해 보세요</p>
+										</div>
+									</div>
+									
+									<div class="guide_item">
+										<div class="tit"><strong>웹 검사</strong></div>
+										<div class="img">
+											<img src="../../images/web/img_link_danger.png" alt="이미지">
+										</div>
+										<div class="txt_wrap">
+											<strong>실시간 탐지를 통해 위험한 링크 알림</strong>
+											<p>URL 검사를 통해 링크의 위험 요소 확인하고<br />
+												세이프브라우징, 스미싱탐지를 통해<br />
+												위험한 링크를 실시간으로 탐지해 보세요.<br />
+												(iOS의 경우 스미싱 탐지 미 제공)</p>
+										</div>
+									</div>
+		
+									<div class="guide_item">
+										<div class="tit"><strong>보안 사고 예방</strong></div>
+										<div class="img">
+											<img src="../../images/more/img_insurance.png" alt="이미지">
+										</div>
+										<div class="txt_wrap">
+											<strong>사고 후 보상까지 사후 관리 기능 제공</strong>
+											<p>보상보험을 통해 피싱으로 인한 피해 발생 예방하고,<br />
+												0505 안심번호 발급을 통해<br />
+												내 휴대폰번호가 노출되지 않게 관리해 보세요.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- // guide_wrap_slick -->
+						</div>
+					</div>
+					<!-- // guide_wrap -->
+
+				</div>
+				<!-- // content_mid -->
+
+			</div><!-- // content_wrap -->
+			
+		</section><!-- // container -->
+		
+	</div><!-- // container_wrap -->
+
+
+	<!-- <div class="footer_wrap">
+		<div class="btnGroup">
+			<div>
+				<button type="button" class="btn line" disabled=""><span>취소</span></button>
+			</div>
+			<div>
+				<button type="button" class="btn fill"><span>확인</span></button>
+			</div>
+		</div>
+	</div> -->
+	<!-- // footer_wrap (하단 고정 영역) -->
+
+</div><!-- // wrap -->
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="../../js/slick.js"></script>
+<script src="../../js/temp.js"></script>
+
+
+<script>
+$(document).ready(function(){
+	/* gallery main */
+	function guideSlick(){
+		$('.guide_slick').slick({
+			dots: true,
+			dotsClass: "guide_slide_dot",
+			infinite: true,
+			arrows: false,
+			// centerMode: true,
+			// centerPadding : '18px'
+		});
+	}
+	guideSlick();
+})
+/* 공지사항, 자주 묻는 질문 */
+let noticeWrap = document.querySelector(".notice_arcodian_wrap")
+if(noticeWrap) {
+	let listItems = document.querySelectorAll(".list .item");
+	listItems.forEach(function(item){
+		item.addEventListener("click", function(){
+			item.classList.toggle("active");
+		})
+	})
+}
+/* // 공지사항, 자주 묻는 질문 */
+
+</script>
+
+</body>
+</html>

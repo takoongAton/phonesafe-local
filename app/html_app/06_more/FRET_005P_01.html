@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+	<title>휴대폰안심 서비스</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+	
+	<!-- font -->
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=block" rel="stylesheet" />
+	
+	<!-- css -->
+	<link rel="stylesheet" href="../../css/reset.css" />
+	<link rel="stylesheet" href="../../css/phonesafe_app.css" />
+	<!-- <link rel="stylesheet" href="../../css/Global.css" /> -->
+	<!-- <link rel="stylesheet" href="../../css/slick.css" /> -->
+</head>
+<body>
+
+<div class="wrap">
+
+	<div class="header_wrap">
+		<div class="temp_native">
+			<button type="button"><span><img src="../../images/temp/btn_top_home.png" alt="홈으로가기"></span></button>
+			<h1>휴대폰안심(native)</h1>
+			<button type="button"><span><img src="../../images/temp/ico_alert.png" alt="알림"></span></button>
+		</div>
+		<!-- // temp_native 삭제 -->
+
+
+		<div class="titleBig">
+			<button type="button" class="btn_back"><span><img src="../../images/temp/btn_top_back.png" alt="이전"></span></button>
+			<p class="tit">
+				<strong>월간 리포트</strong>
+			</p>
+		</div>
+		<!-- // titleBig -->
+
+	</div>
+	<!-- // header_wrap -->
+
+	<div class="container_wrap">
+
+		<section class="container">
+
+			<div class="content_wrap divide">
+
+				<div class="content_mid">
+
+					<div class="period_wrap">
+						<div class="period">
+							<select name="" id="">
+								<option value="2023.01">2023.01</option>
+								<option value="2023.02">2023.02</option>
+								<option value="2023.03">2023.03</option>
+								<option value="2023.04">2023.04</option>
+								<option value="2023.05">2023.05</option>
+								<option value="2023.06">2023.06</option>
+							</select>
+						</div>
+					</div>
+					<!-- // period_wrap -->
+					
+					<!-- <div class="subResurtTit">
+						<p class="tit">
+							<strong>2023년 4월</strong>
+						</p>
+						<div class="info">
+							<div class="date">
+								<span>2023.04</span>
+							</div>
+						</div>
+					</div> -->
+
+					<div class="mainTop">
+						<div class="graph_wrap">
+							<div class="graph">
+								<div class="dot">
+									<span></span>
+								</div>
+
+								<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+									<defs>
+										<linearGradient id="GradientColor0">
+											<stop offset="0%" stop-color="#ddd" />
+											<stop offset="45%" stop-color="#ddd" />
+											<stop offset="100%" stop-color="#ddd" />
+									   </linearGradient>
+										<linearGradient id="GradientColor1" gradientTransform="rotate(-45)">
+											<stop offset="0%" stop-color="#ED1E19" />
+											<stop offset="50%" stop-color="#FD8800" />
+											<stop offset="100%" stop-color="#FD8800" />
+									   </linearGradient>
+										<linearGradient id="GradientColor2" gradientTransform="rotate(-25)">
+											<stop offset="0%" stop-color="#FFA421" />
+											<stop offset="100%" stop-color="#FDE000" />
+										</linearGradient>
+										<linearGradient id="GradientColor3" gradientTransform="rotate(25)">
+											<stop offset="0%" stop-color="#1EA82C" />
+											<stop offset="60%" stop-color="#1EA82C" />
+											<stop offset="100%" stop-color="#9CDE42" />
+										</linearGradient>
+									</defs>
+									<circle cx="96" cy="96" r="90" stroke-linecap="round" class="frame" style="stroke: url(#GradientColor0);"/>
+									<circle cx="96" cy="96" r="90" stroke-linecap="round" class="bar"/>
+								</svg>
+								<!-- 
+									stroke-dashoffset : 100점 == 141, 0점 == 564,
+									1점 = 4.23
+								-->
+							</div>
+							<!-- <div class="graph"><img src="../../images/temp/CircularProgressBar_danger.png" alt="리포트 그래프ㅍ"></div> -->
+							<div class="result">
+								
+								<span class="tit">보안점수</span>
+								<div class="current">
+									
+									<span class="c_danger">712</span><!-- c_safe, c_caution, c_danger -->
+								</div>
+								
+								<!-- <p>
+									<span>지난 주 보다</span>
+									<span>
+										<strong>00</strong>
+										점 높아요
+									</span>
+								</p> -->
+							</div>
+							<!-- // result -->
+						</div>
+						<!-- // graph_wrap -->
+						<p>휴대폰의 보안 상태 : <strong class="c_danger">위험</strong></p>
+					</div>
+
+
+					<div class="subResurtTit">
+						<p class="tit">
+							<strong>보안/성능 점검</strong>
+						</p>
+						<div class="info">
+							<div class="txt_wrap">
+								<span class="txt">00회</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="report_more">
+						<div class="item">
+							<dl>
+								<dt><strong>휴대폰</strong></dt>
+								<dd>
+									<span class="bg_alert bg_danger">위험</span>
+									<span class="count">1</span>
+								</dd>
+							</dl>
+							<dl>
+								<dt><strong>App</strong></dt>
+								<dd>
+									<span class="bg_alert bg_safe">안전</span>
+									<!-- <span class="count"></span> -->
+								</dd>
+							</dl>
+							<dl>
+								<dt><strong>Wi-Fi</strong></dt>
+								<dd>
+									<span class="bg_alert bg_caution">주의</span>
+									<span class="count">16</span>
+								</dd>
+							</dl>
+						</div>
+					</div>
+
+
+
+
+
+					<div class="subResurtTit">
+						<p class="tit">
+							<strong>웹 검사 결과</strong>
+						</p>
+						<div class="info">
+							<div class="txt_wrap">
+								<span class="txt">00회</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="reusrt_table_memory">
+						<div class="list">
+							<div class="row">
+								<dl>
+									<dt><span class="tit">URL 검사</span></dt>
+									<dd>
+										<span>위험한 웹사이트 00건</span>
+									</dd>
+								</dl>
+							</div>
+						</div>
+						<!-- // list -->
+					</div>
+					<!-- // reusrt_table_memory -->
+
+
+
+					<div class="subResurtTit">
+						<p class="tit">
+							<strong>보안 사고 예방</strong>
+						</p>
+						<!-- <div class="info">
+							<div class="txt_wrap">
+								<span class="txt">00회</span>
+							</div>
+						</div> -->
+					</div>
+
+
+					<div class="reusrt_table_memory">
+						<div class="list">
+							<div class="row">
+								<p class="txt">보상보험 가입 내역이 없습니다.</p>
+							</div>
+							<div class="row">
+								<p class="txt">안심번호 발급 내역이 없습니다.</p>
+							</div>
+						</div>
+						<!-- // list -->
+					</div>
+					<!-- // reusrt_table_memory -->
+
+
+
+					
+				</div>
+				<!-- // content_mid -->
+
+				<div class="content_btm"></div>
+
+			</div><!-- // content_wrap -->
+			
+		</section><!-- // container -->
+		
+	</div><!-- // container_wrap -->
+
+
+	<!-- <div class="footer_wrap">
+		<div class="btnGroup">
+			<div>
+				<button type="button" class="btn line" disabled=""><span>취소</span></button>
+			</div>
+			<div>
+				<button type="button" class="btn fill"><span>확인</span></button>
+			</div>
+		</div>
+	</div> -->
+	<!-- // footer_wrap (하단 고정 영역) -->
+
+</div><!-- // wrap -->
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- <script src="../../js/slick.js"></script> -->
+<script src="../../js/temp.js"></script>
+
+<script>
+window.addEventListener("load", function(){
+    mainGraphBar(60);
+})
+</script>
+</body>
+</html>

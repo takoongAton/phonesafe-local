@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+	<title>휴대폰안심 서비스</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+	
+	<!-- font -->
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=block" rel="stylesheet" />
+	
+	<!-- css -->
+	<link rel="stylesheet" href="../../css/reset.css" />
+	<link rel="stylesheet" href="../../css/phonesafe.css" />
+	<!-- <link rel="stylesheet" href="../../css/Global.css" /> -->
+	<!-- <link rel="stylesheet" href="../../css/slick.css" /> -->
+</head>
+<body>
+
+<div class="wrap">
+
+	<div class="header_wrap">
+		<div class="temp">
+			<button type="button"><span><img src="../../images/temp/btn_top_back.png" alt="이전"></span></button>
+			<h1>휴대폰안심</h1>
+			<button type="button"><span><img src="../../images/temp/btn_top_more.png" alt="더보기"></span></button>
+		</div>
+		<!-- // temp 삭제 -->
+		
+		<nav>
+			<div class="scroll-wrapper">
+				<ul class="scroll">
+					<li class="item"><button type="button"><span>홈</span></button></li>
+					<li class="item"><button type="button"><span>보안 검사</span></button></li>
+					<li class="item"><button type="button" class="active"><span>네트워크 검사</span></button></li>
+					<li class="item"><button type="button"><span>웹 검사</span></button></li>
+				</ul>
+			</div>
+			<button type="button" class="more"><span>더보기</span></button>
+		</nav>
+		<!-- // nav-->
+
+		<div class="tab_wrap">
+			<button type="button"><span>Wi-Fi 검사</span></button>
+			<button type="button" class="active"><span>Wi-Fi 위험지역</span></button>
+		</div>
+		<!-- // tab_wrap -->
+	</div>
+	<!-- // header_wrap -->
+
+	<div class="container_wrap">
+
+		<section class="container">
+
+			<div class="content_wrap divide">
+
+				<div class="content_top">
+
+					<div class="subResurtTit">
+						<p class="tit">
+							<strong>“여의도동” 주변</strong>
+							<span class="icon"><img src="../../images/network/ico_location_on.png" alt="위치정보 아이콘"></span>
+						</p>
+					</div>
+				</div>
+				<!-- // content_top -->
+
+
+				<div class="content_mid">
+
+					<div class="map_wrap" style="position:relative; height:100%;">
+						<div class="point" style="top:21.5827%; left:43.05555%;">
+							<div class="img"><img src="../../images/network/ico_navi_safe.png" alt="safe wifi"></div>
+							<span class="count">3</span>
+						</div>
+
+						<div class="point" style="top:54.5827%; left:7.05555%;;">
+							<div class="img"><img src="../../images/network/ico_nevi_danger.png" alt="danger wifi"></div>
+							<span class="count">10</span>
+						</div>
+
+						<div class="point" style="top:46.5827%; left:79.05555%;">
+							<div class="img"><img src="../../images/network/ico_navi_safe.png" alt="safe wifi"></div>
+							<!-- <span class="count">3</span> -->
+						</div>
+
+						<img src="../../images/network/map.png" alt="">
+					</div>
+				</div>
+				<!-- // content_mid -->
+
+				<!-- <div class="content_btm">
+					
+				</div> -->
+				<!-- // content_btm -->
+
+			</div><!-- // content_wrap -->
+			
+		</section><!-- // container -->
+		
+	</div><!-- // container_wrap -->
+
+
+	<!-- <div class="footer_wrap">
+		<div class="btnGroup">
+			<div>
+				<button type="button" class="btn line" disabled=""><span>취소</span></button>
+			</div>
+			<div>
+				<button type="button" class="btn fill"><span>확인</span></button>
+			</div>
+		</div>
+	</div> -->
+	<!-- // footer_wrap (하단 고정 영역) -->
+
+</div><!-- // wrap -->
+
+
+<div class="layer toast">
+	<p>현재 위치 기준 500m 반경 내<br />
+		위험에 노출된 Wi-Fi 정보를 제공합니다.</p>
+</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- <script src="../../js/slick.js"></script> -->
+<script src="../../js/temp.js"></script>
+
+
+</body>
+</html>

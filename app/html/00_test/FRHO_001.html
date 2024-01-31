@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+	<title>휴대폰안심 서비스</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+	
+	<!-- font -->
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=block" rel="stylesheet" />
+	
+	<!-- css -->
+	<link rel="stylesheet" href="../../css/reset.css" />
+	<link rel="stylesheet" href="../../css/slick.css" />
+	<link rel="stylesheet" href="../../css/phonesafe.css" />
+
+
+	<style>
+		.skill {
+			position:relative; width:192px; height:192px; margin:0 auto;
+		}
+		.skill .outer {width:192px; height:192px; padding:12px; border-radius:50%;
+			box-shadow:6px 6px 10px -1px rgba(0,0,0,0.15),
+						-6px -6px 10px -1px rgba(255,255,255,0.7);
+		}
+		.skill .inner {display:flex; justify-content:center; align-items:center; width:120px; height:120px; border-radius:50%;
+			box-shadow:inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+						inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+						-0.5px -0.5px 0px rgba(255,255,255,1),
+						0.5px 0.5px 0px rgba(0,0,0,0.5),
+						0px 12px 10px -10px rgba(0,0,0,0.5);
+		}
+		.skill #number {font-weight:600; color:#555;}
+		.skill circle.bar {
+			fill:none;
+			/* stroke:cornflowerblue; */
+			stroke: url(#GradientColor);
+			stroke-width:12px;
+			stroke-dasharray:564;
+			stroke-dashoffset: 564;
+			animation: anim 0.5s ease-in forwards;
+		}
+		.skill circle.frame {
+			fill:none;
+			/* stroke:cornflowerblue; */
+			stroke: url(#GradientColor0);
+			stroke-width:12px;
+			stroke-dasharray:564;
+			stroke-dashoffset: 141;
+			/* animation: anim 0.5s ease-in forwards; */
+		}
+		.skill svg{
+			position:absolute;
+			top:0;
+			left:0;
+			transform:rotate(135deg);
+		}
+		.skill div.dot {position:absolute; right:50%; top:50%; width:50%; height:12px; background-color:rgba(0,0,0,0.12); z-index:10; transform:translateY(-50%) rotate(-45deg); transform-origin:100% 50%;
+			animation: animDot 0.5s ease-in forwards;
+		}
+		.skill div.dot span {display:block; position:absolute; top:50%; left:2px; width:8px; height:8px; background-color:#fff; border-radius:100%; transform:translateY(-50%);}
+		/* @keyframes animDot {
+			0% {transform:translateY(-50%) rotate(-45deg);}
+			100% {transform:translateY(-50%) rotate(224deg);}
+		} */
+		/* @keyframes anim {
+			100% {
+				stroke-dashoffset: 141;
+			}
+		} */
+	</style>
+</head>
+
+<body>
+
+<div class="wrap">
+
+	<div class="header_wrap">
+		<div class="temp">
+			<button type="button"><span><img src="../../images/temp/btn_top_back.png" alt="이전"></span></button>
+			<h1>휴대폰안심</h1>
+			<button type="button"><span><img src="../../images/temp/btn_top_more.png" alt="더보기"></span></button>
+		</div>
+		<!-- // temp 삭제 -->
+
+		<nav>
+			<div class="scroll-wrapper">
+				<ul class="scroll">
+					<li class="item"><button type="button" class="active"><span>홈</span></button></li>
+					<li class="item"><button type="button"><span>보안 검사</span></button></li>
+					<li class="item"><button type="button"><span>네트워크 검사</span></button></li>
+					<li class="item"><button type="button"><span>웹 검사</span></button></li>
+				</ul>
+			</div>
+			<button type="button" class="more"><span>더보기</span></button>
+		</nav>
+		<!-- // nav-->
+	</div>
+	<!-- // header_wrap -->
+
+	<div class="container_wrap">
+
+		<section class="container">
+
+			<div class="content_wrap">
+
+				<div class="homeTop">
+					<div class="userName">
+						<span class="hello">안녕하세요.</span>
+						<strong class="name">홍*동님</strong>
+					</div><!-- // userName -->
+
+
+					<div class="mainTodayReport">
+						<strong class="tit">오늘의 보안 리포트</strong>
+						<div>
+							<button type="button" class="tooltip"><span><img src="../../images/home/ico_list_question.png" alt="툴팁"></span></button>
+							<p>실시간 감시 중</p>
+
+							<div class="ipt_switch">
+								<input type="checkbox" id="set_switch1" data-switch="primary" checked>
+								<label for="set_switch1" data-on-label="" data-off-label=""></label>
+							</div>
+						</div>
+					</div>
+					<!-- // mainTodayReport -->
+
+					<div class="mainTop">
+
+
+
+						
+						<div class="skill">
+							<div class="outer">
+								<div class="inner">
+									<div class="dot">
+										<span></span>
+									</div>
+								</div>
+							</div>
+							<!-- // outer -->
+							<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+								<defs>
+									<linearGradient id="GradientColor0">
+										<stop offset="0%" stop-color="#ddd" />
+										<stop offset="45%" stop-color="#ddd" />
+										<stop offset="100%" stop-color="#ddd" />
+								   </linearGradient>
+									<linearGradient id="GradientColor1" gradientTransform="rotate(-45)">
+										<stop offset="0%" stop-color="#ED1E19" />
+										<stop offset="50%" stop-color="#FD8800" />
+										<stop offset="100%" stop-color="#FD8800" />
+								   </linearGradient>
+									<linearGradient id="GradientColor2" gradientTransform="rotate(-25)">
+										<stop offset="0%" stop-color="#FFA421" />
+										<stop offset="100%" stop-color="#FDE000" />
+									</linearGradient>
+									<linearGradient id="GradientColor3" gradientTransform="rotate(25)">
+										<stop offset="0%" stop-color="#1EA82C" />
+										<stop offset="60%" stop-color="#1EA82C" />
+										<stop offset="100%" stop-color="#9CDE42" />
+									</linearGradient>
+								</defs>
+								<circle cx="96" cy="96" r="90" stroke-linecap="round" class="frame" style="stroke: url(#GradientColor0);"/>
+								<circle cx="96" cy="96" r="90" stroke-linecap="round" class="bar"/>
+							</svg>
+							<!-- 
+								stroke-dashoffset : 100점 == 141, 0점 == 564,
+								1점 = 4.23
+							-->
+						</div>
+						<!-- // skill -->
+						
+
+						
+
+						<div class="graph_wrap" style="width:auto; height:auto;;">
+							<div id="gauge3" class="gauge-container three" style="width:230px; height:230px; margin:0 auto;"></div>
+							<!-- <div class="graph"><img src="../../images/temp/CircularProgressBar.png" alt="리포트 그래프ㅍ"></div> -->
+							<div class="result">
+								<span class="tit">보안점수</span>
+								<div class="current">
+									<strong class="c_safe">712</strong><!-- c_safe, c_caution, c_danger -->
+								</div>
+								<!-- <p>
+									<span>지난 주 보다</span>
+									<span>
+										<strong>00</strong>
+										점 높아요
+									</span>
+								</p> -->
+							</div>
+							<!-- // result -->
+						</div>
+						<!-- // graph_wrap -->
+
+
+						<div class="graph_wrap" style="width:192px; height:192px;;">
+							<!-- <div id="gauge3" class="gauge-container three" style="width:240px; height:240px; margin:0 auto;"></div> -->
+							<div class="graph"><img src="../../images/temp/CircularProgressBar_caution.png" alt="리포트 그래프ㅍ"></div>
+							<div class="result">
+								<div class="current">
+									<span class="c_safe">712</span><!-- c_safe, c_caution, c_danger -->
+								</div>
+								<!-- <p>
+									<span>지난 주 보다</span>
+									<span>
+										<strong>00</strong>
+										점 높아요
+									</span>
+								</p> -->
+							</div>
+							<!-- // result -->
+						</div>
+						<!-- // graph_wrap -->
+						
+						<div class="inspect">
+							<div class="item">
+								<strong>휴대폰</strong>
+								<div class="state"><span class="ico"><img src="../../images/app/ico_caution.png" alt="주의아이콘" /></span><span class="txt c_caution">주의</span></div>
+							</div>
+							<div class="item">
+								<strong>App</strong>
+								<div class="state"><span class="ico"><img src="../../images/app/ico_danger.png" alt="위험아이콘" /></span><span class="txt c_danger">위험</span></div>
+							</div>
+							<div class="item">
+								<strong>Wi-Fi</strong>
+								<div class="state"><span class="ico"><img src="../../images/app/ico_safe.png" alt="안전아이콘" /></span><span class="txt c_safe">안전</span></div>
+							</div>
+							<div class="item">
+								<strong>URL 검사</strong>
+								<div class="state"><span class="ico"><img src="../../images/app/ico_check.png" alt="검사아이콘" /></span><span class="txt c_check">검사</span></div>
+							</div>
+						</div>
+						<!-- <div class="txt">
+							<p>내용이 들어갑니다.</p>
+							<p>내용이 들어갑니다.</p>
+						</div> -->
+						<button type="button" class="btn_inspect"><span>바로 검사 하기</span></button>
+					</div>
+					<!-- // mainTop -->
+
+				</div>
+				<!-- // homeTop -->
+
+				<div class="main_security">
+					<div class="tit"><strong>보안 사고 예방</strong></div>
+					<div class="list">
+						<div class="item">
+							<div class="inner">
+								<div class="thum"><img src="../../images/temp/sam_300x120.png" alt="썸네일"></div>
+								<div class="summary">
+									<div class="ico"><img src="../../images/home/ico_service_fishing_1.png" alt=""></div>
+									<div class="txt">
+										<strong>피싱으로 인한 피해발생 시</strong>
+										<p>보상보험 제공</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="inner">
+								<div class="thum"><img src="../../images/temp/sam_300x120.png" alt="썸네일"></div>
+								<div class="summary">
+									<div class="ico"><img src="../../images/home/ico_service_fishing_1.png" alt=""></div>
+									<div class="txt">
+										<strong>피싱으로 인한 피해발생 시</strong>
+										<p>보상보험 제공</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="inner">
+								<div class="thum"><img src="../../images/temp/sam_300x120.png" alt="썸네일"></div>
+								<div class="summary">
+									<div class="ico"><img src="../../images/home/ico_service_fishing_1.png" alt=""></div>
+									<div class="txt">
+										<strong>피싱으로 인한 피해발생 시</strong>
+										<p>보상보험 제공</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- // main_security -->
+
+				<div class="main_security_chk">
+					<div class="tit"><strong>쉽고 편한 보안 관리</strong></div>
+					
+					<!-- AOS 전용 -->
+					<div class="bnr">
+						<div>
+							<p>최근 받은 문자 메시지 <span>위험 링크</span>확인하기</p>
+						</div>
+					</div>
+					<!-- // AOS 전용 -->
+
+					<div class="list">
+						<div class="item">
+							<div class="ico"><img src="../../images/home/ico_main_appcheck.png" alt="아이콘"></div>
+							<div class="txt">
+								<strong>App 검사</strong>
+								<p>내 휴대폰의 안전은?</p>
+							</div>
+						</div>
+						<div class="item">
+							<div class="ico"><img src="../../images/home/ico_main_optimize.png" alt="아이콘"></div>
+							<div class="txt">
+								<strong>휴대폰 최적화</strong>
+								<p>휴대폰을 빠르고 깨끗하게!!</p>
+							</div>
+						</div>
+						<div class="item">
+							<div class="ico"><img src="../../images/home/ico_main_wifi.png" alt="아이콘"></div>
+							<div class="txt">
+								<strong>Wi-Fi 검사</strong>
+								<p>접속한 와아파이가 안전한지 확인하세요.</p>
+							</div>
+						</div>
+						<div class="item">
+							<div class="ico"><img src="../../images/home/ico_main_safe.png" alt="아이콘"></div>
+							<div class="txt">
+								<strong>세이프브라우징</strong>
+								<p>안전하지 않은 웹사이트 실시간 탐지</p>
+							</div>
+						</div>
+					</div>
+					<!-- // list -->
+				</div>
+				<!-- // main_security_chk -->
+
+				<div class="mainBenefit">
+					<div class="tit">
+						<strong>지금 받을 수 있는 나만의 혜택</strong>
+					</div>
+					<div class="list">
+						<div class="item">
+							<img src="../../images/temp/sam_bnr.png" alt="배너">
+						</div>
+						<div class="item">
+							<img src="../../images/temp/sam_bnr.png" alt="배너">
+						</div>
+						<div class="item">
+							<img src="../../images/temp/sam_bnr.png" alt="배너">
+						</div>
+					</div>
+				</div>
+				<!-- // mainBenefit -->
+
+				<div class="main_notice">
+					<div><span>공지사항</span></div>
+					<div><span>자주 묻는 질문</span></div>
+					<div><span>자주 묻는 질문</span></div>
+				</div>
+
+
+				<div class="main_footer">
+					<div class="f_logo">
+						<svg id="footer_logo" class="img_logo" data-name="img_logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 230.9515 58.6165">
+							<path transform="translate(-181.9035 -391.1745)" d="M241.6073,449.7068H229.9008l-5.3516-10.4522L211.755,414.1692l-12.7934,25.0854L193.61,449.7068H181.9035l5.3516-10.4522,24.5-48.08,24.5008,48.08Z"></path>
+							<path transform="translate(-181.9035 -391.1745)" d="M288.5161,391.2578V401.71H264.5179v48.081H254.0656V401.71h-23.999V391.2578Z"></path>
+							<path transform="translate(-181.9035 -391.1745)" d="M347.9673,420.4405a29.266,29.266,0,1,1-29.2664-29.266A29.2979,29.2979,0,0,1,347.9673,420.4405Zm-10.4522,0a18.8138,18.8138,0,1,0-18.8142,18.8141A18.8422,18.8422,0,0,0,337.5151,420.4405Z"></path>
+							<path transform="translate(-181.9035 -391.1745)" d="M412.8551,391.2578V449.791l-10.4522-8.0277-37.6284-29.0155V449.791H354.3223V391.4254l10.4522,8.0273,37.6284,29.0155V391.1745Z"></path>
+						</svg>
+					</div>
+
+					<p>서비스 제공사 : (주)아톤</p>
+
+					<p>
+						서비스 가입/ 해지문의<br />
+						<span>080-123-4567(무료)</span> │ <span>aaa@atoncorp.com</span><br />
+						(평일) 09:00~18:00 (점심시간 12:00~13:00)
+					</p>
+
+					<p>* 본 서비스는 가입 즉시 서비스가 개시되는 상품으로 청약철회가 불가능합니다. (전자상거래 등에서의 소비자보호에 관한 법률 제17조 2항 5호에 따라 디지털 콘텐츠의 제공이 개시된 경우 청약철회를 제공하지 않습니다.)</p>
+				</div>
+				<!-- // main_footer -->
+				
+			</div>
+			
+		</section><!-- // container -->
+		
+	</div><!-- // container_wrap -->
+
+
+	<!-- <div class="footer_wrap">
+		<div class="btnGroup">
+			<div>
+				<button type="button" class="btn line" disabled=""><span>취소</span></button>
+			</div>
+			<div>
+				<button type="button" class="btn fill"><span>확인</span></button>
+			</div>
+		</div>
+	</div> -->
+	<!-- // footer_wrap (하단 고정 영역) -->
+
+</div><!-- // wrap -->
+
+
+
+
+
+
+<!-- 도움말 팝업 -->
+<div class="layer help" id="test1111" style="display:none;">
+	<div class="layer_inner">
+		<div class="layer_content">
+			<p>
+				유료회원의 경우 실시간 감시 이용 가능합니다.<br />
+				실시간 감시 대상 : 휴대폰 검사, APP 검사
+			</p>
+		</div>
+		
+		<div class="close"><button type="button"><span>닫기</span></button></div>
+	</div>
+</div><!-- // layer help -->
+
+<script>
+	
+</script>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="../../js/slick.js"></script>
+
+<script src="../../js/temp.js"></script>
+
+
+<script>
+$(document).ready(function(){
+	/* gallery main */
+	function mainContentSlick(){
+		$('.main_security .list').slick({
+			dots: true,
+			dotsClass: "main_slide_dot",
+			infinite: true,
+			arrows: false,
+			centerMode: true,
+			centerPadding : '18px'
+		});
+	}
+	mainContentSlick();
+
+	function mainBenefitSlick(){
+		$('.mainBenefit .list').slick({
+			dots: true,
+			dotsClass: "main_slide_dot",
+			infinite: true,
+			arrows: false,
+		});
+	}
+	mainBenefitSlick();
+})
+
+
+
+
+let btnTooltip = document.querySelector("button.tooltip");
+btnTooltip.addEventListener("click", function(event){
+	target = event.target;
+	let layerTooltip = document.querySelector("#test1111");
+	layerTooltip.style.display = "block";
+	let tempTop = btnTooltip.offsetTop;
+	console.log(tempTop)
+	layerTooltip.style.top = tempTop + btnTooltip.clientHeight + "px";
+})
+
+
+
+let layerHelp = document.querySelector(".layer.help");
+layerHelp.querySelector("button").addEventListener("click", function(){
+	this.closest(".layer").style.display = "none"
+})
+
+
+</script>
+
+
+<script>
+	window.addEventListener("load", function(){
+		let skill = document.querySelector(".skill");
+		let circle = skill.querySelector("circle.bar");
+		let value = 19;
+		if(value <= 80) {
+			circle.style.stroke = "url(#GradientColor1)";
+		} else if(value <= 90) {
+			value = 62;
+			circle.style.stroke = "url(#GradientColor2)";
+		} else if(value <= 100){
+			value = 100;
+			circle.style.stroke = "url(#GradientColor3)";
+		} else {
+			alert("엥?")
+		}
+
+		let dotValueReg = -47 + (value * 2.69);
+		let sd = (100 - value) * 4.23;
+
+		
+		
+		
+		const keyFrames = document.createElement("style");
+		keyFrames.innerHTML = `
+		@keyframes anim {
+			0% {
+				stroke-dashoffset:564;
+			}
+			100% {
+				stroke-dashoffset: ${sd + 141};
+			}
+		}
+		@keyframes animDot {
+			0% {transform:translateY(-50%) rotate(-45deg);}
+			100% {transform:translateY(-50%) rotate(${dotValueReg + 2}deg);}
+		}
+		`;
+		circle.style.strokeDashoffset = sd + 141;
+		let body = document.querySelector("body")
+		body.appendChild(keyFrames);
+	})
+	
+	
+	
+	</script>
+
+</body>
+</html>

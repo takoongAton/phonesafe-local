@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+	<title>휴대폰안심 서비스 확장프로그램</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+	
+	<!-- font -->
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=block" rel="stylesheet" />
+	
+    <style>
+        /* iOS 확장 프로그램용 */
+        * {margin:0; padding:0; font-family:inherit; font-size:inherit; box-sizing:border-box;}
+        img {max-width:100%;}
+        html, body {width:100%; height:100%; margin:0; padding:0;}
+        .ex_wrap_over {position:fixed; top:0; right:0; bottom:0; left:0; background-color:rgba(0,0,0,0.7)}
+        .extension_wrap {display:flex; flex-direction:column; justify-content:space-between; position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); background-color:#fff; width:100%; max-width:320px; font-size:16px; font-family:'Noto Sans KR'; border-radius:1em; overflow:hidden;}
+        .extension_wrap .content_top { flex:1; width:100%; height:100%; padding:2em 1.5em; overflow-y:auto; text-align:center; }
+        .extension_wrap .content_top div.tit {font-size:1.125em; line-height:1.5em; font-weight:bold;}
+        .extension_wrap .content_top span.icon {display:inline-block; width:36px; height:36px; margin-top:12px;}
+        .extension_wrap .content_top p.txt {margin-top:12px; font-size:16px; line-height:1.5em;}
+        .extension_wrap .content_top .site_wrap {margin-top:24px;}
+        .extension_wrap .content_top .site_wrap strong {font-weight:normal;}
+        .extension_wrap .content_top .site_wrap .site_url {word-break:break-all; overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-line-clamp:2;  -webkit-box-orient:vertical; color:#333;}
+        .extension_wrap .content_btm .btn_group {display:flex; justify-content:space-between; border-top:0.5px solid #e7e7e7;}
+        .extension_wrap .content_btm .btn_group div {width:100%;}
+        .extension_wrap .content_btm .btn_group div button {width:100%; height:3.75em; border:0 none; background-color:#fff;}
+        .extension_wrap .content_btm .btn_group div button.next {color:#ff3a4a; font-weight:bold;}
+        .extension_wrap .content_btm .btn_group div button.prev,
+        .extension_wrap .content_btm .btn_group div button.back,
+        .extension_wrap .content_btm .btn_group div button.cancel,
+        .extension_wrap .content_btm .btn_group div button.close {color:#000;}
+        .extension_wrap .content_btm .btn_group div button span {display:block; font-size:1.125em;}
+    </style>
+</head>
+<body>
+  <div class="ex_wrap_over">
+    <div class="extension_wrap">
+      <div class="content_top">
+        <div class="tit"><strong>휴대폰안심 서비스</strong></div>
+        <span class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+                <g id="ico_caution" transform="translate(-16341 -230)">
+                  <rect id="사각형_148892" data-name="사각형 148892" width="36" height="36" transform="translate(16341 230)" fill="none"/>
+                  <g id="group_22304" data-name="group 22304" transform="translate(-1.723 9.445)">
+                    <path id="path_45967" data-name="path 45967" d="M18.946,1.519A1.019,1.019,0,0,0,17.927.5H1.519A1.019,1.019,0,0,0,.5,1.519V29.591a1.019,1.019,0,0,0,1.019,1.019H17.927a1.018,1.018,0,0,0,1.019-1.019V1.519Z" transform="translate(16351 223)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                    <line id="line_543" data-name="line 543" x2="12.207" transform="translate(16354.755 249.541)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                    <line id="line_544" data-name="line 544" x2="2.17" transform="translate(16359.636 226.259)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                    <g id="group_22305" data-name="group 22305" transform="translate(16360.721 236.113)">
+                      <line id="line_545" data-name="line 545" y2="3.499" transform="translate(0 0)" fill="none" stroke="#ff3a4a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                      <line id="line_546" data-name="line 546" y2="0.475" transform="translate(0 5.221)" fill="none" stroke="#ff3a4a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                    </g>
+                    <path id="path_45968" data-name="path 45968" d="M14.944,17.265A4.846,4.846,0,1,1,10.1,12.419,4.846,4.846,0,0,1,14.944,17.265Z" transform="translate(16350.625 221.697)" fill="none" stroke="#ff3a4a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                  </g>
+                </g>
+              </svg>
+        </span>
+        <p class="txt">위험한 링크 감지!!<br />
+          안전하지 않은 웹사이트 접속 시<br />
+          위험에 노출될 수 있습니다.
+        </p>
+
+        <div class="test_lng">
+          <p class="kr">ko-KR</p>
+          <p class="en">en-us</p>
+        </div>
+        
+
+        <div class="site_wrap">
+          <strong>웹사이트</strong>
+          <p class="site_url">URL_PARAM</p>
+          <!-- <p class="site_url">http://www.asdlfijas.dfjas.eifjase.ijsea.fjisae.fjas.eiffjas.ifjasijflsaeijfiasjfjselifj/asefjas/ejf/asejifji/saejfasijef/asjf/sjefoaesjfe</p> -->
+        </div>
+      </div>
+      <div class="content_btm">
+        <div class="btn_group">
+          <div><button type="button" class="cancel"><span>탐지 제외</span></button></div>
+          <div><button type="button" class="next"><span>확인</span></button></div>
+        </div>
+      </div>
+    </div><!-- // extension_wrap -->
+  </div>
+	
+<style>
+.test_lng {font-size:12px;}
+.test_lng p {display:none;}
+.test_lng.ko p.kr {display:block;}
+.test_lng.en p.en {display:block;}
+</style>
+<script>
+  /* 테스트 */
+let btns = document.querySelectorAll(".btn_group button");
+btns.forEach(function(item){
+  item.addEventListener("click", function(){
+    // document.querySelector(".ex_wrap_over").style.display = "none";
+  })
+})
+
+
+
+	// 디바이스 언어 상태 가져오기
+  const userLanguage = navigator.language || navigator.userLanguage;
+  // 콘솔에 언어 상태 출력
+  console.log("사용자 언어:", userLanguage);
+  if(userLanguage == "ko-KR") {
+    document.querySelector(".test_lng p.kr").style.display = "block";
+    alert(userLanguage)
+  } else {
+    document.querySelector(".test_lng p.en").style.display = "block";
+    // alert("other")
+  }
+
+</script>
+</body>
+</html>

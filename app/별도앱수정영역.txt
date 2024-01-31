@@ -1,0 +1,128 @@
+중요 : https://ko.javascript.info/ebook
+
+
+
+
+// 별도앱 관련 수정 //
+
+https://velog.io/@tootb/CSS-In-Depth-Backgrounds-shadows-and-blend-modes
+
+background-image: linear-gradient(to bottom, #fff 0%, #f8f8f8 100%);
+
+-- white --
+background-image: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0.5) 100%);
+background-image: linear-gradient(to bottom, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%);
+background-image: linear-gradient(to bottom, rgba(255,255,255,1) 75%, rgba(255,255,255,0) 100%);
+
+
+-- gray --
+background-image: linear-gradient(to bottom, rgba(248,248,248,1) 0%, rgba(248,248,248,0.5) 100%);
+background-image: linear-gradient(to bottom, rgba(248,248,248,1) 50%, rgba(248,248,248,0) 100%);
+background-image: linear-gradient(to bottom, rgba(248,248,248,1) 70%, rgba(248,248,248,0) 100%);
+
+
+-- 이슈가 있는 페이지 --
+file:///C:/work/aton/phonesafe/phonesafe-publishing/html_app/02_security/FRSE_007P.html
+ file:///C:/work/aton/phonesafe/phonesafe-publishing/html_app/02_security/FRSE_008P_02.html
+-> titleBig가 cnotent_top에 들어있음.
+
+titleBig -> webview_lnb_wrap (하위 내용 포함 수정.)
+
+
+휴대폰안심서비스 별도앱 관련 html수정사항
+타이틀에 해당하는 태그 앞에 버튼 추가.
+
+페이지 타이틀이 header_wrap 안에 포함된 경우.
+
+페이지 타이틀이 content_top 안에 포함된 경우.
+
+페이지 타이틀이 content_mid 안에 포함된 경우.
+
+
+
+--- 페이지명 옆에 버튼만 추가하는 경우 ---
+1. content_top 안에 있는 titleBig의 이름을 subResurtTit로 변경.
+<div class="content_top">
+    <div class="titleBig">
+        <p class="tit">
+            <strong>공지사항</strong>
+        </p>
+    </div>
+</div>
+
+수정
+<div class="content_top">
+    <div class="subResurtTit">
+        <p class="tit">
+            <strong>공지사항</strong>
+        </p>
+    </div>
+</div>
+titleBig -> subResurtTit 관련 페이지
+file:///C:/work/aton/phonesafe/phonesafe-publishing/html_app/02_security/FRSE_007P.html
+file:///C:/work/aton/phonesafe/phonesafe-publishing/html_app/02_security/FRSE_007P_00.html
+file:///C:/work/aton/phonesafe/phonesafe-publishing/html_app/02_security/FRSE_007P_01.html
+file:///C:/work/aton/phonesafe/phonesafe-publishing/html_app/02_security/FRSE_007P_02.html
+file:///C:/work/aton/phonesafe/phonesafe-publishing/html_app/02_security/FRSE_007P_03.html
+file:///C:/work/aton/phonesafe/phonesafe-publishing/html_app/02_security/FRSE_008P.html
+file:///C:/work/aton/phonesafe/phonesafe-publishing/html_app/02_security/FRSE_008P_00.html
+file:///C:/work/aton/phonesafe/phonesafe-publishing/html_app/02_security/FRSE_008P_01.html
+file:///C:/work/aton/phonesafe/phonesafe-publishing/html_app/02_security/FRSE_008P_00_01.html
+file:///C:/work/aton/phonesafe/phonesafe-publishing/html_app/02_security/FRSE_008P_02.html
+file:///C:/work/aton/phonesafe/phonesafe-publishing/html_app/02_security/FRSE_008P_00_02.html
+file:///C:/work/aton/phonesafe/phonesafe-publishing/html_app/02_security/FRSE_008P_03.html
+
+
+2. 페이지 타이틀 옆에 버튼 추가.
+(한 페이지에 <div class="subResurtTit">여러개인 경우 타이틀 역할을 하는 첫번째 subResurtTit 에만 적용.) 
+기존
+<div class="subResurtTit">
+    <p class="tit">
+        <strong>공지사항</strong>
+    </p>
+</div>
+
+수정 :
+<div class="subResurtTit">
+    <button type="button" class="btn_back"><span><img src="../../images/temp/btn_top_back.png" alt="이전"></span></button>
+    <p class="tit">
+        <strong>공지사항</strong>
+    </p>
+</div>
+
+html, css, temp.js 수정
+
+
+--- 페이지명 영역의 위치를 옮기는 경우 ---
+header_wrap 안에 페이지 타이틀 추가.
+
+<div class="header_wrap">
+
+    <div class="temp_native">native</div> (temp또는 temp_native)
+
+    <div class="webview_lnb_wrap">
+        <div class="inner_wrap">
+            <div class="util-btn">
+                <button type="button" class="btn_back">
+                    <span><img src="../../images/temp/btn_top_back.png" alt="이전"></span>
+                </button>
+            </div>
+            <div class="page_tit"><strong>페이지명</strong></div>
+            <!-- <div class="tools-btn">
+                    <button type="button" class="btn_back"><span><img src="../../images/temp/ico_alert.png" alt="알림"></span></button>
+            </div> -->
+        </div>
+    </div>
+    <!-- // webview_lnb_wrap -->
+
+</div>
+<!-- // header_wrap -->
+
+타이틀 영역의 위치 수정시 webview_lnb_wrap에 class 추가.
+: content_top -> header_wrap = <div class="webview_lnb_wrap white">
+: content_mid -> header_wrap = <div class="webview_lnb_wrap gray">
+
+
+별도앱용 컨텐츠 수정. (텍스트)
+file:///C:/work/aton/phonesafe/phonesafe-publishing/html_app/04_web/FRWE_004_00.html
+file:///C:/work/aton/phonesafe/phonesafe-publishing/html_app/04_web/FRWE_007P.html

@@ -1,0 +1,23 @@
+/* iOS 확장 프로그램용 */
+* {margin:0; padding:0; font-family:inherit; font-size:inherit; box-sizing:border-box;}
+img {max-width:100%;}
+html, body {width:100%; height:100%; margin:0; padding:0;}
+.extension_wrap {display:flex; flex-direction:column; justify-content:space-between; width:100%; height:100%; font-size:16px; font-family:'Noto Sans KR';}
+
+.extension_wrap .content_top { flex:1; width:100%; height:100%; padding:2em 1.5em; overflow-y:auto; text-align:center; }
+.extension_wrap .content_top div.tit {font-size:1.125em; line-height:1.5em; font-weight:bold;}
+.extension_wrap .content_top span.icon {display:inline-block; width:36px; height:36px; margin-top:12px;}
+.extension_wrap .content_top p.txt {margin-top:12px; font-size:16px; line-height:1.5em;}
+.extension_wrap .content_top .site_wrap {margin-top:24px;}
+.extension_wrap .content_top .site_wrap strong {font-weight:bold;}
+.extension_wrap .content_top .site_wrap .site_url {word-break:break-all;}
+
+.extension_wrap .content_btm .btn_group {display:flex; justify-content:space-between; border-top:0.5px solid #e7e7e7;}
+.extension_wrap .content_btm .btn_group div {width:100%;}
+.extension_wrap .content_btm .btn_group div button {width:100%; height:3.75em; border:0 none; background-color:#fff;}
+.extension_wrap .content_btm .btn_group div button.next {color:#ff3a4a; font-weight:bold;}
+.extension_wrap .content_btm .btn_group div button.prev,
+.extension_wrap .content_btm .btn_group div button.back,
+.extension_wrap .content_btm .btn_group div button.cancel,
+.extension_wrap .content_btm .btn_group div button.close {color:#000;}
+.extension_wrap .content_btm .btn_group div button span {display:block; font-size:1.125em;}

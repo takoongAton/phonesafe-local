@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+	<title>휴대폰안심 서비스</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+	
+	<!-- font -->
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=block" rel="stylesheet" />
+	
+	<!-- css -->
+	<link rel="stylesheet" href="../../css/reset.css" />
+	<link rel="stylesheet" href="../../css/phonesafe.css" />
+	<!-- <link rel="stylesheet" href="../../css/Global.css" /> -->
+	<!-- <link rel="stylesheet" href="../../css/slick.css" /> -->
+</head>
+<body>
+
+<div class="wrap">
+
+	<div class="header_wrap">
+		<div class="temp">
+			<button type="button"><span><img src="../../images/temp/btn_top_back.png" alt="이전"></span></button>
+			<h1>휴대폰안심</h1>
+			<button type="button"><span><img src="../../images/temp/btn_top_more.png" alt="더보기"></span></button>
+		</div>
+		<!-- // temp 삭제 -->
+		
+		<nav>
+			<div class="scroll-wrapper">
+				<ul class="scroll">
+					<li class="item"><button type="button"><span>홈</span></button></li>
+					<li class="item"><button type="button"><span>보안 검사</span></button></li>
+					<li class="item"><button type="button" class="active"><span>네트워크 검사</span></button></li>
+					<li class="item"><button type="button"><span>웹 검사</span></button></li>
+				</ul>
+			</div>
+			<button type="button" class="more"><span>더보기</span></button>
+		</nav>
+		<!-- // nav-->
+
+		<div class="tab_wrap">
+			<button type="button" class="active"><span>Wi-Fi 검사</span></button>
+			<button type="button"><span>Wi-Fi 위험지역</span></button>
+		</div>
+		<!-- // tab_wrap -->
+	</div>
+	<!-- // header_wrap -->
+
+	<div class="container_wrap">
+
+		<section class="container">
+
+			<div class="content_wrap divide">
+
+				<div class="content_top">
+					<div class="sectionMainTop">
+						<div class="img">
+							<img src="../../images/network/img_wifi_caution.png" alt="wifi 주의 이미지" />
+						</div>
+						<div class="txt">
+							<p>현재 연결된 Wi-Fi는 <strong class="c_caution">주의</strong>가 필요해요.</p>
+							<p>보안에 취약하니 Wi-Fi 연결을 해제하세요. </p>
+						</div>
+						<button type="button"><span>Wi-Fi 설정 해제</span></button>
+					</div>
+					<!-- // sectionMainTop -->
+				</div>
+				<!-- // content_top -->
+
+				<div class="content_mid">
+
+					<div class="subResurtTit">
+						<p class="tit">
+							<strong>연결된 네트워크</strong>
+						</p>
+						<div class="info">
+							<div class="txt_wrap">
+								<span class="icon"><img src="../../images/network/ico_wifi_list.png" alt=""></span>
+								<span class="txt">U+NetF7E0_5G</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="resurt_table_connected">
+						<div class="list">
+							<div class="row">
+								<dl>
+									<dt><span class="tit">IP 주소</span></dt>
+									<dd><span>192.168.0.1</span></dd>
+								</dl>
+							</div>
+							<div class="row">
+								<dl>
+									<dt><span class="tit">MAC주소</span></dt>
+									<dd><span>80:ca:4b:2f:f7:e3</span></dd>
+								</dl>
+							</div>
+							<div class="row">
+								<dl>
+									<dt><span class="tit">신호</span></dt>
+									<dd><span>양호 (-68dBm)</span></dd>
+								</dl>
+							</div>
+							<div class="row">
+								<dl>
+									<dt><span class="tit">네트워크 속도</span></dt>
+									<dd><span>68Mbps</span></dd>
+								</dl>
+							</div>
+							<div class="row">
+								<dl>
+									<dt><span class="tit">보안 (암호화)</span></dt>
+									<dd><strong class="c_caution">주의</strong><span>(WPA2)</span></dd>
+								</dl>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="network_wrap">
+						
+						<div class="other_networks">
+							<div class="subResurtTit">
+								<p class="tit">
+									<strong>연결 가능 네트워크</strong>
+								</p>
+								<div class="info">
+									<div class="txt_wrap">
+										<span class="txt">6</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="resurt_table_otherNetword">
+								<div class="list">
+									<div class="item">
+										<div class="item_network">
+											<div class="wifi">
+												<strong class="name">namil</strong>
+												<div>
+													<span>신호 : 약함</span>
+													<span>보안 (암호화) : 안전 (EAP)</span>
+												</div>
+											</div>
+											<span class="wifi_type"><img src="../../images/network/ico_wifi_lock_excellent.png" alt="잠김 신호강함"></span>
+											<!-- <span class="wifi_type"><img src="../../images/network/ico_wifi_lock_good.png" alt="잠김 신호좋음"></span>
+											<span class="wifi_type"><img src="../../images/network/ico_wifi_lock_weak.png" alt="잠김 신호약함"></span>
+											<span class="wifi_type"><img src="../../images/network/ico_wifi_excellent.png" alt="신호강함"></span>
+											<span class="wifi_type"><img src="../../images/network/ico_wifi_good.png" alt="신호좋음"></span>
+											<span class="wifi_type"><img src="../../images/network/ico_wifi_weak.png" alt="신호 약함"></span> -->
+										</div>
+									</div>
+									<div class="item">
+										<div class="item_network">
+											<div class="wifi">
+												<strong class="name">namil</strong>
+												<div>
+													<span>신호 : 약함</span>
+													<span>보안 (암호화) : 안전 (EAP)</span>
+												</div>
+											</div>
+											<span class="wifi_type"><img src="../../images/network/ico_wifi_lock_good.png" alt="잠김 신호좋음"></span>
+										</div>
+									</div>
+									<div class="item">
+										<div class="item_network">
+											<div class="wifi">
+												<strong class="name">namil</strong>
+												<div>
+													<span>신호 : 약함</span>
+													<span>보안 (암호화) : 안전 (EAP)</span>
+												</div>
+											</div>
+											<span class="wifi_type"><img src="../../images/network/ico_wifi_lock_weak.png" alt="잠김 신호약함"></span>
+										</div>
+									</div>
+									<div class="item">
+										<div class="item_network">
+											<div class="wifi">
+												<strong class="name">namil</strong>
+												<div>
+													<span>신호 : 약함</span>
+													<span>보안 (암호화) : 안전 (EAP)</span>
+												</div>
+											</div>
+											<span class="wifi_type"><img src="../../images/network/ico_wifi_excellent.png" alt="신호강함"></span>
+										</div>
+									</div>
+									<div class="item">
+										<div class="item_network">
+											<div class="wifi">
+												<strong class="name">namil</strong>
+												<div>
+													<span>신호 : 약함</span>
+													<span>보안 (암호화) : 안전 (EAP)</span>
+												</div>
+											</div>
+											<span class="wifi_type"><img src="../../images/network/ico_wifi_good.png" alt="신호좋음"></span>
+										</div>
+									</div>
+									<div class="item">
+										<div class="item_network">
+											<div class="wifi">
+												<strong class="name">GS24</strong>
+												<div>
+													<span>신호 : 약함</span>
+													<span>보안 (암호화) : 안전 (EAP)</span>
+												</div>
+											</div>
+											<span class="wifi_type"><img src="../../images/network/ico_wifi_weak.png" alt="신호 약함"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- // resurt_table_otherNetword -->
+							
+						</div>
+					</div>
+
+
+					
+
+				</div>
+
+				<div class="content_btm"></div>
+
+			</div><!-- // content_wrap -->
+			
+		</section><!-- // container -->
+		
+	</div><!-- // container_wrap -->
+
+
+	<!-- <div class="footer_wrap">
+		<div class="btnGroup">
+			<div>
+				<button type="button" class="btn line" disabled=""><span>취소</span></button>
+			</div>
+			<div>
+				<button type="button" class="btn fill"><span>확인</span></button>
+			</div>
+		</div>
+	</div> -->
+	<!-- // footer_wrap (하단 고정 영역) -->
+
+</div><!-- // wrap -->
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- <script src="../../js/slick.js"></script> -->
+<script src="../../js/temp.js"></script>
+
+
+</body>
+</html>

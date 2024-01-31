@@ -1,0 +1,11 @@
+<svg id="ico_notice" xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54">
+  <rect id="사각형_546" data-name="사각형 546" width="54" height="54" fill="none"/>
+  <g id="그룹_1093" data-name="그룹 1093" transform="translate(-3.336 -5.336)">
+    <g id="타원_74" data-name="타원 74" transform="translate(6.336 8.336)" fill="none" stroke="#ddd" stroke-width="3">
+      <circle cx="24" cy="24" r="24" stroke="none"/>
+      <circle cx="24" cy="24" r="22.5" fill="none"/>
+    </g>
+    <rect id="사각형_313" data-name="사각형 313" width="4" height="18" rx="2" transform="translate(28.336 20.336)" fill="#ddd"/>
+    <circle id="타원_75" data-name="타원 75" cx="2" cy="2" r="2" transform="translate(28.336 42.336)" fill="#ddd"/>
+  </g>
+</svg>

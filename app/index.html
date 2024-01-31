@@ -1,0 +1,1392 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>휴대폰안심 서비스(가칭)</title>
+<style type="text/css">
+body {margin:0; padding:30px 20px 20px 20px; font-family:Tahoma, Sans-Serif; font-size:12px; color:#333; line-height:1;}
+h1, p, ul, th, td {margin:0; padding:0;}
+ul, li {list-style-type:none;}
+
+h1 {margin:0 0 10px 0; font-size:17px;}
+h1 > span {margin-left:10px; font-size:13px; font-weight:normal;}
+.quick *{float:left; vertical-align:middle;}
+.quick {position:fixed; right:0; top:0; padding:5px 10px; background-color:#ddd;}
+.quick p {font-weight:bold;}
+.quick li {margin:0 0 0 8px;}
+.quick li span {display:block; width:5px; padding:0 0 0 8px;}
+.link-guide {display:block; margin-bottom:10px; text-decoration:underline; font-size:13px;}
+a {color:#028086; text-decoration:underline;}
+a:hover {color:#028086; text-decoration:none;}
+a.active {color:red; font-weight:bold;}
+table {width:100%; border-collapse:collapse; border:1px solid #666;}
+tr.line1 {border-top:2px solid #666;}
+th, td {vertical-align:middle; padding:5px 0; font-size:13px;}
+th {padding:6px; font-size:12px; text-align:center; color:#fff; border:1px solid #666; background-color:var(--main-color); font-weight:normal;}
+td {padding:5px 4px 5px 10px; text-align:left; border:1px solid #eee; background-color:#fff; line-height:1.4;}
+td.chk {padding:4px 4px 4px 4px; text-align:center;}
+td p {margin:10px 0 5px 0;}
+tr:hover td{background-color:#eee;}
+.done {color:#ca0404;}
+.ing {color:#028086;}
+.notice {padding:3px 0 10px 0; text-align:right; color:#ff0303; line-height:1.4;}
+
+:root {
+	--main-color:#ff3a4a;
+}
+</style>
+	<script type="text/javascript" src="/js/lib/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			var $lists = $('.menulist td').addClass('dir');
+			$lists
+				.find('td a')
+				.each(function(index){
+					var links = $(this).text();
+					$(this).attr('href', links).attr('target','_blank');
+
+				})
+				.end();
+			
+			//선택한거 파일 확인
+			$('a').on('click', function(){
+				$('a').removeClass('active');
+				$(this).addClass('active');
+			});
+		});
+	</script>
+</head>
+<!-- html body -->
+<body>
+<h1>휴대폰안심 서비스(가칭)</h1>
+
+<table class="menulist">
+	<colgroup>
+		<col width="6%">
+		<col width="10%">
+		<col width="12%">
+		<col width="12%">
+		<col width="14%">
+		<col width="4%">
+		<col width="">
+		<col width="">
+	</colgroup>
+	<thead>
+		<tr>
+			<th scope="col">화면ID</th>
+			<th scope="col">Depth 1</th>
+			<th scope="col">Depth 2</th>
+			<th scope="col">Depth 3</th>
+			<th scope="col">Depth 4</th>
+			<th scope="col">OS</th>
+			<th scope="col">파일명</th>
+			<th scope="col">비고</th>
+		</tr>
+	</thead>
+	<tbody>
+	<!-- <tr>
+		<td colspan="9" class="chk done dir"><strong>0924 : 디자인 검수 요청</strong> 0926 : 디자인 검수 완료 <br> 1004 : 기획 변경 및 추가 수정완료</td>
+	</tr> -->
+<!-- 
+		<tr class="line1">
+			<td>SSSSSSS</td>
+			<td>ㅇㅇㅇ</td>
+			<td>ㅇㅇㅇ</td>
+			<td>ㅇㅇㅇ</td>
+			<td><a target="_blank" href="./page/ㅇㅇㅇㅇ.html">ㅇㅇㅇ.html</a></td>
+			<td>-</td>
+		</tr>
+-->
+		<tr class="line1">
+			<td>FRCM_001P</td>
+			<td>공통</td>
+			<td>서버 연동 오류(공통)</td>
+			<td>페이지</td>
+			<td></td>
+			<td></td>
+			<td><a target="_blank" href="./html/07_etc/FRCM_001P.html">FRCM_001P.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td>FRCM_002P</td>
+			<td></td>
+			<td></td>
+			<td>팝업</td>
+			<td></td>
+			<td></td>
+			<td><a target="_blank" href="./html/07_etc/FRCM_002P.html">FRCM_002P.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td>FRCM_003P</td>
+			<td></td>
+			<td>작업공지</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><a target="_blank" href="./html/07_etc/FRCM_003P.html">FRCM_003P.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td>팝업모음(샘플)</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><a target="_blank" href="./html/07_etc/popups.html">popups.html</a></td>
+			<td>-</td>
+		</tr>
+		<!-- <tr class="">
+			<td></td>
+			<td></td>
+			<td>팝업</td>
+			<td>confirm</td>
+			<td></td>
+			<td></td>
+			<td><a target="_blank" href="./html/ㅁㅁㅁㅁ/ㅇㅇㅇㅇ.html">ㅇㅇㅇㅇ.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>alert</td>
+			<td>기본(공통)</td>
+			<td></td>
+			<td><a target="_blank" href="./html/ㅁㅁㅁㅁ/ㅇㅇㅇㅇ.html">ㅇㅇㅇㅇ.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>개발자 모드 주의 발생</td>
+			<td></td>
+			<td><a target="_blank" href="./html/ㅁㅁㅁㅁ/ㅇㅇㅇㅇ.html">ㅇㅇㅇㅇ.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>개발자 모드 위험 발생</td>
+			<td></td>
+			<td><a target="_blank" href="./html/ㅁㅁㅁㅁ/ㅇㅇㅇㅇ.html">ㅇㅇㅇㅇ.html</a></td>
+			<td>-</td>
+		</tr> -->
+		<tr class="line1">
+			<td>FRHO_001</td>
+			<td>홈</td>
+			<td>유료회원</td>
+			<td></td>
+			<td></td>
+			<td>AOS</td>
+			<td><a target="_blank" href="./html/01_home/FRHO_001.html">FRHO_001.html</a></td>
+			<td></td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td>유료회원</td>
+			<td></td>
+			<td></td>
+			<td>iOS</td>
+			<td><a target="_blank" href="./html/01_home/FRHO_001_00.html">FRHO_001_00.html</a></td>
+			<td>일부 컨텐츠 삭제</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td>무료회원</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><a target="_blank" href="./html/01_home/FRHO_001_01.html">FRHO_001_01.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td>서비스 점검 중(오류)</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><a target="_blank" href="./html/01_home/FRHO_001_02.html">FRHO_001_02.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td>FRCS_001P</td>
+			<td></td>
+			<td>공지사항</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><a target="_blank" href="./html/01_home/FRCS_001P.html">FRCS_001P.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td>FRCS_002P</td>
+			<td></td>
+			<td>자주 묻는 질문</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><a target="_blank" href="./html/01_home/FRCS_002P.html">FRCS_002P.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td>FRCS_003P</td>
+			<td></td>
+			<td>이용안내</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><a target="_blank" href="./html/01_home/FRCS_003P.html">FRCS_003P.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>서비스 오류</td>
+			<td></td>
+			<td></td>
+			<td><a target="_blank" href="./html/01_home/FRCS_003P_01.html">FRCS_003P_01.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>문자 메시지 검사하기</td>
+			<td></td>
+			<td></td>
+			<td><a target="_blank" href="./html/01_home/FRHO_003P.html">FRHO_003P.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>문자 메시지 검사완료</td>
+			<td></td>
+			<td></td>
+			<td><a target="_blank" href="./html/01_home/FRHO_003P_01.html">FRHO_003P_01.html</a></td>
+			<td>-</td>
+		</tr>
+
+		
+
+
+
+
+
+		<tr class="line1">
+			<td>FRSE_001</td>
+			<td>보안 검사</td>
+			<td>휴대폰 검사</td>
+			<td>메인</td>
+			<td></td>
+			<td>AOS</td>
+			<td><a target="_blank" href="./html/02_security/FRSE_001.html">FRSE_001.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>iOS</td>
+			<td><a target="_blank" href="./html/02_security/FRSE_001_00.html">FRSE_001_00.html</a></td>
+			<td>탭메뉴 삭제</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>검사 내역 없음</td>
+			<td></td>
+			<td><a target="_blank" href="./html/02_security/FRSE_001_01.html">FRSE_001_01.html</a></td>
+			<td></td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>검사결과</td>
+			<td>개발자모드(비활성)</td>
+			<td></td>
+			<td><a target="_blank" href="./html/02_security/FRSE_001_02_01.html">FRSE_001_02_01.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>개발자모드(주의)</td>
+			<td></td>
+			<td><a target="_blank" href="./html/02_security/FRSE_001_02_02.html">FRSE_001_02_02.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>개발자모드(위험)</td>
+			<td></td>
+			<td><a target="_blank" href="./html/02_security/FRSE_001_02_03.html">FRSE_001_02_03.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td>FRSE_002P</td>
+			<td></td>
+			<td></td>
+			<td>휴대폰 검사 진행 중</td>
+			<td></td>
+			<td></td>
+			<td><a target="_blank" href="./html/02_security/FRSE_002P.html">FRSE_002P.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>휴대폰 검사 진행 완료</td>
+			<td></td>
+			<td></td>
+			<td><a target="_blank" href="./html/02_security/FRSE_002P_01.html">FRSE_002P_01.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td>FRSE_003</td>
+			<td></td>
+			<td>휴대폰 최적화(AOS)</td>
+			<td>메인</td>
+			<td>조회 결과 없음</td>
+			<td></td>
+			<td><a target="_blank" href="./html/02_security/FRSE_003.html">FRSE_003.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>휴대폰 검사 결과(메인)</td>
+			<td></td>
+			<td><a target="_blank" href="./html/02_security/FRSE_003_01.html">FRSE_003_01.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>점검중</td>
+			<td></td>
+			<td><a target="_blank" href="./html/02_security/FRSE_003_02.html">FRSE_003_02.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td>FRSE_004P</td>
+			<td></td>
+			<td></td>
+			<td>휴대폰 최적화 진행중</td>
+			<td></td>
+			<td></td>
+			<td><a target="_blank" href="./html/02_security/FRSE_004P.html">FRSE_004P.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>휴대폰 최적화 완료</td>
+			<td></td>
+			<td></td>
+			<td><a target="_blank" href="./html/02_security/FRSE_004P_01.html">FRSE_004P_01.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td>FRSE_005</td>
+			<td></td>
+			<td>App 검사</td>
+			<td>메인</td>
+			<td>검사 내역 없음</td>
+			<td></td>
+			<td><a target="_blank" href="./html/02_security/FRSE_005.html">FRSE_005.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>검사 내역 노출</td>
+			<td>AOS</td>
+			<td><a target="_blank" href="./html/02_security/FRSE_005_01_01.html">FRSE_005_01_01.html</a></td>
+			<td>안전</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><a target="_blank" href="./html/02_security/FRSE_005_01_02.html">FRSE_005_01_02.html</a></td>
+			<td>주의</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><a target="_blank" href="./html/02_security/FRSE_005_01_03.html">FRSE_005_01_03.html</a></td>
+			<td>위험</td>
+		</tr>
+
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>검사 내역 노출</td>
+			<td>iOS</td>
+			<td><a target="_blank" href="./html/02_security/FRSE_005_00_01.html">FRSE_005_00_01.html</a></td>
+			<td>안전</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><a target="_blank" href="./html/02_security/FRSE_005_00_02.html">FRSE_005_00_02.html</a></td>
+			<td>주의</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><a target="_blank" href="./html/02_security/FRSE_005_00_03.html">FRSE_005_00_03.html</a></td>
+			<td>위험</td>
+		</tr>
+
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>조회결과 없음</td>
+			<td></td>
+			<td><a target="_blank" href="./html/02_security/FRSE_005_02.html">FRSE_005_02.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td>FRSE_006P</td>
+			<td></td>
+			<td></td>
+			<td>App 검사 진행 중</td>
+			<td></td>
+			<td>AOS</td>
+			<td><a target="_blank" href="./html/02_security/FRSE_006P.html">FRSE_006P.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>iOS</td>
+			<td><a target="_blank" href="./html/02_security/FRSE_006P_00.html">FRSE_006P_00.html</a></td>
+			<td>-</td>
+		</tr>
+
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>App 검사 완료</td>
+			<td></td>
+			<td>AOS</td>
+			<td><a target="_blank" href="./html/02_security/FRSE_006P_01.html">FRSE_006P_01.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>iOS</td>
+			<td><a target="_blank" href="./html/02_security/FRSE_006P_00_01.html">FRSE_006P_00_01.html</a></td>
+			<td>-</td>
+		</tr>
+
+		
+
+
+		<tr class="">
+			<td>FRSE_007P</td>
+			<td></td>
+			<td></td>
+			<td>App 검사내역</td>
+			<td>설치된 App</td>
+			<td>AOS</td>
+			<td><a target="_blank" href="./html/02_security/FRSE_007P.html">FRSE_007P.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td>FRSE_007P</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>iOS</td>
+			<td><a target="_blank" href="./html/02_security/FRSE_007P_00.html">FRSE_007P_00.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>맨위로</td>
+			<td></td>
+			<td><a target="_blank" href="./html/02_security/FRSE_007P_01.html">FRSE_007P_01.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>설치된 App 조회결과 없음</td>
+			<td></td>
+			<td><a target="_blank" href="./html/02_security/FRSE_007P_02.html">FRSE_007P_02.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>검사내역 제공 불가</td>
+			<td></td>
+			<td><a target="_blank" href="./html/02_security/FRSE_007P_03.html">FRSE_007P_03.html</a></td>
+			<td>-</td>
+		</tr>
+
+
+		<tr class="">
+			<td>FRSE_008P</td>
+			<td></td>
+			<td></td>
+			<td>App 검사 상세내역</td>
+			<td>세부 분석 결과</td>
+			<td>AOS</td>
+			<td><a target="_blank" href="./html/02_security/FRSE_008P.html">FRSE_008P.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td>FRSE_008P</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>iOS</td>
+			<td><a target="_blank" href="./html/02_security/FRSE_008P_00.html">FRSE_008P_00.html</a></td>
+			<td>-</td>
+		</tr>
+		
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>세부 분석 결과 위험</td>
+			<td>AOS</td>
+			<td><a target="_blank" href="./html/02_security/FRSE_008P_01.html">FRSE_008P_01.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>iOS</td>
+			<td><a target="_blank" href="./html/02_security/FRSE_008P_00_01.html">FRSE_008P_00_01.html</a></td>
+			<td>-</td>
+		</tr>
+
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>세부 분석 결과 없음</td>
+			<td>AOS</td>
+			<td><a target="_blank" href="./html/02_security/FRSE_008P_02.html">FRSE_008P_02.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>iOS</td>
+			<td><a target="_blank" href="./html/02_security/FRSE_008P_00_02.html">FRSE_008P_00_02.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>검사 결과 제공 불가</td>
+			<td></td>
+			<td><a target="_blank" href="./html/02_security/FRSE_008P_03.html">FRSE_008P_03.html</a></td>
+			<td>-</td>
+		</tr>
+
+
+
+
+		<tr class="line1">
+			<td>FRNE_001</td>
+			<td>네트워크 검사</td>
+			<td>Wi-Fi 검사</td>
+			<td>Wifi 연결 안됨</td>
+			<td></td>
+			<td></td>
+			<td><a target="_blank" href="./html/03_network/FRNE_001.html">FRNE_001.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>Wifi 연결 됨</td>
+			<td>안전</td>
+			<td></td>
+			<td><a target="_blank" href="./html/03_network/FRNE_001_01.html">FRNE_001_01.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>주의</td>
+			<td></td>
+			<td><a target="_blank" href="./html/03_network/FRNE_001_02.html">FRNE_001_02.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>위험</td>
+			<td></td>
+			<td><a target="_blank" href="./html/03_network/FRNE_001_03.html">FRNE_001_03.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>서비스 점검 중</td>
+			<td></td>
+			<td><a target="_blank" href="./html/03_network/FRNE_001_04.html">FRNE_001_04.html</a></td>
+			<td>-</td>
+		</tr>
+
+
+		<tr class="">
+			<td>FRNE_002</td>
+			<td></td>
+			<td>Wi-Fi 위험지역</td>
+			<td>위치정보 OFF</td>
+			<td></td>
+			<td></td>
+			<td><a target="_blank" href="./html/03_network/FRNE_002.html">FRNE_002.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>위치정보 ON</td>
+			<td></td>
+			<td></td>
+			<td><a target="_blank" href="./html/03_network/FRNE_002_01.html">FRNE_002_01.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td>FRNE_003P</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>Wi-Fi 위험지역 상세내역</td>
+			<td></td>
+			<td><a target="_blank" href="./html/03_network/FRNE_003P.html">FRNE_003P.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>상세내역 제공 불가</td>
+			<td></td>
+			<td><a target="_blank" href="./html/03_network/FRNE_003P_01.html">FRNE_003P_01.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>서비스 점검 중</td>
+			<td></td>
+			<td></td>
+			<td><a target="_blank" href="./html/03_network/ㅇㅇㅇㅇ.html">ㅇㅇㅇㅇ.html</a></td>
+			<td>-</td>
+		</tr>
+		
+
+
+
+
+		<tr class="line1">
+			<td>FRWE_001</td>
+			<td>웹검사</td>
+			<td>URL 검사</td>
+			<td>검사전</td>
+			<td></td>
+			<td>AOS</td>
+			<td><a target="_blank" href="./html/04_web/FRWE_001.html">FRWE_001.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><del>iOS</del></td>
+			<td><del><a target="_blank" href="./html/04_web/FRWE_001_00.html">FRWE_001_00.html</a></del></td>
+			<td><del>AOS/iOS 구분 안함</del> &nbsp; 탭메뉴 대신 타이틀</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>검사후</td>
+			<td></td>
+			<td></td>
+			<td><a target="_blank" href="./html/04_web/FRWE_001_01.html">FRWE_001_01.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>검사 결과 오류</td>
+			<td></td>
+			<td><a target="_blank" href="./html/04_web/FRWE_001_02.html">FRWE_001_02.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td>FRWE_002P</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>URL 검사 결과 (위험)</td>
+			<td></td>
+			<td><a target="_blank" href="./html/04_web/FRWE_002P_01.html">FRWE_002P_01.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>URL 검사 결과 (안전)</td>
+			<td></td>
+			<td><a target="_blank" href="./html/04_web/FRWE_002P_02.html">FRWE_002P_02.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>URL 검사 결과 (안전)</td>
+			<td></td>
+			<td><a target="_blank" href="./html/04_web/FRWE_002P_03.html">FRWE_002P_03.html</a></td>
+			<td>해당 URL이 이미 등록된 경우</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>iOS</td>
+			<td><a target="_blank" href="./html/04_web/FRWE_002P_04.html">FRWE_002P_04.html</a></td>
+			<td><del>세이프브라우징 탐지 시 URL 실시간 탐지</del> 삭제</td>
+		</tr>
+		<tr class="">
+			<td>FRWE_003P</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>URL 등록</td>
+			<td>AOS</td>
+			<td><a target="_blank" href="./html/04_web/FRWE_003P.html">FRWE_003P.html</a></td>
+			<td></td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><del>iOS</del></td>
+			<td><del><a target="_blank" href="./html/04_web/FRWE_003P_00.html">FRWE_003P_00.html</a></del></td>
+			<td>사용안함.</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>URL 등록 불가(오류)</td>
+			<td></td>
+			<td><a target="_blank" href="./html/04_web/FRWE_003P_01.html">FRWE_003P_01.html</a></td>
+			<td></td>
+		</tr>
+		<tr class="">
+			<td>FRWE_004</td>
+			<td></td>
+			<td>세이프브라우징</td>
+			<td>사용전</td>
+			<td></td>
+			<td>AOS</td>
+			<td><a target="_blank" href="./html/04_web/FRWE_004.html">FRWE_004.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td>FRWE_004</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>iOS</td>
+			<td><del><a target="_blank" href="./html/04_web/FRWE_004_00.html">FRWE_004_00.html</a></del></td>
+			<td>서비스 불가</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>발견 위험 없음</td>
+			<td></td>
+			<td>AOS</td>
+			<td><a target="_blank" href="./html/04_web/FRWE_004_01.html">FRWE_004_01.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>iOS</td>
+			<td><del><a target="_blank" href="./html/04_web/FRWE_004_00_01.html">FRWE_004_00_01.html</a></del></td>
+			<td>서비스 불가</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>발견 위험 있음</td>
+			<td></td>
+			<td>AOS</td>
+			<td><a target="_blank" href="./html/04_web/FRWE_004_02.html">FRWE_004_02.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>iOS</td>
+			<td><del><a target="_blank" href="./html/04_web/FRWE_004_00_02.html">FRWE_004_00_02.html</a></del></td>
+			<td>서비스 불가</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>조회 결과 없음</td>
+			<td></td>
+			<td></td>
+			<td><a target="_blank" href="./html/04_web/FRWE_004_03.html">FRWE_004_03.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>조회 결과 없음</td>
+			<td></td>
+			<td>iOS</td>
+			<td><del><a target="_blank" href="./html/04_web/FRWE_004_00_03.html">FRWE_004_00_03.html</a></del></td>
+			<td>서비스 불가</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>링크 결과 제공 불가</td>
+			<td></td>
+			<td></td>
+			<td><a target="_blank" href="./html/04_web/FRWE_004_04.html">FRWE_004_04.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td>FRWE_005P</td>
+			<td></td>
+			<td></td>
+			<td>안전하지 않은 웹사이트</td>
+			<td>웹 검사내역</td>
+			<td></td>
+			<td><a target="_blank" href="./html/04_web/FRWE_005P.html">FRWE_005P.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td>FRWE_005P</td>
+			<td></td>
+			<td></td>
+			<td>안전하지 않은 웹사이트</td>
+			<td>맨 위로</td>
+			<td></td>
+			<td><a target="_blank" href="./html/04_web/FRWE_005P_01.html">FRWE_005P_01.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>조회 결과 없음</td>
+			<td></td>
+			<td><a target="_blank" href="./html/04_web/FRWE_005P_02.html">FRWE_005P_02.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>검사내역 제공 불가</td>
+			<td></td>
+			<td><a target="_blank" href="./html/04_web/FRWE_005P_03.html">FRWE_005P_03.html</a></td>
+			<td>-</td>
+		</tr>
+
+
+		<tr class="">
+			<td>FRWE_006</td>
+			<td></td>
+			<td>문자 탐지</td>
+			<td>사용전</td>
+			<td></td>
+			<td>AOS</td>
+			<td><a target="_blank" href="./html/04_web/FRWE_006.html">FRWE_006.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>iOS</td>
+			<td><a target="_blank" href="./html/04_web/FRWE_006_00.html">FRWE_006_00.html</a></td>
+			<td>얀내문구 추가</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>사용후</td>
+			<td>발견위험 없음</td>
+			<td>AOS</td>
+			<td><a target="_blank" href="./html/04_web/FRWE_006_01.html">FRWE_006_01.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>iOS</td>
+			<td><a target="_blank" href="./html/04_web/FRWE_006_00_01.html">FRWE_006_00_01.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>발견위험 있음</td>
+			<td>AOS</td>
+			<td><a target="_blank" href="./html/04_web/FRWE_006_02.html">FRWE_006_02.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>iOS</td>
+			<td><a target="_blank" href="./html/04_web/FRWE_006_00_02.html">FRWE_006_00_02.html</a></td>
+			<td>-</td>
+		</tr>
+
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>조회 결과 없음</td>
+			<td></td>
+			<td><a target="_blank" href="./html/04_web/FRWE_006_03.html">FRWE_006_03.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>iOS</td>
+			<td><a target="_blank" href="./html/04_web/FRWE_006_00_03.html">FRWE_006_00_03.html</a></td>
+			<td>-</td>
+		</tr>
+
+
+		
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>링크 결과 제공 불가</td>
+			<td></td>
+			<td><a target="_blank" href="./html/04_web/FRWE_006_04.html">FRWE_006_04.html</a></td>
+			<td>-</td>
+		</tr>
+
+		<tr class="">
+			<td>FRWE_007P</td>
+			<td></td>
+			<td></td>
+			<td>“Safari” 웹 확장 기능 설정 방법 안내</td>
+			<td></td>
+			<td>iOS</td>
+			<td><a target="_blank" href="./html/04_web/FRWE_007P.html">FRWE_007P.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td>FRWE_008P</td>
+			<td></td>
+			<td></td>
+			<td>“메시지” 설정 방법 안내</td>
+			<td></td>
+			<td>iOS</td>
+			<td><a target="_blank" href="./html/04_web/FRWE_008P.html">FRWE_008P.html</a></td>
+			<td>-</td>
+		</tr>
+
+
+		<tr class="line1">
+			<td>FRET_001</td>
+			<td>더 보기</td>
+			<td>메인</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><a target="_blank" href="./html/06_more/FRET_001.html">FRET_001.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td>FRET_002P</td>
+			<td></td>
+			<td>보상 보험</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><a target="_blank" href="./html/06_more/FRET_002P.html">FRET_002P.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td>FRET_003P</td>
+			<td></td>
+			<td>0505 안심번호</td>
+			<td>미발급</td>
+			<td></td>
+			<td></td>
+			<td><a target="_blank" href="./html/06_more/FRET_003P.html">FRET_003P.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>발급</td>
+			<td></td>
+			<td></td>
+			<td><a target="_blank" href="./html/06_more/FRET_003P_01.html">FRET_003P_01.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td>FRET_004P</td>
+			<td></td>
+			<td>주간 리포트</td>
+			<td>양호</td>
+			<td></td>
+			<td>AOS</td>
+			<td><a target="_blank" href="./html/06_more/FRET_004P.html">FRET_004P.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>iOS</td>
+			<td><a target="_blank" href="./html/06_more/FRET_004P_00.html">FRET_004P_00.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>위험</td>
+			<td></td>
+			<td></td>
+			<td><a target="_blank" href="./html/06_more/FRET_004P_01.html">FRET_004P_01.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>제공 가능한 리포트 없음</td>
+			<td></td>
+			<td></td>
+			<td><a target="_blank" href="./html/06_more/FRET_004P_02.html">FRET_004P_02.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>월간 리포트 제공 불가</td>
+			<td></td>
+			<td></td>
+			<td><a target="_blank" href="./html/06_more/FRET_004P_03.html">FRET_004P_03.html</a></td>
+			<td>-</td>
+		</tr>
+
+		<tr class="">
+			<td>FRET_005P</td>
+			<td></td>
+			<td>월간 리포트</td>
+			<td>양호</td>
+			<td></td>
+			<td>AOS</td>
+			<td><a target="_blank" href="./html/06_more/FRET_005P.html">FRET_005P.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>iOS</td>
+			<td><a target="_blank" href="./html/06_more/FRET_005P_00.html">FRET_005P_00.html</a></td>
+			<td>-</td>
+		</tr>
+
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>위험</td>
+			<td></td>
+			<td></td>
+			<td><a target="_blank" href="./html/06_more/FRET_005P_01.html">FRET_005P_01.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>제공 가능한 리포트 없음</td>
+			<td></td>
+			<td></td>
+			<td><a target="_blank" href="./html/06_more/FRET_005P_02.html">FRET_005P_02.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>월간 리포트 제공 불가</td>
+			<td></td>
+			<td></td>
+			<td><a target="_blank" href="./html/06_more/FRET_005P_03.html">FRET_005P_03.html</a></td>
+			<td>-</td>
+		</tr>
+
+		<tr class="">
+			<td>FRET_006P</td>
+			<td></td>
+			<td>검사 기록</td>
+			<td>목록</td>
+			<td></td>
+			<td></td>
+			<td><a target="_blank" href="./html/06_more/FRET_006P.html">FRET_006P.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>조회 결과 없음</td>
+			<td></td>
+			<td></td>
+			<td><a target="_blank" href="./html/06_more/FRET_006P_02.html">FRET_006P_02.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>검사 기록 제공 불가</td>
+			<td></td>
+			<td></td>
+			<td><a target="_blank" href="./html/06_more/FRET_006P_03.html">FRET_006P_03.html</a></td>
+			<td>-</td>
+		</tr>
+
+
+
+		<tr class="">
+			<td>FRET_007P</td>
+			<td></td>
+			<td>보안설정</td>
+			<td>메인</td>
+			<td></td>
+			<td>AOS</td>
+			<td><a target="_blank" href="./html/06_more/FRET_007P.html">FRET_007P.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>iOS</td>
+			<td><a target="_blank" href="./html/06_more/FRET_007P_01.html">FRET_007P_01.html</a></td>
+			<td>웹 검사 실시간 탐지 설정 삭제</td>
+		</tr>
+		
+
+
+
+
+
+
+		
+
+
+		<!-- <tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><a target="_blank" href="./html/ㅁㅁㅁㅁ/ㅇㅇㅇㅇ.html">ㅇㅇㅇㅇ.html</a></td>
+			<td>-</td>
+		</tr> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<!-- <tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><a target="_blank" href="./html/ㅁㅁㅁㅁ/ㅇㅇㅇㅇ.html">ㅇㅇㅇㅇ.html</a></td>
+			<td>-</td>
+		</tr> -->
+
+		<!-- <tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><a target="_blank" href="./link">link_name.html</a></td>
+			<td>-</td>
+		</tr> -->
+
+	</tbody>
+</table>
+</body>
+<!-- //html body -->
+</html>

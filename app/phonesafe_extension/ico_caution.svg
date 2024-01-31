@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+  <g id="ico_caution" transform="translate(-16341 -230)">
+    <rect id="사각형_148892" data-name="사각형 148892" width="36" height="36" transform="translate(16341 230)" fill="none"/>
+    <g id="group_22304" data-name="group 22304" transform="translate(-1.723 9.445)">
+      <path id="path_45967" data-name="path 45967" d="M18.946,1.519A1.019,1.019,0,0,0,17.927.5H1.519A1.019,1.019,0,0,0,.5,1.519V29.591a1.019,1.019,0,0,0,1.019,1.019H17.927a1.018,1.018,0,0,0,1.019-1.019V1.519Z" transform="translate(16351 223)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <line id="line_543" data-name="line 543" x2="12.207" transform="translate(16354.755 249.541)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <line id="line_544" data-name="line 544" x2="2.17" transform="translate(16359.636 226.259)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <g id="group_22305" data-name="group 22305" transform="translate(16360.721 236.113)">
+        <line id="line_545" data-name="line 545" y2="3.499" transform="translate(0 0)" fill="none" stroke="#ff3a4a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <line id="line_546" data-name="line 546" y2="0.475" transform="translate(0 5.221)" fill="none" stroke="#ff3a4a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      </g>
+      <path id="path_45968" data-name="path 45968" d="M14.944,17.265A4.846,4.846,0,1,1,10.1,12.419,4.846,4.846,0,0,1,14.944,17.265Z" transform="translate(16350.625 221.697)" fill="none" stroke="#ff3a4a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>
