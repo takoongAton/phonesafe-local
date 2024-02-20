@@ -270,7 +270,7 @@ input[data-switch]:checked + label:after {right:2px; transform:translate(0,-50%)
 /* // home footer */
 
 /* 공지사항, 자주 묻는 질문 */
-.notice_arcodian_wrap {padding:18px;}
+.notice_arcodian_wrap {padding:0 18px 18px;}
 .notice_arcodian_wrap div.notice_filter div.select {padding-bottom:18px; text-align:right;}
 .notice_arcodian_wrap div.notice_filter div.select select {width:auto; height:37px; padding-right:18px; padding-left:8px;; border:0; border-bottom:1px solid #000; background:url('../images/common/btn_arrow_list_d.png') no-repeat right center / 18px 18px; color:#000;}
 .notice_arcodian_wrap .list {background-color:#fff; border-radius:12px; overflow:hidden;}
@@ -789,6 +789,8 @@ div.content_mid div.subResurtTit.fnPageTit p.tit {flex:1;}
 .error div.txt {margin-top:16px; padding:1em 1.25em; border:1.5px solid #ddd; background-color:#fff; border-radius:8px; color:#999; font-size:16px; line-height:22px; box-shadow:1px 2px 8px rgba(0, 0, 0, 0.16); text-align:left;}
 .error button.refresh {display:inline-block; width:93px; max-width:none; height:30px; margin-top:20px; border-radius:15px; background:#ededed url('../images/common/btn_refresh.png') no-repeat 18px center / 14px 14px; line-height:30px;}
 .error button.refresh span {display:block; padding:0 12px 0 30px; font-size:12px; line-height:1em; color:#000;}
+.error button.set_alram {display:inline-block; width:auto; max-width:none; height:30px; margin-top:20px; border-radius:15px; background:#ededed; line-height:30px;}
+.error button.set_alram span {display:block; padding:0 12px; font-size:12px; line-height:1em; color:#000;}
 .error button.btn_test {width:100%; height:48px; margin-top:60px; background-color:#333; border-radius:6px;}
 .error button.btn_test span {color:#fff;}
 /* // 네트워크 오류 등 */
@@ -1007,3 +1009,21 @@ pre.privacy .privacy_table_wrap table {width:auto;}
 .reg_email_wrap div.chk_wrap label input[type="checkbox"] ~ span.txt {font-size:14px; line-height:20px;}
 .reg_email_wrap div.chk_wrap label input[type="checkbox"]:checked + span.checkmark {background-image: url('../images/app/btn_check_s_on.png');}
 /* // 이메일 주소 등록 */
+
+
+/* 알람 내역 */
+.alram_wrap {}
+.alram_list {padding:0 18px 20px;}
+.alram_list .item {padding:14px 18px; background-color:#fff; border-radius:12px;}
+.alram_list .item + .item {margin-top:10px;}
+.alram_list .item div.info {display:flex; justify-content:space-between; align-items:center; gap:6px;}
+.alram_list .item div.info span {display:block; color:#999; font-size:12px; line-height:18px;;}
+.alram_list .item div.info span.ico {}
+.alram_list .item div.info span.ico img {display:block; width:16px; height:16px;}
+.alram_list .item div.info span.category {flex:1;}
+.alram_list .item div.tit {margin-top:4px; padding-left:22px; color:#000; font-size:14px; line-height:18px;;}
+.alram_list .item p.txt {margin-top:4px; padding-left:22px; color:#999; font-size:12px; line-height:18px;}
+
+div.select_filter div.select {padding:12px 18px; text-align:right;}
+div.select_filter div.select select {width:auto; height:37px; padding-right:18px; padding-left:8px;; border:0; border-bottom:1px solid #000; background:url('../images/common/btn_arrow_list_d.png') no-repeat right center / 18px 18px; color:#000; font-size:14px;}
+/* // 알람 내역 */

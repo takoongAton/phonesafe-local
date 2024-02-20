@@ -32,7 +32,7 @@
 		<div class="titleBig">
 			<button type="button" class="btn_back"><span><img src="../../images/temp/btn_top_back.png" alt="이전"></span></button>
 			<p class="tit">
-				<strong>휴대폰 인증</strong>
+				<strong>약관 동의</strong>
 			</p>
 		</div>
 		<!-- // titleBig -->
@@ -51,38 +51,48 @@
 					<div class="join_agree_wrap">
 
 						<div class="join_tit_wrap">
-							<div class="tit">
-								휴대폰안심 회원 가입을 위해<br />
-								휴대폰 인증을 진행해 주세요.
-							</div>
+							<div class="tit">휴대폰안심 회원 가입을 위해 약관에 동의해 주세요</div>
 						</div>
 						<!-- // join_tit_wrap -->
 
-						<div class="phone_certify_wrap">
+						<div class="agree_wrap">
 
-							<div class="telecom_wrap">
+							<div class="agree_chk_wrap">
+								<div class="all">
+									<label><input type="checkbox" class="agree all"><span class="checkmark"></span><span class="txt">약관 전체동의 (선택사항 포함)</span></label>
+								</div>
 								<ul>
-									<li><label><input type="radio" name="telecom" id=""><span class="txt">SKT</span></label></li>
-									<li><label><input type="radio" name="telecom" id=""><span class="txt">KT</span></label></li>
-									<li><label><input type="radio" name="telecom" id=""><span class="txt">LGU+</span></label></li>
+									<li>
+										<label>
+											<input type="checkbox" class="agree item" required><span class="checkmark"></span>
+										</label>
+										<span class="txt">(필수) 서비스 이용약관</span>
+									</li>
+									<li>
+										<label>
+											<input type="checkbox" class="agree item" required><span class="checkmark"></span>
+										</label>
+										<span class="txt">(필수) 개인정보 수집 및 이용 동의</span>
+									</li>
+									<li>
+										<label>
+											<input type="checkbox" class="agree item" required><span class="checkmark"></span>
+										</label>
+										<span class="txt">(필수) 개인정보 제3자 제공 동의</span>
+									</li>
+									<li>
+										<label>
+											<input type="checkbox" class="agree item" required><span class="checkmark"></span>
+										</label>
+										<span class="txt">(선택) 알림 및 마케팅 수신동의</span>
+									</li>
 								</ul>
 							</div>
-
-							<div class="phone_wrap">
-								<div class="tit">휴대폰번호</div>
-								<div class="ipt_wrap">
-									<div class="set_input">
-										<input type="text" placeholder="휴대폰 번호를 입력해 주세요">
-									</div>
-									<button type="button" class="set_btn"><span>확인</span></button>
-								</div>
-								<p class="em">가입 가능한 휴대폰번호입니다.</p>
-							</div>
-							<!-- // phone_wrap -->
+							<!-- // agree_chk_wrap -->
 
 						</div>
-						<!-- // phone_certify_wrap -->
-						
+						<!-- // agree_wrap -->
+
 					</div>
 					<!-- // join_agree_wrap -->
 
@@ -91,7 +101,7 @@
 
 				<div class="content_btm">
 					<div class="btm_btn">
-						<button type="button"><span>인증번호 발송</span></button>
+						<button type="button"><span>다음</span></button>
 					</div>
 				</div>
 

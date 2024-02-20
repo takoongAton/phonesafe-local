@@ -12,9 +12,6 @@
 	<!-- css -->
 	<link rel="stylesheet" href="../../css/reset.css" />
 	<link rel="stylesheet" href="../../css/phonesafe_app.css" />
-	<!-- <link rel="stylesheet" href="../../css/Global.css" /> -->
-	<!-- <link rel="stylesheet" href="../../css/slick.css" /> -->
-
 </head>
 <body>
 
@@ -24,21 +21,20 @@
 		<div class="temp_native">
 			<button type="button"><span><img src="../../images/temp/btn_top_home.png" alt="홈으로가기"></span></button>
 			<h1>휴대폰안심(native)</h1>
-			<button type="button"><span><img src="../../images/temp/ico_alert.png" alt="알림"></span></button>
+			<!-- <button type="button"><span><img src="../../images/temp/ico_alert.png" alt="알림"></span></button> -->
 		</div>
 		<!-- // temp_native 삭제 -->
-
 
 		<div class="titleBig">
 			<button type="button" class="btn_back"><span><img src="../../images/temp/btn_top_back.png" alt="이전"></span></button>
 			<p class="tit">
-				<strong>휴대폰 인증</strong>
+				<strong>알림 내역</strong>
 			</p>
 		</div>
 		<!-- // titleBig -->
-
 	</div>
 	<!-- // header_wrap -->
+
 
 	<div class="container_wrap">
 
@@ -46,56 +42,21 @@
 
 			<div class="content_wrap divide">
 
-				<div class="content_top">
+				<div class="content_center">
 
-					<div class="join_agree_wrap">
-
-						<div class="join_tit_wrap">
-							<div class="tit">
-								휴대폰안심 회원 가입을 위해<br />
-								휴대폰 인증을 진행해 주세요.
-							</div>
-						</div>
-						<!-- // join_tit_wrap -->
-
-						<div class="phone_certify_wrap">
-
-							<div class="telecom_wrap">
-								<ul>
-									<li><label><input type="radio" name="telecom" id=""><span class="txt">SKT</span></label></li>
-									<li><label><input type="radio" name="telecom" id=""><span class="txt">KT</span></label></li>
-									<li><label><input type="radio" name="telecom" id=""><span class="txt">LGU+</span></label></li>
-								</ul>
-							</div>
-
-							<div class="phone_wrap">
-								<div class="tit">휴대폰번호</div>
-								<div class="ipt_wrap">
-									<div class="set_input">
-										<input type="text" placeholder="휴대폰 번호를 입력해 주세요">
-									</div>
-									<button type="button" class="set_btn"><span>확인</span></button>
-								</div>
-								<p class="em">가입 가능한 휴대폰번호입니다.</p>
-							</div>
-							<!-- // phone_wrap -->
-
-						</div>
-						<!-- // phone_certify_wrap -->
-						
+					<div class="error">
+						<div class="img"><img src="../../images/common/ico_notice.png" alt="아이콘"></div>
+						<div class="tit">수신된 알림 내역이 없습니다. </div>
+						<button type="button" class="set_alram">
+							<span>알림 설정하기</span>
+						</button>
 					</div>
-					<!-- // join_agree_wrap -->
 
 				</div>
-				<!-- // content_mid -->
+				<!-- // content_center -->
 
-				<div class="content_btm">
-					<div class="btm_btn">
-						<button type="button"><span>인증번호 발송</span></button>
-					</div>
-				</div>
-
-			</div><!-- // content_wrap -->
+			</div>
+			<!-- // content_wrap -->
 			
 		</section><!-- // container -->
 		
@@ -117,9 +78,7 @@
 </div><!-- // wrap -->
 
 
-<!-- <div class="toTop active">
-	<button type="button"><span>위로</span></button>
-</div> -->
+
 
 
 
