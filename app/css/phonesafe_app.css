@@ -1002,12 +1002,13 @@ pre.privacy .privacy_table_wrap table {width:auto;}
 .reg_email_wrap div.set_input {padding:0 18px;}
 .reg_email_wrap div.set_input input {height:40px; padding:8px; color:#000; font-size:16px; line-height:22px; background-color:transparent; border:0; border-bottom:1.5px solid #000;}
 .reg_email_wrap div.set_input input::placeholder {color:#ddd;}
-.reg_email_wrap div.chk_wrap {margin-top:12px; padding:0 18px;}
+.reg_email_wrap div.chk_wrap {display:flex; justify-content:space-between; align-items:center; margin-top:12px; padding:0 18px;}
 .reg_email_wrap div.chk_wrap label {display:inline-flex; align-items:center; position:relative; width:100%;}
 .reg_email_wrap div.chk_wrap label input[type="checkbox"] {position:absolute; top:0; left:0; width:0; height:0; opacity:0;}
 .reg_email_wrap div.chk_wrap label input[type="checkbox"] + span.checkmark {display:block; width:24px; height:24px; background:url('../images/app/btn_check_s_off.png') no-repeat left top / contain; margin-right:6px;}
 .reg_email_wrap div.chk_wrap label input[type="checkbox"] ~ span.txt {font-size:14px; line-height:20px;}
 .reg_email_wrap div.chk_wrap label input[type="checkbox"]:checked + span.checkmark {background-image: url('../images/app/btn_check_s_on.png');}
+.reg_email_wrap div.chk_wrap button {display:inline-block; width:24px; min-width:24px; height:24px; background:url('../images/app/ico_arrow_small_right.png') no-repeat right center / 14px 14px; color:transparent; font-size:0; overflow:hidden;}
 /* // 이메일 주소 등록 */
 
 
