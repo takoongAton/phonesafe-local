@@ -102,15 +102,15 @@ input[data-switch]:checked + label:after {right:2px; transform:translate(0,-50%)
 .header_wrap div.temp_native button:first-of-type {left:18px;}
 .header_wrap div.temp_native button:last-of-type {right:18px;}
 .header_wrap div.temp_native button span {display:block; width:24px; height:24px;}
-.header_wrap div.temp_native {display:none;}
+/* .header_wrap div.temp_native {display:none;} */
 /* 공통 임시 */
 
 /* 공통 header */
-.header_wrap nav {display:block; position:relative; width:100%; padding:0 78px 0 18px;}
+.header_wrap nav {display:block; position:relative; width:100%; padding:0 73px 0 18px;}
 .header_wrap nav div {}
 .header_wrap nav div ul {}
 .header_wrap nav div ul li {display:inline-block;}
-.header_wrap nav div ul li button {display:inline-block; width:auto; height:36px; padding:0 9px; color:#999; font-size:14px;}
+.header_wrap nav div ul li button {display:inline-block; width:auto; height:36px; padding:0 4.5px; color:#999; font-size:14px;}
 .header_wrap nav div ul li button span {display:block; position:relative; line-height:36px;}
 .header_wrap nav div ul li button.active {color:#000;}
 .header_wrap nav div ul li button.active span {font-weight:bold;}
@@ -220,20 +220,64 @@ input[data-switch]:checked + label:after {right:2px; transform:translate(0,-50%)
 .main_security div.list .item div.summary p {color:#999; font-size:14px; line-height:20px;}
 /* // 보안 사고 예방 */
 
+/* 보안 캠페인 */
+.main_campain {}
+.main_campain div.tit {display:flex; align-items:center; width:100%; height:60px; padding:0 18px;}
+.main_campain div.list {}
+.main_campain div.list .item {border-radius:10px; padding-right:18px; padding-bottom:20px; vertical-align:top; }
+.main_campain div.list .item div.inner {border-radius:10px; overflow:hidden; box-shadow:0 2px 4px rgba(0, 0, 0, 0.16);}
+.main_campain div.list .item div.inner * {vertical-align:top; line-height:1;}
+.main_campain div.list .item .thum {}
+.main_campain div.list .item div.summary {width:100%; height:64px; padding:10px 18px 9px; border-radius:0 0 6px 6px; overflow:hidden;}
+.main_campain div.list .item div.summary p.txt {flex:1; color:#000; font-size:14px; line-height:20px; font-weight:bold;}
+.main_campain div.list .item div.summary span.date {display:block; margin-top:3px; color:#999; font-size:12px; line-height:20px; letter-spacing:0;}
+/* // 보안 캠페인 */
+
+
+/* 홈 최신 보안 뉴스 */
+.security_news {padding-bottom:20px;}
+.security_news div.tit {display:flex; align-items:center; height:60px; padding:0 18px;}
+.security_news div.tit strong {}
+.security_news div.list {padding:0 18px;}
+.security_news div.list div.item {display:flex; justify-content:space-between; gap:14px; padding:10px 0;}
+.security_news div.list div.item div.thum {width:64px; min-width:64px; height:64px;}
+.security_news div.list div.item div.txt_wrap {flex:1; position:relative;}
+.security_news div.list div.item div.txt_wrap div.txt {padding:0; font-size:14px; line-height:20px;}
+.security_news div.list div.item div.txt_wrap span.date {display:block; position:absolute; bottom:0; left:0; color:#999999; font-size:12px; line-height:18px;}
+.security_news div.btn_group {margin-top:10px; padding:0 18px;}
+.security_news button.btn_more {height:48px; background-color:#fff; border:1px solid #ddd; border-radius:100px;}
+.security_news button.btn_more span {display:block; font-size:14px; line-height:1;}
+/* // 홈 최신 보안 뉴스 */
+
+
+/* 최신 보안뉴스 */
+.premium_report {padding-bottom:20px; background-color:#F8F8F8;}
+.premium_report div.tit {display:flex; align-items:center; height:60px; padding:0 18px;}
+.premium_report div.list {display:flex; justify-content:space-between; width:100%; gap:10px; padding:0 18px;}
+.premium_report div.list div.item {width:100%; border-radius:6px; overflow:hidden; box-shadow:0 2px 4px rgba(0,0,0,0.16);}
+.premium_report div.list div.item button.btn_down {height:48px;}
+.premium_report div.list div.item button.btn_down img {width:24px; height:24px;}
+.premium_report div.btn_group {margin-top:20px; padding:0 18px;}
+.premium_report button.btn_more {height:48px; background-color:#fff; border:1px solid #ddd; border-radius:100px;}
+.premium_report button.btn_more span {display:block; font-size:14px; line-height:1;}
+/* // 최신 보안뉴스 */
+
+
+
 /* home 쉽고 편한 보안 관리 */
 .main_security_chk {background-color:#f8f8f8;}
 .main_security_chk div.tit {display:flex; align-items:center; height:60px; padding:0 18px;}
-.main_security_chk div.bnr {margin-bottom:20px; padding:0 18px;}
+.main_security_chk div.bnr {padding:0 18px 20px;}
 .main_security_chk div.bnr div {padding:12px 0; border:1px solid #ddd; background-color:#fff; border-radius:100px; text-align:center;}
 .main_security_chk div.bnr p {display:inline-block; font-size:14px; line-height:24px; padding-right:24px; background:url('../images/common/ico_arrow_list_big_right.png') no-repeat right center / 24px 24px;}
-.main_security_chk div.bnr p span {color:#ff3a4a;}
-.main_security_chk div.list {padding:0 18px 18px;}
+.main_security_chk div.bnr p span {color:var(--main-color);}
+/* .main_security_chk div.list {padding:0 18px 18px;}
 .main_security_chk div.list .item {display:flex; align-items:center; padding:16px 18px 14px; background-color:#fff; border-radius:6px; box-shadow:0 2px 4px rgba(0, 0, 0, 0.16);}
 .main_security_chk div.list .item + .item {margin-top:12px;}
 .main_security_chk div.list .item div.ico {width:40px; min-width:40px; height:40px;}
 .main_security_chk div.list .item div.txt {flex:1; padding-left:1em;}
 .main_security_chk div.list .item div.txt strong {display:block; font-size:14px; line-height:20px;}
-.main_security_chk div.list .item div.txt p {color:#999; font-size:12px; line-height:20px;}
+.main_security_chk div.list .item div.txt p {color:#999; font-size:12px; line-height:20px;} */
 /* // home 쉽고 편한 보안 관리 */
 
 /* home slick dot */
@@ -270,7 +314,7 @@ input[data-switch]:checked + label:after {right:2px; transform:translate(0,-50%)
 /* // home footer */
 
 /* 공지사항, 자주 묻는 질문 */
-.notice_arcodian_wrap {padding:0 18px 18px;}
+.notice_arcodian_wrap {padding:20px 18px 18px;}
 .notice_arcodian_wrap div.notice_filter div.select {padding-bottom:18px; text-align:right;}
 .notice_arcodian_wrap div.notice_filter div.select select {width:auto; height:37px; padding-right:18px; padding-left:8px;; border:0; border-bottom:1px solid #000; background:url('../images/common/btn_arrow_list_d.png') no-repeat right center / 18px 18px; color:#000;}
 .notice_arcodian_wrap .list {background-color:#fff; border-radius:12px; overflow:hidden;}
@@ -287,6 +331,7 @@ input[data-switch]:checked + label:after {right:2px; transform:translate(0,-50%)
 .notice_arcodian_wrap .list .item div.detail_wrap .inner {flex:1;}
 .notice_arcodian_wrap .list .item.active div.tit_wrap {background-image:url('../images/home/ico_arrow_list_big_up.png');}
 .notice_arcodian_wrap .list .item.active div.detail_wrap {display:flex;}
+.select_filter + .notice_arcodian_wrap {padding-top:0;}
 /* // 공지사항, 자주 묻는 질문 */
 
 /* 이용안내 내용 */
@@ -1011,6 +1056,12 @@ pre.privacy .privacy_table_wrap table {width:auto;}
 .reg_email_wrap div.chk_wrap button {display:inline-block; width:24px; min-width:24px; height:24px; background:url('../images/app/ico_arrow_small_right.png') no-repeat right center / 14px 14px; color:transparent; font-size:0; overflow:hidden;}
 /* // 이메일 주소 등록 */
 
+/* 팝업용 이메일 주소 등록 */
+.layer .reg_email_wrap {margin-top:12px;}
+.layer .reg_email_wrap div.set_input {padding:0;}
+.layer .reg_email_wrap div.chk_wrap {padding:0;}
+/* // 팝업용 이메일 주소 등록 */
+
 
 /* 알람 내역 */
 .alram_wrap {}
@@ -1028,3 +1079,60 @@ pre.privacy .privacy_table_wrap table {width:auto;}
 div.select_filter div.select {padding:12px 18px; text-align:right;}
 div.select_filter div.select select {width:auto; height:37px; padding-right:18px; padding-left:8px;; border:0; border-bottom:1px solid #000; background:url('../images/common/btn_arrow_list_d.png') no-repeat right center / 18px 18px; color:#000; font-size:14px;}
 /* // 알람 내역 */
+
+
+
+
+
+/* 매거진 리스트 */
+.magazine_list_wrap {padding:10px 18px 18px;}
+/* 보안 캠페인 */
+.magazine_list_wrap .magazine_campain_list div.item {margin-bottom:19px;}
+.magazine_list_wrap .magazine_campain_list div.item div.thum {font-size:0;}
+.magazine_list_wrap .magazine_campain_list div.item div.thum img {display:block; border-radius:6px;}
+.magazine_list_wrap .magazine_campain_list div.item div.tit {margin-top:10px; font-size:16px; line-height:22px; font-weight:bold;}
+.magazine_list_wrap .magazine_campain_list div.item span.date {display:block; color:#999; font-size:12px; line-height:18px;}
+/* // 보안 캠페인 */
+
+/* 보안 뉴스 */
+.magazine_list_wrap .magazine_news_list {padding-bottom:10px;}
+.magazine_list_wrap .magazine_news_list div.item {display:flex; justify-content:space-between; gap:14px; padding:10px 0;}
+.magazine_list_wrap .magazine_news_list div.item div.thum {width:96px; min-width:96px; height:96px;}
+.magazine_list_wrap .magazine_news_list div.item div.txt_wrap {flex:1; position:relative;}
+.magazine_list_wrap .magazine_news_list div.item div.txt_wrap div.txt {padding:0; font-size:16px; line-height:22px; font-weight:bold; overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical;}
+.magazine_list_wrap .magazine_news_list div.item div.txt_wrap div.write_info {position:absolute; bottom:0; left:0;}
+.magazine_list_wrap .magazine_news_list div.item div.txt_wrap div.write_info span  {display:inline-block; position:relative; color:#999999; font-size:14px; line-height:1;}
+.magazine_list_wrap .magazine_news_list div.item div.txt_wrap div.write_info span + span {margin-left:7px; padding-left:8px;}
+.magazine_list_wrap .magazine_news_list div.item div.txt_wrap div.write_info span + span::before {content:""; display:block; position:absolute; top:50%; left:0; width:0; height:70%; border-left:1px solid #ddd; transform:translateY(-50%);}
+/* // 보안 뉴스 */
+
+/* 프리미엄 리포트 */
+.magazine_list_wrap .magazine_report_list div.item {margin-bottom:19px; border-radius:6px; box-shadow:0 2px 4px rgba(0, 0, 0, 0.16); overflow:hidden;}
+.magazine_list_wrap .magazine_report_list div.item div.thum {position:relative; font-size:0;}
+.magazine_list_wrap .magazine_report_list div.item div.thum img {display:block;}
+.magazine_list_wrap .magazine_report_list div.item div.txt_wrap {display:flex; justify-content:space-between; align-items:flex-start; position:relative; padding:10px 18px;}
+.magazine_list_wrap .magazine_report_list div.item div.txt_wrap p.monthly {display:block; color:#999; font-size:12px; line-height:18px;}
+.magazine_list_wrap .magazine_report_list div.item div.txt_wrap div.tit {font-size:16px; line-height:22px; font-weight:bold; overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-line-clamp:2;  -webkit-box-orient:vertical;}
+.magazine_list_wrap .magazine_report_list div.item div.txt_wrap button {width:24px; height:24px; min-width:24px;}
+/* // 프리미엄 리포트 */
+
+/* 매거진 더보기 버튼 */
+.magazine_list_wrap div.btn_group button.btn_more {height:48px; background-color:#fff; border:1px solid #ddd; border-radius:6px;}
+.magazine_list_wrap div.btn_group button.btn_more span {display:block; font-size:14px; line-height:1;}
+/* // 매거진 더보기 버튼 */
+.select_filter + .magazine_list_wrap {padding-top:0;}
+/* // 매거진 리스트 */
+
+
+/* 매거진 보안 캠페인, 보안 뉴스 상세 보기 */
+.magazine_view_wrap {}
+.magazine_view_wrap .magazine_view_tit {padding:18px 20px;}
+.magazine_view_wrap .magazine_view_tit div.tit {font-size:16px; line-height:22px; font-weight:bold;}
+.magazine_view_wrap .magazine_view_tit div.wirte_info {margin-top:4px; font-size:12px; line-height:18px;;}
+.magazine_view_wrap .magazine_view_tit div.wirte_info span {display:inline-block; position:relative; line-height:1;}
+.magazine_view_wrap .magazine_view_tit div.wirte_info span + span {margin-left:6px; padding-left:7px;}
+.magazine_view_wrap .magazine_view_tit div.wirte_info span + span::before {content:""; display:block; position:absolute; top:50%; left:0; width:0; height:75%; border-left:1px solid #000; transform:translateY(-50%);}
+.magazine_view_wrap .magazine_view_content {padding:20px 18px; background-color:#f8f8f8; font-size:14px; line-height:20px;}
+.magazine_view_wrap .magazine_view_content .megezine_img img {margin-bottom:20px; border-radius:6px; overflow:hidden;}
+.magazine_view_wrap .magazine_view_content .megezine_txt {white-space:pre-line;}
+/* // 매거진 보안 캠페인, 보안 뉴스 상세 보기 */
