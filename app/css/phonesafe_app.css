@@ -234,7 +234,7 @@ input[data-switch]:checked + label:after {right:2px; transform:translate(0,-50%)
 /* // 보안 캠페인 */
 
 
-/* 홈 최신 보안 뉴스 */
+/* 홈 최신 보안 뉴스 App_SB_v1.0 삭제 */
 .security_news {padding-bottom:20px;}
 .security_news div.tit {display:flex; align-items:center; height:60px; padding:0 18px;}
 .security_news div.tit strong {}
@@ -250,7 +250,23 @@ input[data-switch]:checked + label:after {right:2px; transform:translate(0,-50%)
 /* // 홈 최신 보안 뉴스 */
 
 
-/* 최신 보안뉴스 */
+/* 사이버 보안 휘엽 사례 */
+.cyber_security {padding-bottom:20px;}
+.cyber_security div.tit {display:flex; align-items:center; height:60px; padding:0 18px;}
+.cyber_security div.tit strong {}
+.cyber_security div.list {padding:0 18px;}
+.cyber_security div.list div.item {display:flex; justify-content:space-between; gap:14px; padding:8px 0;}
+.cyber_security div.list div.item div.thum {width:64px; min-width:64px; height:64px;}
+.cyber_security div.list div.item div.txt_wrap {flex:1; position:relative;}
+.cyber_security div.list div.item div.txt_wrap div.txt {padding:0; color:#000; font-size:14px; line-height:20px; font-weight:bold;}
+.cyber_security div.list div.item div.txt_wrap span.date {display:block; color:#999999; font-size:12px; line-height:18px;}
+.cyber_security div.btn_group {margin-top:20px; padding:0 18px;}
+.cyber_security button.btn_more {height:48px; background-color:#fff; border:1px solid #ddd; border-radius:100px;}
+.cyber_security button.btn_more span {display:block; font-size:14px; line-height:1;}
+/* // 사이버 보안 휘엽 사례 */
+
+
+/* 프리미엄 리포트 App_SB_v1.0 삭제  */
 .premium_report {padding-bottom:20px; background-color:#F8F8F8;}
 .premium_report div.tit {display:flex; align-items:center; height:60px; padding:0 18px;}
 .premium_report div.list {display:flex; justify-content:space-between; width:100%; gap:10px; padding:0 18px;}
@@ -260,7 +276,7 @@ input[data-switch]:checked + label:after {right:2px; transform:translate(0,-50%)
 .premium_report div.btn_group {margin-top:20px; padding:0 18px;}
 .premium_report button.btn_more {height:48px; background-color:#fff; border:1px solid #ddd; border-radius:100px;}
 .premium_report button.btn_more span {display:block; font-size:14px; line-height:1;}
-/* // 최신 보안뉴스 */
+/* // 프리미엄 리포트 */
 
 
 
@@ -1094,7 +1110,7 @@ div.select_filter div.select select {width:auto; height:37px; padding-right:18px
 .magazine_list_wrap .magazine_campain_list div.item span.date {display:block; color:#999; font-size:12px; line-height:18px;}
 /* // 보안 캠페인 */
 
-/* 보안 뉴스 */
+/* 보안 뉴스 App_SB_v1.0 삭제 */
 .magazine_list_wrap .magazine_news_list {padding-bottom:10px;}
 .magazine_list_wrap .magazine_news_list div.item {display:flex; justify-content:space-between; gap:14px; padding:10px 0;}
 .magazine_list_wrap .magazine_news_list div.item div.thum {width:96px; min-width:96px; height:96px;}
@@ -1106,7 +1122,7 @@ div.select_filter div.select select {width:auto; height:37px; padding-right:18px
 .magazine_list_wrap .magazine_news_list div.item div.txt_wrap div.write_info span + span::before {content:""; display:block; position:absolute; top:50%; left:0; width:0; height:70%; border-left:1px solid #ddd; transform:translateY(-50%);}
 /* // 보안 뉴스 */
 
-/* 프리미엄 리포트 */
+/* 프리미엄 리포트 App_SB_v1.0 삭제 */
 .magazine_list_wrap .magazine_report_list div.item {margin-bottom:19px; border-radius:6px; box-shadow:0 2px 4px rgba(0, 0, 0, 0.16); overflow:hidden;}
 .magazine_list_wrap .magazine_report_list div.item div.thum {position:relative; font-size:0;}
 .magazine_list_wrap .magazine_report_list div.item div.thum img {display:block;}
@@ -1115,6 +1131,26 @@ div.select_filter div.select select {width:auto; height:37px; padding-right:18px
 .magazine_list_wrap .magazine_report_list div.item div.txt_wrap div.tit {font-size:16px; line-height:22px; font-weight:bold; overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-line-clamp:2;  -webkit-box-orient:vertical;}
 .magazine_list_wrap .magazine_report_list div.item div.txt_wrap button {width:24px; height:24px; min-width:24px;}
 /* // 프리미엄 리포트 */
+
+
+/* 카드 뉴스 리스트 */
+.card_news_list {display:flex; flex-wrap:wrap; width:100%; gap:20px 12px}
+.card_news_list div.item {width:calc(50% - 6px)}
+.card_news_list div.txt {margin-top:10px; color:#000; font-size:14px; line-height:20px; font-weight:bold;}
+.card_news_list div.write_info {margin-top:4px;}
+.card_news_list div.write_info span.date {display:block; color:#999; font-size:12px; line-height:18px;}
+/* // 카드 뉴스 리스트 */
+
+/* 사이버 위협 사례 리스트 */
+.cyber_serurity_list {display:flex; flex-direction:column; gap:20px 0; width:100%;}
+.cyber_serurity_list div.item {display:flex; align-items:flex-start; gap:14px; width:100%;}
+.cyber_serurity_list div.item div.thum {width:104px;}
+.cyber_serurity_list div.item div.txt_wrap {flex:1;}
+.cyber_serurity_list div.item div.txt_wrap div.tit {color:#000; font-size:14px; line-height:20px; font-weight:bold; word-break:break-all; overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-line-clamp:2;  -webkit-box-orient:vertical;}
+.cyber_serurity_list div.item div.txt_wrap div.txt {margin-top:4px; color:#000; font-size:14px; line-height:20px; word-break:break-all; overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical;}
+.cyber_serurity_list div.item div.txt_wrap div.write_info span.date {display:block; color:#999; font-size:12px; line-height:18px;}
+/* // 사이버 위협 사례 리스트 */
+
 
 /* 매거진 더보기 버튼 */
 .magazine_list_wrap div.btn_group button.btn_more {height:48px; background-color:#fff; border:1px solid #ddd; border-radius:6px;}
