@@ -78,19 +78,24 @@ div.layer.loading .loader_wrap {position:fixed; top:50%; left:50%; border-radius
 div.layer.loading div.dim {background-color:rgba(0,0,0,0.7);}
 div.layer.loading .loader_wrap * {vertical-align:top; font-size:0;}
 div.layer.loading .loader_wrap div.img {display:inline-block; width:66px; background-color: #fff; border-radius:12px; animation: loader_img 3s infinite linear;}
-div.layer.loading .loader {height:10px; margin-top:8px;}
+div.layer.loading .loader {height:10px; margin-top:12px;}
 div.layer.loading .loader span,
 div.layer.loading .loader::before,
-div.layer.loading .loader::after {display:inline-block; border-radius:100%; width:4px; height:4px; margin:0 3px; animation-fill-mode: both; animation: bblFadInOut 1.4s infinite ease-in-out; background-color:#fff;}
+div.layer.loading .loader::after {display:inline-block; border-radius:100%; width:4px; height:4px; margin:0 6px; animation-fill-mode: both; animation: bblFadInOut 1.4s infinite ease-in-out; background-color:#fff;}
 
 div.layer.loading .loader:before,
 div.layer.loading .loader:after {content: '';}
 div.layer.loading .loader:before {animation-delay: -0.4s;}
 div.layer.loading .loader:after {animation-delay: 0.4s;}
-@keyframes bblFadInOut {
+/* @keyframes bblFadInOut {
     0% {width:4px; height:4px; background-color:#fff;}
     40% {width:10px; height:10px; background-color:#009ddf;}
 	100% {width:4px; height:4px; background-color:#fff;}
+} */
+@keyframes bblFadInOut {
+    0% {transform:scale(1); background-color:#fff;}
+    40% {transform:scale(2.5); background-color:#009ddf;}
+	100% {transform:scale(1); background-color:#fff;}
 }
 
 @keyframes loader_img {
@@ -103,7 +108,7 @@ div.layer.loading .loader:after {animation-delay: 0.4s;}
 <div class="layer loading">
 	<div class="dim"></div>
 	<div class="loader_wrap">
-		<div class="img"><img src="../../images/app/img_appicon_132.png" alt="앱아이콘"></div>
+		<!-- <div class="img"><img src="../../images/app/img_appicon_132.png" alt="앱아이콘"></div> -->
 		<div class="loader">
 			<span></span>
 		</div>
