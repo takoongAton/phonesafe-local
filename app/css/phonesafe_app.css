@@ -1052,6 +1052,13 @@ pre.privacy .privacy_table_wrap table {width:auto;}
 /* // 회원 정보 변경 */
 
 
+/* 회원 탈퇴 안내 텍스트 */
+.signout_alert {padding:0 18px;}
+.signout_alert li p {position:relative; padding-left:0.6125em; color:#999; font-size:12px; line-height:1.5em;}
+.signout_alert li p::before {content:"·"; position:absolute; top:0; left:0; color:inherit; font-size:inherit; line-height:inherit; font-weight:bold;}
+/* // 회원 탈퇴 안내 텍스트 */
+
+
 /* 개인정보, 약관보기 등 (app용) */
 .privacy_app {font-size:14px; line-height:1.42857em;}
 /* // 개인정보, 약관보기 등 (app용) */
