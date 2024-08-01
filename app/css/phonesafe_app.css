@@ -745,6 +745,16 @@ div.content_mid div.subResurtTit.fnPageTit p.tit {flex:1;}
 .safari_guide_set ul li div strong {display:inline-block; font-size:14px; line-height:1em;}
 .safari_guide_set ul li p {flex:1; font-size:16px; line-height:21px; letter-spacing:-0.05em;}
 /* // 사파리 가이드 설정 설명 */
+
+/* 사파리 가이드 설정 slick */
+.safari_guide_list {padding-top:48px; text-align:center;}
+.safari_guide_list .item {}
+.safari_guide_list .item div.img {}
+.safari_guide_list .item strong {display:inline-block; margin-top:20px; font-size:14px; line-height:20px; font-weight:700;}
+.safari_guide_list .item p {margin-top:10px; font-size:14px; line-height:20px; font-weight:400;}
+.safari_guide_list .guide_slide_dot {position:fixed; left:50%; bottom:21px; transform:translateX(-50%);}
+.safari_guide_list .guide_slide_dot li.slick-active button {background-color:#009ddf;}
+/* // 사파리 가이드 설정 slick */
 /* // 웹 검사 */
 
 

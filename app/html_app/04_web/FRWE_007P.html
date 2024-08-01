@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href="../../css/reset.css" />
 	<link rel="stylesheet" href="../../css/phonesafe_app.css" />
 	<!-- <link rel="stylesheet" href="../../css/Global.css" /> -->
-	<!-- <link rel="stylesheet" href="../../css/slick.css" /> -->
+	<link rel="stylesheet" href="../../css/slick.css" />
 </head>
 <body>
 
@@ -43,56 +43,36 @@
 
 			<div class="content_wrap divide">
 
-				<div class="content_top">
-
-					<div class="safari_guide_set">
-						<ul>
-							<li>
-								<div>
-									<span>STEP</span>
-									<strong>1</strong>
-								</div>
-								<p>기본 브라우저 “Safari”로 설정</p>
-							</li>
-							<li>
-								<div>
-									<span>STEP</span>
-									<strong>2</strong>
-								</div>
+				<div class="content_mid">
+					<div class="safari_guide_slick_wrap">
+						<div class="safari_guide_list">
+							<div class="item">
+								<div class="img"><img src="../../images/app/safari_guide_img_01.png" alt="이미지"></div>
+								<strong>STEP 01</strong>
 								<p>휴대폰 “설정”에서 “Safari” 선택</p>
-							</li>
-							<li>
-								<div>
-									<span>STEP</span>
-									<strong>3</strong>
-								</div>
-								<p>“확장 프로그램” 메뉴> “휴대폰안심” 허용</p>
-							</li>
-							<li>
-								<div>
-									<span>STEP</span>
-									<strong>4</strong>
-								</div>
-								<p>모든 웹사이트에 대한 권한 허용</p>
-							</li>
-							<li>
-								<div>
-									<span>STEP</span>
-									<strong>5</strong>
-								</div>
-								<p>“설정” 종료</p>
-							</li>
-						</ul>
+							</div>
+							<div class="item">
+								<div class="img"><img src="../../images/app/safari_guide_img_02.png" alt="이미지"></div>
+								<strong>STEP 02</strong>
+								<p>기본 브라우저 “Safari”로 설정</p>
+							</div>
+							<div class="item">
+								<div class="img"><img src="../../images/app/safari_guide_img_03.png" alt="이미지"></div>
+								<strong>STEP 03</strong>
+								<p>“Safari”에서 “확장프로그램”메뉴 선택</p>
+							</div>
+							<div class="item">
+								<div class="img"><img src="../../images/app/safari_guide_img_04.png" alt="이미지"></div>
+								<strong>STEP 04</strong>
+								<p>”휴대폰안심” 허용,<br />
+									모든 웹 사이트에 대한 권한 허용</p>
+							</div>
+						</div>
+						<!-- // safari_guide_list -->
 					</div>
+					<!-- // safari_guide_slick_wrap -->
 				</div>
-
-
-				<div class="content_btm">
-					<div class="btm_btn">
-						<button type="button" class="btn_cancel"><span>취소</span></button>
-						<button type="button" class="btn_next"><span>설정</span></button>
-					</div>
-				</div>
+				<!-- // content_mid -->
 
 			</div><!-- // content_wrap -->
 			
@@ -121,8 +101,22 @@
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<!-- <script src="../../js/slick.js"></script> -->
+<script src="../../js/slick.js"></script>
 <script src="../../js/temp.js"></script>
+
+<script>
+function safariGuideSlick(){
+$('.safari_guide_list').slick({
+	dots: true,
+	dotsClass: "guide_slide_dot",
+	infinite: true,
+	arrows: false,
+	// centerMode: true,
+	// centerPadding : '18px'
+});
+}
+safariGuideSlick();
+</script>
 
 </body>
 </html>
