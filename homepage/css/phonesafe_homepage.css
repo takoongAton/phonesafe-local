@@ -550,7 +550,7 @@ table.dataTable tbody td:first-of-type {padding-left:2em; text-align:left;}
 
 
 /* 서비스 이용약관, 개인정보 처리방침용 팝업 */
-.layer.privacy {position:fixed; top:50%; left:50%; width:100%; max-width:960px; transform:translate(-50%,-50%); background-color:#fff; z-index:1;}
+.layer.privacy {position:fixed; top:50%; left:50%; width:100%; max-width:960px; transform:translate(-50%,-50%); background-color:#fff; z-index:11;}
 .layer.privacy .layer_header {display:flex; justify-content:space-between; align-items:center; position:relative; background-color:#333;}
 .layer.privacy .layer_header h2 {height:72px; padding:0 24px; color:#fff; font-size:20px; line-height:72px; text-align:left;}
 .layer.privacy .layer_header button.btn_close {position:absolute; top:50%; right:24px; width:36px; height:36px; color:transparent; transform:translateY(-50%);}
@@ -655,7 +655,7 @@ table.dataTable tbody td:first-of-type {padding-left:2em; text-align:left;}
 
 
 /* 서비스가입 알뜰폰 약관동의 */
-.layer.privacy_agree {position:fixed; top:50%; left:50%; width:100%; max-width:960px; transform:translate(-50%,-50%); background-color:#fff; z-index:1;}
+.layer.privacy_agree {position:fixed; top:50%; left:50%; width:100%; max-width:960px; transform:translate(-50%,-50%); background-color:#fff; z-index:11;}
 .layer.privacy_agree .layer_header {display:flex; justify-content:space-between; align-items:center; position:relative; background-color:#333;}
 .layer.privacy_agree .layer_header h2 {height:72px; padding:0 24px; color:#fff; font-size:20px; line-height:72px; text-align:left;}
 .layer.privacy_agree .layer_header button.btn_close {position:absolute; top:50%; right:24px; width:36px; height:36px; color:transparent; transform:translateY(-50%);}
