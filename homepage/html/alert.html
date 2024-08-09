@@ -576,7 +576,7 @@
 
 
 
-<div class="layer alert" style="display:none;">
+<div class="layer alert">
 	<div class="inner">
 		<div class="layer_content">
 			<p class="txt">이미 가입되어있는 번호입니다.</p>
@@ -648,19 +648,19 @@ document.querySelectorAll(".check_item div.item label + span.txt").forEach(funct
 
 
 /* alert 테스트 (상황에 맞게 수정해서 적용해주세요) */
-// let alertLayer = document.querySelector(".layer.alert");
-// if(alertLayer) {
-//     const computedStyle = window.getComputedStyle(alertLayer);
-//     const displayValue = computedStyle.getPropertyValue('display');
-// 	if(displayValue != "none") {
-// 		document.querySelector("body").style.overflowY = "hidden";
-// 		document.querySelector("body").style.height = "100vh";
-// 		let btnClose = alertLayer.querySelector(".btn_close");
-// 		btnClose.addEventListener("click", function(){
-// 			document.querySelector("body").removeAttribute("style")
-// 		})
-// 	}
-// }
+let alertLayer = document.querySelector(".layer.alert");
+if(alertLayer) {
+    const computedStyle = window.getComputedStyle(alertLayer);
+    const displayValue = computedStyle.getPropertyValue('display');
+	if(displayValue != "none") {
+		document.querySelector("body").style.overflowY = "hidden";
+		document.querySelector("body").style.height = "100vh";
+		let btnClose = alertLayer.querySelector(".btn_close");
+		btnClose.addEventListener("click", function(){
+			document.querySelector("body").removeAttribute("style")
+		})
+	}
+}
 /* alert 테스트 */
 </script>
 </body>
