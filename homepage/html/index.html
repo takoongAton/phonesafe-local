@@ -550,10 +550,7 @@
 약관의 일부 조항이 관련 법령에 위반되는 등의 사유로 그 법적 효력을 상실한 경우 해당 조항 외의 나머지 조항들은 여전히 유효합니다.
 
 (시행일) 본 약관은 2023년 12월 20일부터 시행합니다.
-
 			</div>
-			
-
 		</div>
 	</div>
 </div>
@@ -590,7 +587,7 @@
 
 
 
-<div class="layer privacy_agree" id="privacy_agree01" style="display:block;">
+<div class="layer privacy_agree" id="privacy_agree01" style="display:none;">
 	<div class="inner">
 		<!-- <div class="layer_header">
 			<h2>KT MVNO 개인정보 3자 제공 동의</h2>
@@ -728,8 +725,23 @@ let privacy_agree = document.querySelector(".privacy_agree");
 privacy_agree.querySelector(".btn button").addEventListener("click", function(item){
 	alert("약관 동의 및 인증번호 요청");
 	privacy_agree.style.display = "none";
-	privacy_agree.classList.remove("active");
+	scrollUnFixed();
 })
+
+let testBtn = document.querySelector(".unaccount_wrap .tit"); // '휴대폰안심 가입/해지 텍스트' 를 버튼으로 테스트함.
+testBtn.addEventListener("click", function(){
+	privacy_agree.style.display = "block";
+	scrollFixed();
+})
+
+function scrollFixed(){
+	document.querySelector("html").style.overflowY = "hidden";
+	document.querySelector("html").style.height = "100vh";
+}
+
+function scrollUnFixed(){
+	document.querySelector("html").removeAttribute("style");
+}
 </script>
 </body>
 </html>

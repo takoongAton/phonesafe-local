@@ -99,6 +99,7 @@ if(layers.length > 0) {
 		let btn_close = item.querySelector(".btn_close");
 		btn_close.addEventListener("click", function(e){
 			e.target.closest(".layer").style.display = "none";
+			scrollUnFixed();
 		})
 	})
 }
