@@ -740,17 +740,17 @@ function scrollFixed(){
 	console.log("scrollY" + scrollY)
 	document.querySelector("html").style.overflowY = "hidden";
 	document.querySelector("html").style.height = "100%";
-	document.querySelector("body").style.position = "fixed";
-	document.querySelector("body").style.width = "100%";
-	document.querySelector("body").style.position = "fixed";
-	document.querySelector("body").style.top = `-${scrollPosition}px`;
+	// document.querySelector("body").style.position = "fixed";
+	// document.querySelector("body").style.width = "100%";
+	// document.querySelector("body").style.position = "fixed";
+	// document.querySelector("body").style.top = `-${scrollPosition}px`;
 	
 }
 
 function scrollUnFixed(){
 	document.querySelector("html").removeAttribute("style");
-	document.querySelector("body").removeAttribute("style");
-	window.scroll(0, scrollPosition)
+	// document.querySelector("body").removeAttribute("style");
+	// window.scroll(0, scrollPosition)
 }
 </script>
 </body>
