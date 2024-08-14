@@ -680,13 +680,13 @@ table.dataTable tbody td:first-of-type {padding-left:2em; text-align:left;}
 .layer.privacy_agree div.btn button {width:436px; height:72px; border-radius:5px; background-color:#222; color:#fff;}
 .layer.privacy_agree div.btn button span {display:block; color:#fff; font-size:24px; line-height:1em; font-weight:500;}
 @media screen and (max-width:786px) {
-	.layer.privacy_agree {top:0; left:0; width:100%; height:100vh; background-color:rgba(0,0,0,0.5); transform:unset; z-index:20;}
+	.layer.privacy_agree {top:0; left:0; width:100%; height:100vh; background-color:rgba(0,0,0,0.5); transform:unset; touch-action:none; z-index:20;}
 	.layer.privacy_agree .layer_header h2 {height:48px; font-size:16px; line-height:48px;}
 	.layer.privacy_agree button.btn_close {top:16px; right:16px;}
 
 	.layer.privacy_agree .inner {display:flex; flex-direction:column; justify-content:space-between; position:fixed; top:50%; left:50%; width:88.88888vw; height:80vh; margin:0 auto; background-color:#fff; transform:translate(-50%,-50%);}
 	
-	.layer.privacy_agree .layer_content {flex:1; height:auto; max-height:unset; padding:0; border:0; overflow-y:auto;}
+	.layer.privacy_agree .layer_content {flex:1; height:auto; max-height:unset; padding:0; border:0; overflow-y:auto; touch-action:none;}
 
 	.layer.privacy_agree .layer_content .privacy_agree_wrap {padding:20px 20px 0 20px;}
 	.layer.privacy_agree .layer_content .privacy_agree_wrap div.tit {padding-right:36px; font-size:18px;}
@@ -694,7 +694,7 @@ table.dataTable tbody td:first-of-type {padding-left:2em; text-align:left;}
 	.layer.privacy_agree .layer_content .checkbox_wrap span.txt {font-size:14px; line-height:24px;}
 	
 	.layer.privacy_agree .layer_content .txt_content {margin:20px 20px 0 20px; padding:0 24px 24px; font-size:0.875em;}
-	.layer.privacy_agree div.btn {margin-top:20px; padding:0 20px 20px;}
+	.layer.privacy_agree div.btn {margin-top:20px; padding:0 20px 20px; touch-action:none;}
 	.layer.privacy_agree div.btn button {width:100%; height:48px; border-radius:3px;}
 	.layer.privacy_agree div.btn button span {font-size:14px;}
 }
