@@ -198,6 +198,14 @@
 <script type="text/javascript" src="../js/slick.min.js"></script>
 <script type="text/javascript" src="../js/temp.js"></script>
 
+<script>
+let privacy_agree = document.querySelector(".privacy_agree");
+privacy_agree.querySelector(".btn button").addEventListener("click", function(item){
+	alert("약관 동의 및 인증번호 요청");
+	privacy_agree.style.display = "none";
+	privacy_agree.classList.remove("active");
+})
+</script>
 
 </body>
 </html>
