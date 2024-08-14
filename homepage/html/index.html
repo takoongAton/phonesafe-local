@@ -721,6 +721,7 @@ document.querySelectorAll(".check_item div.item label + span.txt").forEach(funct
 
 
 <script>
+let scrollPosition;
 let privacy_agree = document.querySelector(".privacy_agree");
 privacy_agree.querySelector(".btn button").addEventListener("click", function(item){
 	alert("약관 동의 및 인증번호 요청");
@@ -735,12 +736,21 @@ testBtn.addEventListener("click", function(){
 })
 
 function scrollFixed(){
+	scrollPosition = scrollY;
+	console.log("scrollY" + scrollY)
 	document.querySelector("html").style.overflowY = "hidden";
 	document.querySelector("html").style.height = "100%";
+	document.querySelector("body").style.position = "fixed";
+	document.querySelector("body").style.width = "100%";
+	document.querySelector("body").style.position = "fixed";
+	document.querySelector("body").style.top = `-${scrollPosition}px`;
+	
 }
 
 function scrollUnFixed(){
 	document.querySelector("html").removeAttribute("style");
+	document.querySelector("body").removeAttribute("style");
+	window.scroll(0, scrollPosition)
 }
 </script>
 </body>
