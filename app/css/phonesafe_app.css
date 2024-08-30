@@ -251,7 +251,7 @@ input[data-switch]:checked + label:after {right:2px; transform:translate(0,-50%)
 
 
 /* 사이버 보안 휘엽 사례 */
-.cyber_security {padding-bottom:20px;}
+/* .cyber_security {padding-bottom:20px;}
 .cyber_security div.tit {display:flex; align-items:center; height:60px; padding:0 18px;}
 .cyber_security div.tit strong {}
 .cyber_security div.list {padding:0 18px;}
@@ -262,8 +262,36 @@ input[data-switch]:checked + label:after {right:2px; transform:translate(0,-50%)
 .cyber_security div.list div.item div.txt_wrap span.date {display:block; color:#999999; font-size:12px; line-height:18px;}
 .cyber_security div.btn_group {margin-top:20px; padding:0 18px;}
 .cyber_security button.btn_more {height:48px; background-color:#fff; border:1px solid #ddd; border-radius:100px;}
-.cyber_security button.btn_more span {display:block; font-size:14px; line-height:1;}
+.cyber_security button.btn_more span {display:block; font-size:14px; line-height:1;} */
 /* // 사이버 보안 휘엽 사례 */
+
+
+/* 실시간 가족 알림 */
+.family_alarm {padding-bottom:20px; background-color:#F8F8F8;}
+.family_alarm div.tit {display:flex; align-items:center; width:100%; height:60px; padding:0 18px;}
+.family_alarm div.bnr_wrap {padding:0 18px;}
+.family_alarm div.bnr_wrap div {display:flex; align-items:center; gap:4px; padding:6px 18px 6px 12px; border:1px solid #0076FF; border-radius:6px; background-color:#fff;}
+.family_alarm div.bnr_wrap div span.ico {width:48px; min-width:48px; height:48px; overflow:hidden;}
+.family_alarm div.bnr_wrap div p.txt {flex:1;}
+.family_alarm div.bnr_wrap div p.txt strong {color:#0076FF; font-weight:700;}
+/* // 실시간 가족 알림 */
+
+
+/* 보안 상식 A to Z */
+.cyber_security {padding-bottom:20px; background-color:#F8F8F8;}
+.cyber_security div.tit {display:flex; align-items:center; height:60px; padding:0 18px;}
+.cyber_security div.tit strong {}
+.cyber_security div.list {display:flex; flex-direction:column; width:100%; gap:10px; padding:0 18px;}
+.cyber_security div.list div.item {display:flex; justify-content:space-between; align-items:center; gap:16px; padding:18px 18px 20px 18px; border-radius:6px; background-color:#fff; box-shadow:0 3px 6px rgba(119,143,172,0.3);}
+.cyber_security div.list div.item div.thum {width:60px; min-width:60px; height:60px; border-radius:100%; overflow:hidden;}
+.cyber_security div.list div.item div.txt_wrap {display:flex; flex-direction:column; flex:1; position:relative;}
+.cyber_security div.list div.item div.txt_wrap span.cate {color:#999; font-size:12px; line-height:20px;}
+.cyber_security div.list div.item div.txt_wrap div.txt {padding:0; color:#000; font-size:14px; line-height:20px; font-weight:bold; letter-spacing:0;}
+.cyber_security div.list div.item div.txt_wrap span.date {display:block; color:#999999; font-size:12px; line-height:18px;}
+.cyber_security div.btn_group {margin-top:20px; padding:0 18px;}
+.cyber_security button.btn_more {height:48px; background-color:transparent; border:1px solid #C1C1C1; border-radius:6px;}
+.cyber_security button.btn_more span {display:block; color:#555; font-size:14px; line-height:1;}
+/* // 보안 상식 A to Z */
 
 
 /* 프리미엄 리포트 App_SB_v1.0 삭제  */
