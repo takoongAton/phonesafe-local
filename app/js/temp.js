@@ -259,26 +259,26 @@ function mainGraphBar(num){
     let value = num;
     let graph_wrap = document.querySelector(".graph_wrap");
     let graph = graph_wrap.querySelector(".graph");
-    
-    // console.log(graph.offsetWidth)
-
-    // let circumference = Math.PI * (graph.offsetWidth);
-    // let circumferencePer = circumference / 100;
-    // console.log(circumference, circumferencePer)
+    let circumference = Math.PI * (graph.offsetWidth + 8);
+    let circumferencePer = circumference / 100;
 
     if(graph) {
         let circle = graph.querySelector("circle.bar");
         if(value == null || value == undefined || value == 0 ) {
             return false;
         }
-        if(value <= 60) {
+        if(value <= 70) {
             // value = 18;
             circle.style.stroke = "url(#GradientColor1)";
             graph_wrap.querySelector(".current strong").classList.add("c_danger");
-        } else if(value <= 79) {
+        } else if(value <= 80) {
             // value = 62;
             circle.style.stroke = "url(#GradientColor2)";
             graph_wrap.querySelector(".current strong").classList.add("c_caution");
+        } else if(value <= 90){
+            // value = 91;
+            circle.style.stroke = "url(#GradientColor3)";
+            graph_wrap.querySelector(".current strong").classList.add("c_safe");
         } else if(value <= 100){
             // value = 100;
             circle.style.stroke = "url(#GradientColor3)";
@@ -295,7 +295,7 @@ function mainGraphBar(num){
         keyFrames.innerHTML = `
         @keyframes aniBar {
             0% {
-                stroke-dashoffset:439.6;
+                stroke-dashoffset:${circumference}
             }
             100% {
                 stroke-dashoffset:${graphBar};

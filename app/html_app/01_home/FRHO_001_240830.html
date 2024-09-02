@@ -126,11 +126,11 @@
 .myddd .my_score strong {display:block; font-size:16px; line-height:1.5em; font-weight:bold;}
 .myddd .my_score span.date {display:block; color:#999; font-size:10px; line-height:1.5em;}
 
-.homeTop_new div.graph_wrap {display:inline-block; position:relative; width:140px; height:140px; overflow:hidden; vertical-align:top;}
-.homeTop_new div.graph_wrap .graph {position:relative; width:140px; height:140px; margin:0 auto;}
-.homeTop_new div.graph_wrap .graph svg {position:absolute; top:0; left:0; transform:rotate(90deg); width:140px; height:140px;}
-.homeTop_new div.graph_wrap .graph circle.bar {fill:none; stroke: url(#GradientColor); stroke-width:8px; stroke-dasharray:439.6; stroke-dashoffset: 439.6; animation: aniBar 0.5s ease-in forwards;}
-.homeTop_new div.graph_wrap .graph circle.frame {fill:none; stroke: url(#GradientColor0); stroke-width:8px; stroke-dasharray:439.6; stroke-dashoffset:0; opacity:0.3;}
+.homeTop_new div.graph_wrap {display:inline-block; position:relative; width:70px; height:70px; overflow:hidden; vertical-align:top;}
+.homeTop_new div.graph_wrap .graph {position:relative; width:70px; height:70px; margin:0 auto;}
+.homeTop_new div.graph_wrap .graph svg {position:absolute; top:0; left:0; transform:rotate(90deg); width:70px; height:70px;}
+.homeTop_new div.graph_wrap .graph circle.bar {fill:none; stroke: url(#GradientColor); stroke-width:8px; stroke-dasharray:219.91; stroke-dashoffset: 219.91; animation: aniBar 0.5s ease-in forwards;}
+.homeTop_new div.graph_wrap .graph circle.frame {fill:none; stroke: url(#GradientColor0); stroke-width:8px; stroke-dasharray:219.91; stroke-dashoffset:0; opacity:0.3;}
 .homeTop_new div.graph_wrap .result {display:flex; flex-direction:column; justify-content:center; align-items:center; position:absolute; top:50%; left:50%; width:54px; height:54px; border-radius:100%; transform:translate(-50%,-50%); font-weight:500; background-color:#fff;}
 .homeTop_new div.graph_wrap .result div.current {color:#0076FF; font-size:28px; line-height:41px; font-weight:500;}
 .homeTop_new div.graph_wrap .result span.tit {display:inline-block; color:#999; font-size:14px; line-height:20px;}
@@ -168,8 +168,8 @@
 												<stop offset="100%" stop-color="#0076FF" />
 											</linearGradient>
 										</defs>
-										<circle cx="70" cy="70" r="66" stroke-linecap="round" class="frame" style="stroke: url(#GradientColor0);"/>
-										<circle cx="70" cy="70" r="66" stroke-linecap="round" class="bar"/>
+										<circle cx="35" cy="35" r="31" stroke-linecap="round" class="frame" style="stroke: url(#GradientColor0);"/>
+										<circle cx="35" cy="35" r="31" stroke-linecap="round" class="bar"/>
 									</svg>
 									<!-- 
 										stroke-dashoffset : 100점 == 141, 0점 == 564,
@@ -614,7 +614,7 @@ layerHelp.querySelector("button").addEventListener("click", function(){
 
 
 window.addEventListener("load", function(){
-    mainGraphBar(86);
+    mainGraphBar(50);
 })
 
 
