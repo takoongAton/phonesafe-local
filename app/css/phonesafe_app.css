@@ -218,12 +218,12 @@ input[data-switch]:checked + label:after {right:2px; transform:translate(0,-50%)
 .homeTop_new .inspect .item div.state {display:inline-flex;}
 .homeTop_new .inspect .item div span {display:block; font-size:12px; line-height:1; font-weight:bold;}
 
-.myddd {display:flex; justify-content:space-between; align-items:center; width:100%; padding:20px 35px 20px 18px; border-bottom:1px solid #dbdbdb;}
-.myddd .my_score {}
-.myddd .my_score div.tit {display:inline-block; position:relative; padding-right:28px; font-size:16px; line-height:1.5em; font-weight:bold;}
-.myddd .my_score div.tit::after {content:""; display:block; position:absolute; top:50%; right:0; width:24px; height:24px;background:url('../../images/app/arrow_c_r2.png') no-repeat center / contain; transform:translateY(-50%);}
-.myddd .my_score strong {display:block; font-size:16px; line-height:1.5em; font-weight:bold;}
-.myddd .my_score span.date {display:block; color:#999; font-size:10px; line-height:1.5em;}
+.my_score_wrap {display:flex; justify-content:space-between; align-items:center; width:100%; padding:20px 35px 20px 18px; border-bottom:1px solid #dbdbdb;}
+.my_score_wrap .my_score {}
+.my_score_wrap .my_score div.tit {display:inline-block; position:relative; padding-right:28px; font-size:16px; line-height:1.5em; font-weight:bold;}
+.my_score_wrap .my_score div.tit::after {content:""; display:block; position:absolute; top:50%; right:0; width:24px; height:24px;background:url('../../images/app/arrow_c_r2.png') no-repeat center / contain; transform:translateY(-50%);}
+.my_score_wrap .my_score strong {display:block; font-size:16px; line-height:1.5em; font-weight:bold;}
+.my_score_wrap .my_score span.date {display:block; color:#999; font-size:10px; line-height:1.5em;}
 
 .homeTop_new div.graph_wrap {display:inline-block; position:relative; width:70px; height:70px; overflow:hidden; vertical-align:top;}
 .homeTop_new div.graph_wrap .graph {position:relative; width:70px; height:70px; margin:0 auto;}
