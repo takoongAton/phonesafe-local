@@ -107,34 +107,6 @@
 				</div>
 				<!-- // homeTop -->
 
-<style>
-.homeTop_new {padding:20px 18px; background-color:#F8F8F8;}
-.homeTop_new .inner {border-radius:6px; background-color:#fff; box-shadow:0 3px 6px rgba(119,143,172,0.3);}
-.homeTop_new .inspect {padding:0 18px;}
-.homeTop_new .inspect .item {display:flex; justify-content:space-between; align-items:center; gap:8px; position:relative; padding:25px 0 26px;}
-.homeTop_new .inspect .item + .item {border-top:1px solid #ddd;}
-.homeTop_new .inspect .item {}
-.homeTop_new .inspect .item::after {content:""; display:inline-block; width:24px; height:24px; background:url('../../images/app/ico_arrow_list_big_right.png') no-repeat left top / contain; line-height:1; overflow:hidden;}
-.homeTop_new .inspect .item strong {flex:1; font-size:14px; line-height:20px; font-weight:500;}
-.homeTop_new .inspect .item div.state {display:inline-flex;}
-.homeTop_new .inspect .item div span {display:block; font-size:12px; line-height:1; font-weight:bold;}
-
-.myddd {display:flex; justify-content:space-between; align-items:center; width:100%; padding:20px 35px 20px 18px; border-bottom:1px solid #dbdbdb;}
-.myddd .my_score {}
-.myddd .my_score div.tit {display:inline-block; position:relative; padding-right:28px; font-size:16px; line-height:1.5em; font-weight:bold;}
-.myddd .my_score div.tit::after {content:""; display:block; position:absolute; top:50%; right:0; width:24px; height:24px;background:url('../../images/app/arrow_c_r2.png') no-repeat center / contain; transform:translateY(-50%);}
-.myddd .my_score strong {display:block; font-size:16px; line-height:1.5em; font-weight:bold;}
-.myddd .my_score span.date {display:block; color:#999; font-size:10px; line-height:1.5em;}
-
-.homeTop_new div.graph_wrap {display:inline-block; position:relative; width:70px; height:70px; overflow:hidden; vertical-align:top;}
-.homeTop_new div.graph_wrap .graph {position:relative; width:70px; height:70px; margin:0 auto;}
-.homeTop_new div.graph_wrap .graph svg {position:absolute; top:0; left:0; transform:rotate(90deg); width:70px; height:70px;}
-.homeTop_new div.graph_wrap .graph circle.bar {fill:none; stroke: url(#GradientColor); stroke-width:8px; stroke-dasharray:219.91; stroke-dashoffset: 219.91; animation: aniBar 0.5s ease-in forwards;}
-.homeTop_new div.graph_wrap .graph circle.frame {fill:none; stroke: url(#GradientColor0); stroke-width:8px; stroke-dasharray:219.91; stroke-dashoffset:0; opacity:0.3;}
-.homeTop_new div.graph_wrap .result {display:flex; flex-direction:column; justify-content:center; align-items:center; position:absolute; top:50%; left:50%; width:54px; height:54px; border-radius:100%; transform:translate(-50%,-50%); font-weight:500; background-color:#fff;}
-.homeTop_new div.graph_wrap .result div.current {color:#0076FF; font-size:28px; line-height:41px; font-weight:500;}
-.homeTop_new div.graph_wrap .result span.tit {display:inline-block; color:#999; font-size:14px; line-height:20px;}
-</style>
 				<div class="homeTop_new">
 					<div class="inner">
 						<div class="myddd">
@@ -219,17 +191,6 @@
 				</div>
 				<!-- // homeTop_new -->
 
-<style>
-/* 피싱 범죄 예방 */
-.phishing_security {background-color:#F8F8F8;}
-.phishing_security div.tit {display:flex; align-items:center; width:100%; height:60px; padding:0 18px;}
-.phishing_security div.list {display:flex; flex-wrap:wrap; gap:12px; padding:0 18px 18px;}
-.phishing_security div.list div.item {display:flex; flex-direction:column; align-items:center; justify-content:center; gap:4px; width:calc(50% - 6px); height:112px; border-radius:6px; background-color:#fff; text-align:center; box-shadow:0 3px 6px rgba(119,143,172,0.3);}
-.phishing_security div.list div.item div.ico img {display:inline-block; width:48px; height:48px;}
-.phishing_security div.list div.item p.txt {color:#555555; font-size:12px; line-height:16px;}
-.phishing_security div.list div.item strong.tit {display:block; margin-top:2px; color:#000; font-size:16px; line-height:1.5em; font-weight:500;}
-/* // 피싱 범죄 예방 */
-</style>
 				<div class="phishing_security">
 					<div class="tit"><strong>피싱 범죄를 예방하려면?</strong></div>
 					<div class="list">
@@ -614,7 +575,7 @@ layerHelp.querySelector("button").addEventListener("click", function(){
 
 
 window.addEventListener("load", function(){
-    mainGraphBar(50);
+    mainGraphBar(85);
 })
 
 
