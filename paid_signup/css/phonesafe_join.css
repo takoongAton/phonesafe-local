@@ -412,3 +412,13 @@ input[type="number"]::-webkit-inner-spin-button {-webkit-appearance:none; -moz-a
 
 
 /* // PASS 스타일 팝업창 */
+
+
+
+/* 가입창 배너 없을 경우 노출 */
+.signUp_tit_Wrap {padding:1em; text-align:center;}
+.signUp_tit_Wrap h2 {color:#333; font-size:20px; line-height:1.5em; font-weight:bold;}
+.signUp_tit_Wrap div.txt_wrap {margin-top:0.5em;}
+.signUp_tit_Wrap p.txt {color:#545454; font-size:14px; line-height:1.5em; font-weight:bold; word-break:keep-all;}
+.signUp_tit_Wrap p.price {margin-top:0.25em; color:red; font-size:12px; line-height:1.5em; font-weight:bold;}
+/* // 가입창 배너 없을 경우 노출 */
