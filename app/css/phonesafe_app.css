@@ -233,7 +233,9 @@ input[data-switch]:checked + label:after {right:2px; transform:translate(0,-50%)
 .homeTop_new div.graph_wrap .result {display:flex; flex-direction:column; justify-content:center; align-items:center; position:absolute; top:50%; left:50%; width:54px; height:54px; border-radius:100%; transform:translate(-50%,-50%); font-weight:500; background-color:#fff;}
 .homeTop_new div.graph_wrap .result div.current {color:#0076FF; font-size:24px; line-height:41px; font-weight:500;}
 .homeTop_new div.graph_wrap .result div.current strong {color:#ddd;}
-.homeTop_new div.graph_wrap .result div.current strong.c_safe {color:#0076FF;}
+.homeTop_new div.graph_wrap .result div.current strong.c_safe {color:var(--color-safe);}
+.homeTop_new div.graph_wrap .result div.current strong.c_caution {color:var(--color-caution);}
+.homeTop_new div.graph_wrap .result div.current strong.c_danger {color:var(--color-danger);}
 .homeTop_new div.graph_wrap .result span.tit {display:inline-block; color:#999; font-size:14px; line-height:20px;}
 
 .homeTop_new div.btn {width:100%;}
