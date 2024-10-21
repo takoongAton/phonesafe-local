@@ -1276,3 +1276,18 @@ div.select_filter div.select select {width:auto; height:37px; padding-right:18px
 .magazine_view_wrap .magazine_view_content .megezine_img img {margin-bottom:20px; border-radius:6px; overflow:hidden;}
 .magazine_view_wrap .magazine_view_content .megezine_txt {white-space:pre-line;}
 /* // 매거진 보안 캠페인, 보안 뉴스 상세 보기 */
+
+
+
+/* 메시지 필터링 */
+.message_filter_wrap {padding:20px 18px;}
+.message_filter_wrap .inner_box {padding:40px 0 20px;  border-radius:12px; background-color:#fff; text-align:center;}
+.message_filter_wrap .inner_box div.tit strong {display:block; color:#333; font-size:14px; line-height:21px;}
+.message_filter_wrap .inner_box .step_list {display:flex; flex-direction:column; gap:40px 0; padding:40px 0;}
+.message_filter_wrap .inner_box .step_list div.item {}
+.message_filter_wrap .inner_box .step_list div.item div.img {display:flex; flex-direction:column; gap:10px 0; padding-bottom:10px;}
+.message_filter_wrap .inner_box .step_list div.item div.img img {display:block;}
+.message_filter_wrap .inner_box .step_list div.item strong {display:block; color:#000; font-size:14px; line-height:20px; font-weight:bold;}
+.message_filter_wrap .inner_box .step_list div.item p {margin-top:4px; color:#000; font-size:14px; line-height:20px; font-weight:400;}
+.message_filter_wrap .inner_box p.txt {padding:0 18px; color:#999999; font-size:12px; line-height:18px; text-align:left; word-break:keep-all;}
+/* // 메시지 필터링 */
