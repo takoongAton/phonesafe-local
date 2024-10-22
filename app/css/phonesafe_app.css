@@ -850,7 +850,8 @@ div.content_mid div.subResurtTit.fnPageTit p.tit {flex:1;}
 .service_more div.service_item ul li span.icon {width:24px; height:24px;}
 .service_more div.service_item ul li span.txt {margin-top:8px;}
 .service_more div.version {padding:21px 18px; background-color:#F8F9FB; font-size:0;}
-.service_more div.version strong {display:inline-block; position:relative; margin-right:0.75em; padding-right:0.75em; font-size:12px; line-height:1em;}
+.service_more div.version div + div {margin-top:10px;}
+.service_more div.version strong {display:inline-block; position:relative; width:74px; margin-right:0.75em; padding-right:0.75em; font-size:12px; line-height:1em;}
 .service_more div.version strong::after {content:""; display:block; position:absolute; top:50%; right:0; width:0; height:80%; border-left:1px solid #000; transform:translateY(-50%);}
 .service_more div.version span.txt {display:inline-block; position:relative; font-size:12px; line-height:1em;}
 .service_more div.version button {display:inline-block; width:auto; color:#999999;}
@@ -1025,8 +1026,8 @@ div.content_mid div.subResurtTit.fnPageTit p.tit {flex:1;}
 
 
 /* 하단 토스트 레이어 */
-.layer.toast {position:fixed; right:18px; bottom:18px; left:18px; max-width:calc(720px - 36px); margin:0 auto; }
-.layer.toast p {display:flex; justify-content:center; align-items:center; min-height:36px; padding:10px 0; background-color:#fff; border-radius:12px; text-align:center; font-size:14px; box-shadow:0 2px 4px rgba(0,0,0,0.16);}
+.layer.toast {position:fixed; right:18px; bottom:18px; left:18px; max-width:calc(720px - 36px); margin:0 auto; z-index:20;}
+.layer.toast p {display:flex; justify-content:center; align-items:center; min-height:44px; padding:10px 0; background-color:rgba(0, 0, 0, 0.5); border-radius:6px; color:#fff; font-size:14px; text-align:center;}
 /* // 하단 토스트 레이어 */
 
 
@@ -1291,3 +1292,86 @@ div.select_filter div.select select {width:auto; height:37px; padding-right:18px
 .message_filter_wrap .inner_box .step_list div.item p {margin-top:4px; color:#000; font-size:14px; line-height:20px; font-weight:400;}
 .message_filter_wrap .inner_box p.txt {padding:0 18px; color:#999999; font-size:12px; line-height:18px; text-align:left; word-break:keep-all;}
 /* // 메시지 필터링 */
+
+
+
+/* 실시간 가족 알림 */
+.realtime_family_wrap {padding-bottom:20px;}
+.realtime_family_wrap.detail {padding-top:20px;}
+
+.family_box {padding:0 20px;}
+
+.myFamily_wrap {border-radius:12px; overflow:hidden;}
+.myFamily_wrap.boxshadow {box-shadow:0 2px 4px rgba(0,0,0,0.16);}
+
+.myFamily_list {}
+.myFamily_list .item {display:flex; justify-content:space-between; align-items:center; gap:0 12px; position:relative; width:100%; padding:20px 18px; background-color: #fff;}
+.myFamily_list .item + .item {border-top:1px solid #F8F8F8;}
+.myFamily_list .item .btn_link {display:block; position:absolute; top:50%; right:18px; width:24px; height:24px; transform:translateY(-50%); background:url('../../images/common/ico_arrow_list_big_right.png') no-repeat center center / contain; overflow:hidden; color:transparent;}
+.myFamily_list div.thum {width:44px; min-width:44px; height:44px; background-color:#EDEDED; border-radius:100%;}
+.myFamily_list div.txt_wrap {display:flex; flex-direction:column; gap:4px 0; flex:1;}
+.myFamily_list div.txt_wrap div.user_info {display:flex; align-items:center; gap:0 4px;}
+.myFamily_list div.txt_wrap div.user_info strong.name {display:inline-block; color:#000; font-size:16px; line-height:24px; font-weight:bold;}
+.myFamily_list div.txt_wrap div.user_info span.bedge {display:inline-block; padding:0 8px; border-radius:14px; background-color:#009DDF; color:#fff; font-size:10px; line-height:18px;}
+.myFamily_list div.txt_wrap div.user_info button.btn_edit {width:24px; height:24px; background:url('../../images/app/ico_wallet_setting.png') no-repeat center center / 16px 16px; color:transparent; overflow:hidden;}
+.myFamily_list div.txt_wrap div.filter_count {display:flex; flex-wrap:wrap; gap:12px;}
+.myFamily_list div.txt_wrap div.filter_count div {display:inline-flex; align-items:center; gap:2px;}
+.myFamily_list div.txt_wrap div.filter_count span.icon {display:inline-flex; align-items:center; width:20px; height:20px; width:16px; height:16px; line-height:1; vertical-align:top;}
+.myFamily_list div.txt_wrap div.filter_count span.icon img {display:block; width:16px; height:16px; font-size:0;}
+.myFamily_list div.txt_wrap div.filter_count span.txt {display:inline-block; color:#000; font-size:14px; line-height:20px;}
+.myFamily_list div.txt_wrap div.user_phone {display:block; color:#999; font-size:14px; line-height:20px;}
+.myFamily_list div.btn {}
+.myFamily_list div.btn button {width:68px; height:32px; border:1px solid transparent; border-radius:6px; line-height:1em;}
+.myFamily_list div.btn button span {display:block; font-size:12px; line-height:18px; font-weight:400;}
+.myFamily_list div.btn button.btn_light {border-color:#888888; background-color:#fff; color:#888888;}
+.myFamily_list div.btn button.btn_dark {border-color:#000000; background-color:#000000; color:#fff;}
+
+.myFamily_wrap .family_reg_wrap {background-color:#fff;}
+.myFamily_wrap .family_reg_wrap .not_reg {text-align:center;}
+.myFamily_wrap .family_reg_wrap .not_reg div.txt {display:flex; flex-direction:column; justify-content:center; align-items:center; gap:8px 0; min-height:84px; padding:18px 0;}
+.myFamily_wrap .family_reg_wrap .not_reg div.txt strong {display:block; color:#000; font-size:14px; line-height:20px;}
+.myFamily_wrap .family_reg_wrap .not_reg div.txt p {color:#999999; font-size:14px; line-height:20px; word-break:keep-all;}
+
+.myFamily_wrap .family_reg_wrap .btn button {padding:14px 0; border-top:1px solid #F8F8F8;}
+.myFamily_wrap .family_reg_wrap .btn button span {display:block; color:#000; font-size:14px; line-height:20px; font-weight:bold;}
+
+
+.filter_count_detail {margin:20px 0; padding:0 18px;}
+.filter_count_detail div.inner {display:flex; justify-content:space-between; align-items:center; width:100%; border-radius:12px; background-color:#fff;}
+.filter_count_detail div.inner div {display:flex; flex-direction:column; gap:4px 0; width:100%; padding:18px 0 19px; text-align:center;}
+.filter_count_detail div.inner div span {display:block; color:#000; font-size:14px; line-height:20px;}
+.filter_count_detail div.inner div strong {display:block; color:#000; font-size:18px; line-height:27px; font-weight:bold;}
+.filter_count_detail div.inner div strong.em {color:#ED1E19;}
+
+
+
+.family_reg_form {padding:30px 18px 20px; background-color:#fff;}
+.family_reg_form .tit {font-size:16px; line-height:24px; font-weight:bold;}
+.family_reg_form .tit span {color:#ED1E19;}
+.family_reg_form .ipt_wrap {display:flex; gap:0 16px; width:100%;}
+.family_reg_form .ipt_wrap .set_sel {width:80px;}
+.family_reg_form .ipt_wrap .set_sel select {height:40px; border:0; border-bottom:1.5px solid #000;}
+.family_reg_form .ipt_wrap .set_sel select {background:url('../../images/common/btn_arrow_list_d.png') no-repeat right center / 18px 18px;}
+.family_reg_form .ipt_wrap .set_input {flex:1; background-color:#ff6600;}
+.family_reg_form div.ipt_wrap {display:flex; width:100%; gap:12px; padding-top:8px;}
+.family_reg_form div.ipt_wrap .set_input input {width:100%; height:40px; border:0; border-bottom:1.5px solid #000; background-color:#fff;}
+.family_reg_form div.ipt_wrap .set_input input::placeholder {color:#ddd;}
+.family_reg_form div.ipt_wrap button.set_btn {width:84px; height:40px; background-color:#000; border-radius:6px; color:#fff;}
+.family_reg_form .phone_wrap {margin-top:20px;}
+
+
+
+.myFamily_guide {margin:20px 18px; padding:14px 18px; border-radius:12px; background-color:#fff;}
+.myFamily_guide div.tit strong {display:block; position:relative; padding-left:0.92857em; font-size:14px; line-height:22px; font-weight:bold;}
+.myFamily_guide div.tit strong::before {content:"·"; display:block; position:absolute; top:0; left:0; color:inherit; font-size:inherit; line-height:inherit; font-weight:inherit;}
+.myFamily_guide div.txt {margin-top:6px;}
+.myFamily_guide div.txt p {position:relative; padding-left:0.92857em; color:#333; font-size:14px; line-height:22px;}
+.myFamily_guide div.txt p::before {content:"-"; display:block; position:absolute; top:0; left:0; color:#999999; font-size:inherit; line-height:inherit; font-weight:inherit;}
+
+.myFamily_bnr {padding:0 18px 18px;}
+.myFamily_bnr img {display:block; border-radius:12px; overflow:hidden;}
+
+
+.family_reg_txt {padding:14px 18px;}
+.family_reg_txt p {padding:14px 18px; border-radius:12px; background-color:#fff; font-size:14px; line-height:22px; font-weight:400;}
+/* // 실시간 가족 알림 */
