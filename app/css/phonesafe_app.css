@@ -1307,13 +1307,13 @@ div.select_filter div.select select {width:auto; height:37px; padding-right:18px
 .myFamily_list {}
 .myFamily_list .item {display:flex; justify-content:space-between; align-items:center; gap:0 12px; position:relative; width:100%; padding:20px 18px; background-color: #fff;}
 .myFamily_list .item + .item {border-top:1px solid #F8F8F8;}
-.myFamily_list .item .btn_link {display:block; position:absolute; top:50%; right:18px; width:24px; height:24px; transform:translateY(-50%); background:url('../../images/common/ico_arrow_list_big_right.png') no-repeat center center / contain; overflow:hidden; color:transparent;}
+.myFamily_list .item .btn_link {display:block; position:absolute; top:50%; right:18px; width:24px; height:24px; transform:translateY(-50%); background:url('../images/common/ico_arrow_list_big_right.png') no-repeat center center / contain; overflow:hidden; color:transparent;}
 .myFamily_list div.thum {width:44px; min-width:44px; height:44px; background-color:#EDEDED; border-radius:100%;}
 .myFamily_list div.txt_wrap {display:flex; flex-direction:column; gap:4px 0; flex:1;}
 .myFamily_list div.txt_wrap div.user_info {display:flex; align-items:center; gap:0 4px;}
 .myFamily_list div.txt_wrap div.user_info strong.name {display:inline-block; color:#000; font-size:16px; line-height:24px; font-weight:bold;}
 .myFamily_list div.txt_wrap div.user_info span.bedge {display:inline-block; padding:0 8px; border-radius:14px; background-color:#009DDF; color:#fff; font-size:10px; line-height:18px;}
-.myFamily_list div.txt_wrap div.user_info button.btn_edit {width:24px; height:24px; background:url('../../images/app/ico_wallet_setting.png') no-repeat center center / 16px 16px; color:transparent; overflow:hidden;}
+.myFamily_list div.txt_wrap div.user_info button.btn_edit {width:24px; height:24px; background:url('../images/app/ico_wallet_setting.png') no-repeat center center / 16px 16px; color:transparent; overflow:hidden;}
 .myFamily_list div.txt_wrap div.filter_count {display:flex; flex-wrap:wrap; gap:12px;}
 .myFamily_list div.txt_wrap div.filter_count div {display:inline-flex; align-items:center; gap:2px;}
 .myFamily_list div.txt_wrap div.filter_count span.icon {display:inline-flex; align-items:center; width:20px; height:20px; width:16px; height:16px; line-height:1; vertical-align:top;}
