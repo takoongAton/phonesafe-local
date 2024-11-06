@@ -427,8 +427,9 @@ input[type="number"]::-webkit-inner-spin-button {-webkit-appearance:none; -moz-a
 
 
 /* 주민등록번호 앞 7자리 관련 추가 */
-.phonesafe_join_wrap .signUp_form .input_item {display:flex; flex-direction:row; align-items:center; width:100%; gap:9px 30px; margin-top:16px;}
-.phonesafe_join_wrap .signUp_form .input_item div.tit {width:180px; padding-left:21px;}
+.phonesafe_join_wrap .signUp_form .input_item {display:flex; flex-direction:row; align-items:center; width:100%; gap:9px 0px; margin-top:16px;}
+.phonesafe_join_wrap .signUp_form .input_item div.tit {width:209px; padding-left:18px;}
+.phonesafe_join_wrap .signUp_form .input_item div.tit strong {font-size:18px; line-height:27px; font-weight:500; letter-spacing:-0.05em;}
 .phonesafe_join_wrap .signUp_form .input_item div.ipt_wrap {display:flex; justify-content:space-between; flex:1; /* gap:35px; */ width:100%;}
 .phonesafe_join_wrap .signUp_form .input_item div.ipt_wrap > div {width:100%;}
 .phonesafe_join_wrap .signUp_form .input_item div.ipt_wrap input {height:56px; padding:0 1em; border-radius:5px; border:1px solid #ddd; background-color:#fff; font-size:1.125em; line-height:56px; font-weight:500;}
