@@ -202,7 +202,7 @@ input[type="number"]::-webkit-inner-spin-button {-webkit-appearance:none; -moz-a
 .phonesafe_join_wrap .signUp_wrap .tit_wrap ul.txt p::before {content:""; display:block; position:absolute; top:50%; left:0; width:3px; height:3px; background-color:#aaa; border-radius:100%; transform:translateY(-50%);}
 .phonesafe_join_wrap .signUp_wrap .tit_wrap ul.txt p span {color:#333; font-weight:400;}
 .phonesafe_join_wrap .signUp_wrap .tit_wrap p.price {margin-top:0.5em; color:#ff0000; padding-left:11px; font-size:0.76em; font-weight:bold; text-align:left;}
-.phonesafe_join_wrap .signUp_wrap .phoneNum {margin-top:0.9375em;}
+.phonesafe_join_wrap .signUp_wrap .phoneNum {}
 .phonesafe_join_wrap .signUp_wrap .phoneNum input {height:56px; padding-left:1em; line-height:56px; background-color:#fff; border:1px solid #ddd; border-radius:5px; font-size:1.125em; font-weight:500; overflow:hidden;}
 .phonesafe_join_wrap .signUp_wrap .phoneNum input:focus {padding-left:calc(1em - 1px); border-color:#ff3245; border-width:2px;}
 .phonesafe_join_wrap .signUp_wrap .phoneNum input::-webkit-input-placeholder,
@@ -232,7 +232,7 @@ input[type="number"]::-webkit-inner-spin-button {-webkit-appearance:none; -moz-a
 .phonesafe_join_wrap .esc {display:inline-block; align-items:center; width:auto; text-align:center; margin:1em auto 1em; color:#aaa; font-size:0.9375em;}
 
 .phonesafe_join_wrap .signUp_form {margin-top:1.5em;}
-.phonesafe_join_wrap .signUp_form .btn_g_default {margin-top:0.625em;}
+.phonesafe_join_wrap .signUp_form .btn_g_default {margin-top:1em;}
 
 /* 증권/펀드색상 구분 */ 
 .phonesafe_join_wrap.stock #joinbutton {background-color:#ff0000;}
@@ -298,7 +298,7 @@ input[type="number"]::-webkit-inner-spin-button {-webkit-appearance:none; -moz-a
 	.phonesafe_join_wrap .esc {font-size:0.6875em;}
 
 	/* .phonesafe_join_wrap .signUp_wrap .phoneNum input {height:3.12em; font-size:0.78125em; line-height:3.12em;} */
-	.phonesafe_join_wrap .certify_wrap {margin-top:0.71875em;}
+	.phonesafe_join_wrap .certify_wrap {margin-top:1em;}
 
 	.phonesafe_join_wrap .certify_wrap .btn_certify {display:inline-block; width:100%;  background-color:#000; }
 	.phonesafe_join_wrap .certify_wrap .btn_certify span {color:#fff;  font-weight:700;}
@@ -422,3 +422,27 @@ input[type="number"]::-webkit-inner-spin-button {-webkit-appearance:none; -moz-a
 .signUp_tit_Wrap p.txt {color:#545454; font-size:14px; line-height:1.5em; font-weight:bold; word-break:keep-all;}
 .signUp_tit_Wrap p.price {margin-top:0.25em; color:red; font-size:12px; line-height:1.5em; font-weight:bold;}
 /* // 가입창 배너 없을 경우 노출 */
+
+
+
+
+/* 주민등록번호 앞 7자리 관련 추가 */
+.phonesafe_join_wrap .signUp_form .input_item {display:flex; flex-direction:row; align-items:center; width:100%; gap:9px 30px; margin-top:16px;}
+.phonesafe_join_wrap .signUp_form .input_item div.tit {width:180px;}
+.phonesafe_join_wrap .signUp_form .input_item div.ipt_wrap {display:flex; justify-content:space-between; flex:1; /* gap:35px; */ width:100%;}
+.phonesafe_join_wrap .signUp_form .input_item div.ipt_wrap > div {width:100%;}
+.phonesafe_join_wrap .signUp_form .input_item div.ipt_wrap input {height:56px; padding:0 1em; border-radius:5px; border:1px solid #ddd; background-color:#fff; font-size:1.125em; line-height:56px; font-weight:500;}
+.phonesafe_join_wrap .signUp_form .input_item div.ipt_wrap span.dash {display:flex; justify-content:center; align-items:center; position:relative; min-width:35px; color:transparent;}
+.phonesafe_join_wrap .signUp_form .input_item div.ipt_wrap span.dash::before {content:""; display:block; position:absolute; top:50%; left:50%; width:12px; height:1px; background-color:#707070; transform:translate(-50%,-50%);}
+.phonesafe_join_wrap .signUp_form .input_item div.ipt_wrap div.num_last {display:flex; align-items:center; width:100%; gap:0 10px;}
+.phonesafe_join_wrap .signUp_form .input_item div.ipt_wrap div.num_last input {width:56px;}
+.phonesafe_join_wrap .signUp_form .input_item div.ipt_wrap div.num_last span {text-align:center; line-height:0;}
+.phonesafe_join_wrap .signUp_form .input_item div.ipt_wrap div.num_last span img {max-width:145px;}
+@media screen and (max-width:720px)	{
+	.phonesafe_join_wrap .signUp_form .input_item {flex-direction:column; align-items: flex-start;}
+	.phonesafe_join_wrap .signUp_form .input_item div.ipt_wrap div.num_last {justify-content:flex-start;}
+}
+@media screen and (max-width:540px)	{
+	.phonesafe_join_wrap .signUp_form .input_item div.ipt_wrap div.num_last {flex:0;}
+}
+/* // 주민등록번호 앞 7자리 관련 추가 */
