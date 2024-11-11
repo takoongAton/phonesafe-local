@@ -108,7 +108,7 @@ if(layers.length > 0) {
 
 
 /* 해지하기 입력창 */
-let cancelInputs = document.querySelectorAll(".phonenumber_wrap input")
+let cancelInputs = document.querySelectorAll(".phonenumber_wrap input, .identify_wrap input")
 cancelInputs.forEach(function(item, index){
 	item.addEventListener("focusin", function(e){
 		e.target.closest(".item").classList.add("focus");
