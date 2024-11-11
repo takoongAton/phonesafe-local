@@ -277,8 +277,8 @@ div.layer.full .close button::after {transform:translate(-50%,-50%) rotate(-45de
 .unaccount_wrap {width:88.88888vw; max-width:786px; margin:0 auto; padding:60px 0 76px;}
 .unaccount_wrap div.tit {padding-bottom:8px; border-bottom:2px solid #000;}
 .unaccount_wrap div.tit strong {display:inline-block; font-size:24px; line-height:1.5em;}
-.unaccount_wrap .telecoms div.row {display:flex; align-items:flex-start; width:100%; padding:18px 0; gap:18px;}
-.unaccount_wrap .telecoms div.row strong {display:inline-block; min-width:70px; font-size:14px; line-height:1.28571em;}
+.unaccount_wrap .telecoms div.row {display:flex; align-items:flex-start; width:100%; padding:18px 0; gap:18px; border-bottom:1px solid #ddd;}
+.unaccount_wrap .telecoms div.row strong {display:inline-block; min-width:80px; font-size:14px; line-height:1.28571em;}
 .unaccount_wrap .telecoms div.row div.check_wrap label {display:inline-block; position:relative; padding-left:2em; font-size:14px;}
 .unaccount_wrap .telecoms div.row div.check_wrap label + label {margin-left:12px;}
 .unaccount_wrap .telecoms div.row div.check_wrap label input {position:absolute; top:0; left:0; width:0; height:0; opacity:0;}
@@ -290,11 +290,33 @@ div.layer.full .close button::after {transform:translate(-50%,-50%) rotate(-45de
 .unaccount_wrap .telecoms div.row div.check_wrap label input:checked ~ span.txt {color:#000;}
 .unaccount_wrap .telecoms p.txt {margin-top:0.66666em; font-size:0.75em; color:#888;}
 
-.unaccount_wrap .phonenumber_wrap div.item {display:flex; justify-content:space-between; align-items:center; position:relative; width:100%; padding:20px 0; border-bottom:1px solid #ddd;}
-.unaccount_wrap .phonenumber_wrap strong.tit {display:inline-block; min-width:70px; font-size:14px; white-space:nowrap;}
-.unaccount_wrap .phonenumber_wrap .ipt_set {flex:1; position:relative;}
+/* 주민등록번호 앞자리 */
+.unaccount_wrap .identify_wrap div.item {display:flex; justify-content:flex-start; align-items:center; gap:0 10px; position:relative; width:100%; padding:20px 0; border-bottom:1px solid #ddd;}
+.unaccount_wrap .identify_wrap strong.tit {display:inline-block; min-width:80px; font-size:14px; line-height:24px; white-space:nowrap;}
+.unaccount_wrap .identify_wrap .ipt_set {flex:1; display:flex; position:relative; align-items:center;}
+.unaccount_wrap .identify_wrap .ipt_set div {}
+.unaccount_wrap .identify_wrap .ipt_set div.first_num {width:100px;}
+.unaccount_wrap .identify_wrap .ipt_set div.last_num {width:50px;}
+.unaccount_wrap .identify_wrap .ipt_set input {width:100%; height:36px; padding:0 1em; border:0 none; background-color:#fff; font-size:14px;}
+.unaccount_wrap .identify_wrap .ipt_set input[type="password"] {color:#707070;}
+/* .unaccount_wrap .identify_wrap .ipt_set span.timer {position:absolute; top:50%; right:0; transform:translateY(-50%); color:#ff0000} */
+.unaccount_wrap .identify_wrap .ipt_set span.dash {display:block; width:8px; position:relative; color:transparent}
+.unaccount_wrap .identify_wrap .ipt_set span.dash::before {content:""; display:block; position:absolute; top:50%; left:50%; width:100%; height:1px; background-color:#000; transform:translate(-50%,-50%);}
+/* .unaccount_wrap .identify_wrap button {width:68px; height:36px; margin-left:12px; background-color:#333; border-radius:5px;}
+.unaccount_wrap .identify_wrap button span {display:block; color:#fff; font-size:12px;}
+.unaccount_wrap .identify_wrap button:disabled {background-color:#ddd;}
+.unaccount_wrap .identify_wrap button:disabled span {color:#888;} */
+.unaccount_wrap .identify_wrap div.item.focus {border-bottom-color:#000;}
+.unaccount_wrap .identify_wrap p.error_txt {margin-top:0.66666em; color:#FF0000; font-size:14px; line-height:1.42857em;}
+/* // 주민등록번호 앞자리 */
+
+.unaccount_wrap .phonenumber_wrap div.item {display:flex; justify-content:space-between; align-items:center; gap:0 10px; position:relative; width:100%; padding:20px 0; border-bottom:1px solid #ddd;}
+.unaccount_wrap .phonenumber_wrap strong.tit {display:inline-block; min-width:80px; font-size:14px; line-height:24px; white-space:nowrap;}
+.unaccount_wrap .phonenumber_wrap .ipt_set {flex:1; display:flex; gap:0 10px; position:relative; align-items:center;}
 .unaccount_wrap .phonenumber_wrap .ipt_set input {width:100%; height:36px; padding:0 1em; border:0 none; background-color:#fff; font-size:14px;}
 .unaccount_wrap .phonenumber_wrap .ipt_set span.timer {position:absolute; top:50%; right:0; transform:translateY(-50%); color:#ff0000}
+.unaccount_wrap .phonenumber_wrap .ipt_set span.dash {display:block; width:15px; position:relative; color:transparent}
+.unaccount_wrap .phonenumber_wrap .ipt_set span.dash::before {content:""; display:block; position:absolute; top:50%; left:50%; width:100%; height:1px; background-color:#000; transform:translate(-50%,-50%);}
 .unaccount_wrap .phonenumber_wrap button {width:68px; height:36px; margin-left:12px; background-color:#333; border-radius:5px;}
 .unaccount_wrap .phonenumber_wrap button span {display:block; color:#fff; font-size:12px;}
 .unaccount_wrap .phonenumber_wrap button:disabled {background-color:#ddd;}
@@ -306,7 +328,7 @@ div.layer.full .close button::after {transform:translate(-50%,-50%) rotate(-45de
 .unaccount_wrap > div.btn button {width:320px; height:48px; background-color:#333;}
 .unaccount_wrap > div.btn button strong {color:#fff; font-size:14px;}
 
-.unaccount_wrap .guide_txt {font-size:0.75em;}
+.unaccount_wrap .guide_txt {margin-top:40px; padding:20px; font-size:0.75em; background-color:#F8F8F8;}
 .unaccount_wrap .guide_txt p + p {margin-top:6px;}
 .unaccount_wrap .guide_txt p.em {color:#ff0000; line-height:1.66666em;}
 .unaccount_wrap .guide_txt p.txt {color:#888; line-height:1.55555em;}
@@ -314,7 +336,16 @@ div.layer.full .close button::after {transform:translate(-50%,-50%) rotate(-45de
 @media only screen and (min-width:720px) {
 	.unaccount_wrap {padding:92px 0 118px;}
 	.unaccount_wrap div.tit strong {font-size:48px;}
-	.unaccount_wrap .phonenumber_wrap strong.tit {width:118px; min-width:118px; font-size:24px;}
+	
+	.unaccount_wrap .identify_wrap strong.tit {width:148px; min-width:148px; font-size:24px; line-height:32px;}
+	.unaccount_wrap .identify_wrap .ipt_set div.first_num {width:140px;}
+	.unaccount_wrap .identify_wrap .ipt_set div.last_num {width:100px;}
+	.unaccount_wrap .identify_wrap .ipt_set input {height:80px; font-size:24px;}
+	.unaccount_wrap .identify_wrap button {width:180px; height:80px; margin-left:48px;}
+	.unaccount_wrap .identify_wrap button span {font-size:24px;}
+	.unaccount_wrap .identify_wrap p.error_txt {font-size:18px;}
+
+	.unaccount_wrap .phonenumber_wrap strong.tit {width:148px; min-width:148px; font-size:24px; line-height:32px;}
 	.unaccount_wrap .phonenumber_wrap .ipt_set input {height:80px; font-size:24px;}
 	.unaccount_wrap .phonenumber_wrap button {width:180px; height:80px; margin-left:48px;}
 	.unaccount_wrap .phonenumber_wrap button span {font-size:24px;}
@@ -330,7 +361,7 @@ div.layer.full .close button::after {transform:translate(-50%,-50%) rotate(-45de
 	.unaccount_wrap > div.btn button {width:436px; height:96px; border-radius:5px;}
 	.unaccount_wrap > div.btn button strong {font-size:24px;}
 
-	.unaccount_wrap .guide_txt {margin-top:36px; font-size:1em;}
+	.unaccount_wrap .guide_txt {margin-top:80px; font-size:1em;}
 	.unaccount_wrap .guide_txt p + p {margin-top:24px;}
 }
 /* // 휴대폰안심 서비스 해지 */
@@ -613,7 +644,7 @@ table.dataTable tbody td:first-of-type {padding-left:2em; text-align:left;}
 .signTab button.active {background-color:#333;}
 .signTab button.active span {color:#fff;}
 
-.sign_wrap .agree_wrap .row {display:flex; align-items:flex-start; width:100%; padding: 40px 0; gap:10px;}
+.sign_wrap .agree_wrap .row {display:flex; align-items:flex-start; width:100%; padding: 40px 0; gap:10px; border-bottom:1px solid #ddd;}
 .sign_wrap .agree_wrap .row > strong {display:inline-block; min-width:84px; font-size:14px; white-space:nowrap;}
 
 .sign_wrap .agree_wrap .check_all {padding-left:3px;}
@@ -632,8 +663,8 @@ table.dataTable tbody td:first-of-type {padding-left:2em; text-align:left;}
 .sign_wrap .agree_wrap .check_item div.item label input[type='checkbox']:checked + span.checkmark {background-image:url('../images/ico_check_s_on.png');}
 .sign_wrap .agree_wrap .check_item div.item label + span.txt {display:inline-flex; align-items:center; height:1.8em; color:#888; font-size:0.75em; cursor:pointer;}
 
-.sign_wrap .tab_content .btn {margin-top:3em; text-align:center;}
-.sign_wrap .tab_content .btn button {width:320px; height:48px; background-color:#333;}
+.sign_wrap .tab_content .btn {margin-top:40px; text-align:center;}
+.sign_wrap .tab_content .btn button {width:100%; height:48px; background-color:#333;}
 .sign_wrap .tab_content .btn button strong {color:#fff; font-size:14px;}
 
 @media only screen and (min-width:720px) {
@@ -645,16 +676,18 @@ table.dataTable tbody td:first-of-type {padding-left:2em; text-align:left;}
 	.sign_wrap .agree_wrap .row {display:flex; align-items:flex-start; width:100%; padding: 40px 0; gap:10px;}
 	.sign_wrap .agree_wrap .row > strong {min-width:118px; font-size:24px;}
 
+	.sign_wrap .agree_wrap .check_wrap {margin-left:50px;}
 	.sign_wrap .agree_wrap .check_all label {padding-left:2.75em;}
 	.sign_wrap .agree_wrap .check_all label input[type='checkbox'] + span.checkmark {width:1.875em; height:1.875em;}
 	.sign_wrap .agree_wrap .check_all label input[type='checkbox'] ~ span.txt {font-size:24px;}
 	
-	.sign_wrap .agree_wrap .check_item {flex-direction:row; gap:12px 20px; margin-top:15px;}
+	.sign_wrap .agree_wrap .check_item {flex-direction:row; gap:12px; margin-top:15px;}
 	.sign_wrap .agree_wrap .check_item div.item {width:calc(50% - 10px);}
 	.sign_wrap .agree_wrap .check_item div.item label {padding-left:2.75em; height:2.25em;}
 	.sign_wrap .agree_wrap .check_item div.item label input[type='checkbox'] + span.checkmark {width:2.25em; height:2.25em;}
 	.sign_wrap .agree_wrap .check_item div.item label + span.txt {font-size:1.25em;}
 	
+	.sign_wrap .tab_content .btn {margin-top:60px;}
 	.sign_wrap .tab_content .btn button {width:436px; height:96px; border-radius:5px;}
 	.sign_wrap .tab_content .btn button strong {font-size:24px;}
 }
