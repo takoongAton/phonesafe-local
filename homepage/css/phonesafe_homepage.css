@@ -758,3 +758,138 @@ table.dataTable tbody td:first-of-type {padding-left:2em; text-align:left;}
 .layer.alert .btn_group button {width:100%; height:40px; border-radius:2px; background-color:#333; color:#fff;}
 */
 /* // alert형 레이어 팝업 */
+
+
+
+
+
+/* 1:1 문의하기 관련 추가 */
+/* 메인 1:1 문의 추가 */
+.refund_wrap {display:flex; flex-direction:column; justify-content:center; align-items:center; width:100%; height:200px; background:rgba(0,0,0,1) url('../images/img_main_refund_bg.png') no-repeat left center / cover; color:#fff;}
+.refund_wrap .inner {max-width:1200px; text-align:center;}
+.refund_wrap .inner div.tit {}
+.refund_wrap .inner div.tit strong {display:block; font-size:2em; line-height:1.46875em; text-align:center;}
+.refund_wrap .inner div.txt_wrap {margin-top:10px;}
+.refund_wrap .inner div.txt_wrap button {display:inline-block; width:160px; height:48px; border-radius:4px; background-color:#000; color:#fff}
+.refund_wrap .inner div.txt_wrap button span {color:#fff; font-size:20px; line-height:1.2em; font-weight:500;}
+.refund_wrap .inner div.txt_wrap span.txt {color:#fff; font-size:18px; line-height:1.5em; font-size:bold;}
+.refund_wrap .inner div.txt_wrap span.txt br {display:none;}
+/* // 메인 1:1 문의 추가 */
+
+
+.customer_form {padding:96px 0 120px;}
+/* 입력폼 */
+.btn_set {width:100%; padding:12px 24px;}
+.btn_default {width:100%; height:72px; background-color:#213DA1; color:#fff;}
+.form_wrap {}
+.form_wrap .row {display:flex; align-items:flex-start; width:100%;}
+.form_wrap .row div.tit {min-width:140px; padding:12px 0;}
+.form_wrap .row div.tit strong {display:flex; align-items:center; height:72px; font-size:20px;}
+.form_wrap .row .ipt_form {width:100%;}
+.form_wrap .row .ipt_form .ipt_set {display:flex; justify-content:space-between; align-items:center; width:100%; padding:12px 0; border-bottom:1px solid #ddd;}
+.form_wrap .row .ipt_form .ipt_set > div {flex:1;}
+.form_wrap .row .ipt_form .ipt_set > div p.txt {padding-left:24px; color:#999;}
+.form_wrap .row .ipt_form .ipt_set span.txt {display:inline-block; padding-right:2.5em; font-size:inherit; line-height:1em; font-weight:bold;}
+.form_wrap .row .ipt_form .ipt_set input {width:100%; padding:0 24px; font-size:20px;}
+.form_wrap .row .ipt_form .ipt_set input::placeholder {font-size:1em;}
+.form_wrap .row .ipt_form .ipt_set button {position:relative !important; width:auto; padding:0 2em; border-radius:1px;}
+.form_wrap .row .ipt_form .ipt_set button.btn_address {width:140px; height:72px; background-color:#213DA1; color:#fff; font-size:16px; font-weight:500;}
+
+.form_wrap .row .ipt_form .textarea_set {display:flex; justify-content:space-between; align-items:center; width:100%; padding:12px 0 0;}
+.form_wrap .row .ipt_form .textarea_set > div {flex:1;}
+.form_wrap .row .ipt_form .textarea_set textarea {width:100%; height:280px; padding:24px; border:1px solid #ddd; font-size:20px; font-weight:500; resize:none;}
+.form_wrap .row .ipt_form .textarea_set textarea::placeholder {color:#888; font-weight:400;}
+
+.form_wrap .row .ipt_form span.dash {width:30px; min-width:30px; text-align:center;}
+.form_wrap .row .ipt_form input {border:0 none; line-height:72px;}
+.form_wrap .row .ipt_form input::placeholder {color:#999; font-size:18px; line-height:inherit;}
+.form_wrap .row .ipt_form .ipt_wrap {display:flex; align-items:center; gap:10px; width:100%;}
+
+.form_wrap .row .ipt_form .select_set {width:100%; padding:12px 0; border-bottom:1px solid #ddd;}
+.form_wrap .row .ipt_form .select_set select {position:relative; width:100%; height:72px; padding:0 24px; border:0 none; color:#999; font-size:20px; background:url('../images/ico_arrow_u.png') no-repeat right 24px center / 36px 36px;}
+.form_wrap .row .ipt_form .select_set select option {background-color:#fff; color:#000;}
+.form_wrap .row .ipt_form .select_set select.changed {color:#000;}
+.form_wrap .row .ipt_form .select_set select::before {content:""; display:block; position:absolute; top:0; right:0; width:20px; height:20px; background-color:#ff6600;}
+
+@media screen and (max-width:768px) {
+	.customer_form {padding:30px 0;}
+    .form_wrap .row {flex-direction:column;}
+	.form_wrap .row div.tit {padding-bottom:0;}
+    .form_wrap .row div.tit strong {height:40px; font-size:0.875em;}
+    .form_wrap .row div.tit strong br {display:none;}
+    .form_wrap .row .ipt_form .ipt_set {padding:0;}
+    .form_wrap .row .ipt_form .ipt_set input {padding:0; font-size:0.875em;}
+	.form_wrap .row .ipt_form .ipt_set > div p.txt {padding-left:10px; font-size:0.875em;}
+    .form_wrap .row .ipt_form .ipt_set span.txt {font-size:14px; padding-right:0.85714em;}
+	.form_wrap .row .ipt_form .textarea_set {padding:0;}
+	.form_wrap .row .ipt_form .textarea_set textarea {width:100%; height:240px; padding:10px; font-size:0.875em;}
+    .form_wrap .row .ipt_form input {height:40px;}
+    .form_wrap .row .ipt_form .ipt_set button.btn_address {height:40px; width:auto; padding:0 2em; font-size:14px;}
+    .form_wrap .row .ipt_form .select_set {padding:0;}
+    .form_wrap .row .ipt_form .select_set select {height:40px; padding:0; font-size:14px;}
+}
+/* // 입력폼 */
+
+
+/* 입력폼 관련 안내 문구 */
+.form_alert {position:relative; padding:10px 24px;}
+.form_alert p {position:relative; color:#555555; font-size:1em; line-height:1.75em;}
+.form_alert p.em {padding-bottom:0.625em; color:#FF0000;}
+.form_alert p.txt {padding-left:0.6875em;}
+.form_alert p.txt span {position:absolute; top:0; left:0; color:inherit; font-size:inherit; line-height:inherit;}
+.form_alert button.btn_tooltips {display:inline-flex; align-items:center; height:1.5em; color:#999; font-size:16px;}
+.form_alert button.btn_tooltips span {}
+.form_alert button.btn_tooltips span.icon {display:inline-flex; width:24px; height:24px;}
+.form_alert button.btn_tooltips span.icon img {}
+.form_alert button.btn_tooltips span.txt {display:inline-block; color:#999; font-size:16px; line-height:1.5em;}
+
+@media screen and (max-width:768px) {
+	.customer_form {padding:0 20px;}
+    .form_alert {padding:4px 0;}
+    .form_alert p {font-size:0.75em;}
+    .form_alert button.btn_tooltips {font-size:14px;}
+    .form_alert button.btn_tooltips span.icon {width:20px; height:20px;}
+    .form_alert button.btn_tooltips span.txt {font-size:14px; line-height:1.42857em;}
+    
+}
+/* // 입력폼 관련 안내 문구 */
+
+
+/* 약관 동의 */
+.customer_form .agree_wrap {margin-top:2em;}
+.customer_form .agree_wrap div.chk_all {display:flex; align-items:center; gap:0 0.875em; padding:1em 1.5em; border:1px solid #ddd;}
+.customer_form .agree_wrap div.chk_all button {display:inline-block}
+
+.customer_form .agree_wrap input[type="text"] {border:1px solid #ddd;}
+.customer_form .agree_wrap input[type="text"]:optional {background-color: #f7f7f7;} /* 선택옵션 */
+.customer_form .agree_wrap input[type="text"]:required {background-color: #ff0000;} /* 필수옵션 */
+
+.customer_form .agree_wrap label {display:inline-block; position:relative; padding-left:2.375em; line-height:1.75em; cursor:pointer;}
+.customer_form .agree_wrap label input[type="checkbox"] {position:absolute; width:0; height:0; border:0 none; opacity:0;}
+.customer_form .agree_wrap label input[type="checkbox"] + span.checkmark {content:""; display:inline-block; position:absolute; top:0; left:0; width:1.75em; height:1.75em; background:url('../images/ico_check_on.png') no-repeat left top / contain; border:1px solid #989898; vertical-align:top;}
+.customer_form .agree_wrap label input[type="checkbox"]:checked + span.checkmark {/* border-color:#242424; */ border:0; background-color: #fff; background-image:url('../images/ico_check_s_on.png')}
+.customer_form .agree_wrap label em {margin-left:0.25em; color:#ff0000}
+.customer_form .agree_wrap label span.txt {display:inline-block; line-height:1.75em; word-break:keep-all;}
+
+.customer_form .agree_wrap div.chk_all label {padding-left:0;}
+.customer_form .agree_wrap div.chk_all label input[type="checkbox"] + span.checkmark {position:relative; border-radius:100%;}
+.customer_form .agree_wrap div.chk_all label input[type="checkbox"]:checked + span.checkmark {background-color:#000; background-image:url('../images/ico_check_on.png')}
+.customer_form .agree_wrap div.chk_all span.txt {width:28px; height:28px; font-size:20px; line-height:28px; font-weight:bold;}
+
+.customer_form .agree_wrap .btn_group {margin-top:72px; text-align:center;}
+.customer_form .agree_wrap .btn_group button {width:284px; height:80px; background-color:#333333; border-radius:5px;}
+.customer_form .agree_wrap .btn_group button span {display:block; color:#fff; font-size:20px; line-height:29px; font-weight:500;}
+
+@media screen and (max-width:768px) {
+    .customer_form .agree_wrap {font-size:0.875em;}
+    .customer_form .agree_wrap div.chk_all {padding:1em 1.25em;}
+	.customer_form .agree_wrap div.chk_all span.txt {font-size:14px;}
+	.customer_form .agree_wrap div.chk_all label {display:flex; align-items:center; gap:0 10px;}
+	.customer_form .agree_wrap div.chk_all label input[type="checkbox"] + span.checkmark {width:18px; height:18px;}
+
+	.customer_form .agree_wrap .btn_group {margin-top:30px;}
+	.customer_form .agree_wrap .btn_group button {width:100%; height:48px; border-radius:4px;}
+	.customer_form .agree_wrap .btn_group button span {font-size:14px;}
+}
+/* // 약관 동의 */
+/* // 1:1 문의하기 관련 추가 */
