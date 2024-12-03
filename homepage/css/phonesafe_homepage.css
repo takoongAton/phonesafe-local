@@ -772,8 +772,17 @@ table.dataTable tbody td:first-of-type {padding-left:2em; text-align:left;}
 .refund_wrap .inner div.txt_wrap {margin-top:10px;}
 .refund_wrap .inner div.txt_wrap button {display:inline-block; width:160px; height:48px; border-radius:4px; background-color:#000; color:#fff}
 .refund_wrap .inner div.txt_wrap button span {color:#fff; font-size:20px; line-height:1.2em; font-weight:500;}
-.refund_wrap .inner div.txt_wrap span.txt {color:#fff; font-size:18px; line-height:1.5em; font-size:bold;}
+.refund_wrap .inner div.txt_wrap span.txt {color:#fff; font-size:18px; line-height:1.5em; font-weight:bold;}
 .refund_wrap .inner div.txt_wrap span.txt br {display:none;}
+@media screen and (max-width:768px) {
+	.refund_wrap {height:120px; background-position:center center;}
+	.refund_wrap .inner div.tit strong {font-size:1.125em;}
+	.refund_wrap .inner div.txt_wrap {margin-top:8px;}
+	.refund_wrap .inner div.txt_wrap button {width:84px; height:32px;}
+	.refund_wrap .inner div.txt_wrap button span {font-size:12px; line-height:2.66666em;}
+	.refund_wrap .inner div.txt_wrap span.txt {font-size:12px;}
+	.refund_wrap .inner div.txt_wrap span.txt br {display:block;}
+}
 /* // 메인 1:1 문의 추가 */
 
 
