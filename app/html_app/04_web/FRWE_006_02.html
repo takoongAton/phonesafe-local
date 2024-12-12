@@ -43,7 +43,7 @@
 		<div class="tab_wrap">
 			<button type="button"><span>URL 검사</span></button>
 			<button type="button"><span>세이프브라우징</span></button>
-			<button type="button" class="active"><span>스미싱 탐지</span></button>
+			<button type="button" class="active"><span>메시지 탐지</span></button>
 		</div>
 		<!-- // tab_wrap -->
 	</div>
@@ -58,13 +58,13 @@
 				<div class="content_top">
 					<div class="sectionMainTop">
 						<div class="img">
-							<img src="../../images/web/img_message_on.png" alt="스미싱탐지 알람 이미지" />
+							<img src="../../images/web/img_message_on.png" alt="메시지탐지 알람 이미지" />
 						</div>
 						<div class="txt">
-							<p>실시간 스미싱 탐지 중</p>
+							<p>실시간 메시지 탐지 중</p>
 							<p>현재 발견된 위험한 링크가 포함된 메세지 <strong class="c_danger">00</strong></p>
 						</div>
-						<button type="button"><span>스미싱 탐지 중단 하기</span></button>
+						<button type="button"><span>메시지 탐지 중단 하기</span></button>
 					</div>
 					<!-- // sectionMainTop -->
 
@@ -102,6 +102,23 @@
 									</dd>
 								</dl>
 							</div>
+
+							<div class="message_count">
+								<div class="active">
+									<span class="ico"><img src="../../images/app/ico_app_mms.png" alt="문자메시지"></span>
+									<span class="txt">000개</span>
+								</div>
+								<div>
+									<span class="ico"><img src="../../images/app/ico_app_kakao.png" alt="카카오톡"></span>
+									<span class="txt">000개</span>
+								</div>
+								<div>
+									<span class="ico"><img src="../../images/app/ico_app_whats.png" alt="와츠앱"></span>
+									<span class="txt">000개</span>
+								</div>
+							</div>
+							<!-- // message_count -->
+
 						</div>
 						<!-- // list -->
 					</div>
@@ -111,9 +128,15 @@
 						<dl>
 							<dt>안내사항</dt>
 							<dd>
-								- 스미싱 탐지를 통해 검사 완료된 메세지에 위험한 링크가 발견될 경우 알림을 제공합니다.
+								- 메시지 탐지를 통해 검사 완료된 메세지에 위험한 링크가 발견될 경우 알림을 제공합니다.<br />
+								- 탐지할 메시지 앱을 추가할 수 있습니다.<br />
+								<a href="#g">추가하기 &gt;</a><br />
+								- 메시지 알림 설정이 되어 있지 않은 경우 메시지 탐지가 불가합니다. 메시지 설정에서 알림을 허용해주세요.
 							</dd>
 						</dl>
+						<!-- <div class="btn">
+							<button type="button"><span>“메세지” 설정 방법 안내</span></button>
+						</div> -->
 					</div>
 					<!-- // safari_guide -->
 
