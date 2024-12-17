@@ -1303,8 +1303,8 @@ div.select_filter div.select select {width:auto; height:37px; padding-right:18px
 /* // 탐지할 메시지 앱 간격 설정 */
 
 /* 메시지 필터 결과 */
-.message_count {display:flex; justify-content:space-between; align-items:center; padding:10px 18px 14px !important;}
-.message_count div {display:inline-flex; align-items:center; gap:0 2px;}
+.message_count {display:flex; justify-content:space-between; align-items:center; padding:10px 18px 14px 20px; letter-spacing:0em;}
+.message_count div {display:inline-flex; align-items:center; gap:0 4px;}
 .message_count div span.ico {display:inline-block; width:16px; height:16px;}
 .message_count div span.ico img {filter: grayscale(1); opacity:0.5;}
 .message_count div span.txt {display:inline-block; color:#999; font-size:14px; line-height:20px;}
