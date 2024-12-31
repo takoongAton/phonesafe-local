@@ -1308,8 +1308,7 @@ div.select_filter div.select select {width:auto; height:37px; padding-right:18px
 .message_count div.item {display:inline-block; position:relative; width:48px; min-width:48px; height:48px;}
 .message_count div.item span.ico {display:flex; justify-content:center; align-items:center; width:48px; height:48px; border-radius:100%; background-color:#F5F5F5; overflow:hidden;}
 .message_count div.item span.ico img {display:block; width:20px; height:20px; line-height:1em;}
-.message_count div.item span.txt {display:none; position:absolute; top:-4px; right:0; height:16px; padding:0 6px; border-radius:8px; background-color:#ED1E19; font-size:10px; color:#fff; line-height:15px; font-weight:bold;}
-.message_count div.item.active span.txt {display:inline-block;}
+.message_count div.item span.txt {display:inline-block; position:absolute; top:-4px; right:0; height:16px; padding:0 6px; border-radius:8px; background-color:#ED1E19; font-size:10px; color:#fff; line-height:15px; font-weight:bold;}
 /* // 메시지 필터 결과 */
 
 
