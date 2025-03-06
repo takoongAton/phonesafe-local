@@ -312,8 +312,9 @@ div.layer.full .close button::after {transform:translate(-50%,-50%) rotate(-45de
 
 .unaccount_wrap .phonenumber_wrap div.item {display:flex; justify-content:space-between; align-items:center; gap:0 10px; position:relative; width:100%; padding:20px 0; border-bottom:1px solid #ddd;}
 .unaccount_wrap .phonenumber_wrap strong.tit {display:inline-block; min-width:80px; font-size:14px; line-height:24px; white-space:nowrap;}
-.unaccount_wrap .phonenumber_wrap .ipt_set {flex:1; display:flex; gap:0 10px; position:relative; align-items:center;}
+.unaccount_wrap .phonenumber_wrap .ipt_set {flex:1; display:flex; display:block; gap:0 10px; position:relative; align-items:center;}
 .unaccount_wrap .phonenumber_wrap .ipt_set input {width:100%; height:36px; padding:0 1em; border:0 none; background-color:#fff; font-size:14px;}
+.unaccount_wrap .phonenumber_wrap .ipt_set input::placeholder {color:#707070; font-weight:400;}
 .unaccount_wrap .phonenumber_wrap .ipt_set span.timer {position:absolute; top:50%; right:0; transform:translateY(-50%); color:#ff0000}
 .unaccount_wrap .phonenumber_wrap .ipt_set span.dash {display:block; width:15px; position:relative; color:transparent}
 .unaccount_wrap .phonenumber_wrap .ipt_set span.dash::before {content:""; display:block; position:absolute; top:50%; left:50%; width:100%; height:1px; background-color:#000; transform:translate(-50%,-50%);}

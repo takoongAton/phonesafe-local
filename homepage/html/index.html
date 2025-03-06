@@ -12,6 +12,8 @@
 	
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=block" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;500;700&display=swap" rel="stylesheet">
+
+	<script src="https://www.google.com/recaptcha/api.js?render=6LdED-sqAAAAAFJh2-oS6cBFX12ckNGnzHuGl3oq" async defer></script>
 </head>
 
 <body>
@@ -402,17 +404,37 @@
 						<div class="item">
 							<strong class="tit">휴대폰 번호</strong>
 							<div class="ipt_set">
-								<input type="text">
+								<input type="text" placeholder="휴대폰번호를 입력하세요.">
 							</div>
 							<button type="button" disabled><span>인증요청</span></button>	
 						</div>
-						<div class="item">
+						<!-- <div class="item">
 							<strong class="tit">인증번호</strong>
 							<div class="ipt_set">
 								<input type="text">
 								<span class="timer">00:00</span>
 							</div>
 							<button type="button" disabled><span>시간연장</span></button>
+						</div> -->
+						<div class="item">
+							<strong class="tit">보안문자입력</strong>
+							<div class="ipt_set">
+								<input type="text" placeholder="보안문자를 입력하세요.">
+								<span class="timer">00:00</span>
+								<!-- <div class="reC">reCaptcha area</div> -->
+								 <div>
+									<div class="g-recaptcha" data-sitekey="6LdED-sqAAAAAFJh2-oS6cBFX12ckNGnzHuGl3oq" data-callback="recaptchaCallback" data-expired-callback="recaptchaExpired" style="margin-top: 3rem;"></div>
+									<input id="hidden-grecaptcha" name="hidden-grecaptcha" type="text" style="opacity: 0; position: absolute; top: 0; left: 0; height: 1px; width: 1px;"/>
+								 </div>
+								<div>
+									<form action="?" method="POST">
+										<div class="g-recaptcha" data-sitekey="your_site_key"></div>
+										<br/>
+										<input type="submit" value="Submit">
+									</form>
+								</div>
+							</div>
+							<!-- <button type="button" disabled><span>시간연장</span></button> -->
 						</div>
 						<!-- <p class="error_txt">올바른 휴대폰 번호를 입력하십시오.</p> -->
 					</div>
