@@ -325,9 +325,9 @@ div.layer.full .close button::after {transform:translate(-50%,-50%) rotate(-45de
 .unaccount_wrap .phonenumber_wrap div.item.focus {border-bottom-color:#000;}
 .unaccount_wrap .phonenumber_wrap p.error_txt {margin-top:0.66666em; color:#FF0000; font-size:14px; line-height:1.42857em;}
 /* 리캡챠 관련 추가 */
-.unaccount_wrap .phonenumber_wrap div.item .recaptcha_area {display:inline-flex; align-items:center; margin-top:24px;}
+.unaccount_wrap .phonenumber_wrap div.item .recaptcha_area {display:inline-flex; align-items:center; margin-top:24px; padding-left:14px;}
 .unaccount_wrap .phonenumber_wrap div.item .recaptcha_area div.img {width:160px; height:36px; padding:5px; background-color:#f2f2f2;;}
-.unaccount_wrap .phonenumber_wrap div.item .recaptcha_area div.img img {width:100%; height:100%; object-fit: cover;}
+.unaccount_wrap .phonenumber_wrap div.item .recaptcha_area div.img img {width:100%; height:100%; object-fit:cover;}
 .unaccount_wrap .phonenumber_wrap div.item .recaptcha_area button.btn_refresh {display:inline-flex; justify-content:center; align-items:center; width:36px; height:36px; margin-left:4px; background-color:#fff; border:1px solid #ddd; border-radius:2px;}
 .unaccount_wrap .phonenumber_wrap div.item .recaptcha_area button.btn_refresh span {background:url('../images/btn_refresh.png') no-repeat center center / 19px auto; color:transparent; overflow:hidden;}
 /* // 리캡챠 관련 추가 */
@@ -360,6 +360,7 @@ div.layer.full .close button::after {transform:translate(-50%,-50%) rotate(-45de
 	.unaccount_wrap .phonenumber_wrap button span {font-size:24px;}
 	.unaccount_wrap .phonenumber_wrap p.error_txt {font-size:18px;}
 	/* 리캡챠 관련 추가 */
+	.unaccount_wrap .phonenumber_wrap div.item .recaptcha_area {padding-left:24px;}
 	.unaccount_wrap .phonenumber_wrap div.item .recaptcha_area div.img {width:180px; height:60px; background-color:#f2f2f2;}
 	.unaccount_wrap .phonenumber_wrap div.item .recaptcha_area button.btn_refresh {width:60px; height:60px; margin-left:12px; border-radius:5px;}
 	.unaccount_wrap .phonenumber_wrap div.item .recaptcha_area button.btn_refresh span {background-size:32px auto;}
