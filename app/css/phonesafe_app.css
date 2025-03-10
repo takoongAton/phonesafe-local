@@ -1252,6 +1252,16 @@ div.select_filter div.select select {width:auto; height:37px; padding-right:18px
 .card_news_list div.write_info span.date {display:block; color:#999; font-size:12px; line-height:18px;}
 /* // 카드 뉴스 리스트 */
 
+/* 카드 뉴스 리스트 _ new */
+.card_news_list_new {}
+.card_news_list_new div.item {display:flex; flex-direction:column; gap:10px 0; padding-bottom:20px;}
+.card_news_list_new div.item + div.item {border-top:1px solid #F8F8F8; padding:20px 0;}
+.card_news_list_new div.item div.thum {border-radius:6px;}
+.card_news_list_new div.item span.date {display:block; font-size:14px; line-height:20px;}
+.card_news_list_new div.txt {padding:1px; color:#000; font-size:16px; line-height:22px; font-weight:700;}
+/* // 카드 뉴스 리스트 _ new */
+
+
 /* 사이버 위협 사례 리스트 */
 .cyber_serurity_list {display:flex; flex-direction:column; gap:20px 0; width:100%;}
 .cyber_serurity_list div.item {display:flex; align-items:flex-start; gap:14px; width:100%;}
