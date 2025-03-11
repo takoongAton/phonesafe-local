@@ -141,6 +141,9 @@ input[data-switch]:checked + label:after {right:2px; transform:translate(0,-50%)
 .header_wrap div.tab_wrap button span {position:relative; top:-1px; color:#888; font-size:14px;}
 .header_wrap div.tab_wrap button.active {border-color:#000; background-color:#000;}
 .header_wrap div.tab_wrap button.active span {color:#fff; font-weight:bold;}
+.header_wrap div.tab_wrap.eng {}
+.header_wrap div.tab_wrap.eng button {height:54px;}
+.header_wrap div.tab_wrap.eng button span {display:block; padding:0 5px; line-height:1.25em; word-break:keep-all;}
 /* // 카테고리 메인 검사/검사내역 탭 */
 
 
@@ -495,6 +498,10 @@ div.content_top div.subResurtTit {position:-webkit-sticky; position:sticky; top:
 div.content_top div.subResurtTit p.tit {flex:1;}
 div.content_mid div.subResurtTit.fnPageTit {flex:1; position:-webkit-sticky; position:sticky; top:0; right:0; left:0; z-index:1; width:100%;}
 div.content_mid div.subResurtTit.fnPageTit p.tit {flex:1;}
+
+/* 영문 버전용 추가 */
+div.subResurtTit.eng {height:auto; flex-direction:column; justify-content:flex-start; align-items:flex-start; gap:0; padding:18px 18px 9px;}
+/* // 영문 버전용 추가 */
 
 /* div.subResurtTit span.alert.caution {display:inline-block; height:18px; padding:0 8px; background-color:var(--color-caution); border-radius:8px; color:#fff; font-size:10px; line-height:18px;;} */
 
@@ -860,6 +867,13 @@ div.content_mid div.subResurtTit.fnPageTit p.tit {flex:1;}
 .service_more div.version button {display:inline-block; width:auto; color:#999999;}
 .service_more div.version button span {color:#999; font-size:12px; border-bottom:1px solid #999;}
 .service_more div.version button a {color:#999999;}
+
+/* 영문 버전용 추가 */
+.service_more.eng div.service_item + div.service_item {margin-top:0.5em}
+.service_more.eng div.service_item ul {display:flex; flex-direction:column; gap:5px;}
+.service_more.eng div.service_item ul li {flex-direction:row; justify-content:flex-start; width:100%; gap:10px; height:auto; padding:8px 0;}
+.service_more.eng div.service_item ul li span.txt {margin-top:0;}
+/* // 영문 버전용 추가 */
 /* // 더보기 메인 */
 
 /* 0505 안심번호 */
@@ -1147,7 +1161,7 @@ pre.privacy .privacy_table_wrap table {width:auto;}
 .user_info_set .round_box .list .item div.row p.txt {word-break:break-all;}
 .user_info_set .round_box .list .item div.row.arrow {background:url('../images/common/ico_arrow_list_big_right.png') no-repeat right center / 24px 24px;}
 .user_info_set .round_box .list .item div {text-align:right; line-height:1;}
-.user_info_set .btn_change {display:inline-block; width:70px; height:32px; margin-top:10px; border:1px solid #888; border-radius:6px;}
+.user_info_set .btn_change {display:inline-block; min-width:70px; width:auto; height:32px; margin-top:10px; padding:0 10px; border:1px solid #888; border-radius:6px;}
 .user_info_set .btn_change span {display:block; color:#888; font-size:12px; line-height:1;}
 .user_info_set div.alert {padding:20px 0;}
 .user_info_set div.alert p {font-size:12px; color:#999; font-size:12px; line-height:1.5em;}
@@ -1349,7 +1363,7 @@ div.select_filter div.select select {width:auto; height:37px; padding-right:18px
 .myFamily_list div.txt_wrap div.filter_count span.txt {display:inline-block; color:#000; font-size:14px; line-height:20px;}
 .myFamily_list div.txt_wrap div.user_phone {display:block; color:#999; font-size:14px; line-height:20px;}
 .myFamily_list div.btn {}
-.myFamily_list div.btn button {width:68px; height:32px; border:1px solid transparent; border-radius:6px; line-height:1em;}
+.myFamily_list div.btn button {min-width:68px; height:32px; padding:0 10px; border:1px solid transparent; border-radius:6px; line-height:1em;}
 .myFamily_list div.btn button span {display:block; font-size:12px; line-height:18px; font-weight:400;}
 .myFamily_list div.btn button.btn_light {border-color:#888888; background-color:#fff; color:#888888;}
 .myFamily_list div.btn button.btn_dark {border-color:#000000; background-color:#000000; color:#fff;}
