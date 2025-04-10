@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+	<title>휴대폰안심 서비스</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+	
+	<!-- font -->
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=block" rel="stylesheet" />
+	
+	<!-- css -->
+	<link rel="stylesheet" href="../../css/reset.css" />
+	<link rel="stylesheet" href="../../css/slick.css" />
+	<link rel="stylesheet" href="../../css/phonesafe_app.css" />
+	
+</head>
+<body>
+
+<div class="wrap">
+
+	<div class="header_wrap">
+		<div class="temp_native">
+			<button type="button"><span><img src="../../images/temp/btn_top_home.png" alt="홈으로가기"></span></button>
+			<h1>휴대폰안심(native)</h1>
+			<button type="button"><span><img src="../../images/temp/ico_alert.png" alt="알림"></span></button>
+		</div>
+		<!-- // temp_native 삭제 -->
+
+		<nav>
+			<div class="scroll-wrapper">
+				<ul class="scroll">
+					<li class="item"><button type="button" class="active"><span>홈</span></button></li>
+					<li class="item"><button type="button"><span>보안 검사</span></button></li>
+					<li class="item"><button type="button"><span>네트워크 검사</span></button></li>
+					<li class="item"><button type="button"><span>웹 검사</span></button></li>
+				</ul>
+			</div>
+			<button type="button" class="more"><span>더보기</span></button>
+		</nav>
+		<!-- // nav-->
+	</div>
+	<!-- // header_wrap -->
+
+	<div class="container_wrap">
+
+		<section class="container">
+
+			<div class="content_wrap">
+
+				<div class="homeNew">
+					<div class="homeUrl">
+						<div class="txt_wrap">
+							<strong class="tit">URL 검사</strong>
+							<p class="txt">URL 검사를 통해 링크의  위험 요소를 확인해 보세요.</p>
+						</div>
+						<div class="ipt_wrap">
+							<input type="text" placeholder="복사한 URL을 입력 하세요." />
+							<div class="btns">
+								<button type="button"><span><img src="../../images/app/ico_search_off.png" alt="검색" /></span></button>
+								<button type="button"><span><img src="../../images/app/ico_qr.png" alt="QR스캔" /></span></button>
+							</div>
+						</div>
+					</div>
+					<!-- // homeUrl -->
+
+					<div class="home_card">
+						<div class="card_item">
+							<div class="inner">
+								<div class="txt_wrap">
+									<strong class="tit">실시간 가족 알림</strong>
+									<p class="txt">
+										<span>가족을 등록해<br />
+											보세요</span>
+									</p>
+								</div>
+								<div class="img"><img src="../../images/app/img_alarm_off.png" alt="가족알림 OFF" /></div>
+							</div>
+						</div>
+						<div class="card_item">
+							<div class="inner">
+								<div class="txt_wrap">
+									<strong class="tit">휴대폰 검사</strong>
+									<p class="txt">
+										<span>휴대폰 검사를<br />
+											시작해 보세요</span>
+									</p>
+								</div>
+								<div class="img"><img src="../../images/app/img_insp.png" alt="이미지" /></div>
+							</div>
+						</div>
+					</div>
+					<!-- // home_card -->
+
+					<div class="home_message">
+						<div class="img"><img src="../../images/app/img_msgdt.png" alt="이미지" /></div>
+						<div class="txt_wrap">
+							<strong class="tit">메시지 탐지</strong>
+							<p class="txt">위험 요소를 <br />
+								사전에 예방해 보세요</p>
+							<!-- <strong class="count">000건</strong> -->
+						</div>
+					</div>
+					<!-- // home_message -->
+
+					<div class="home_qrfishing">
+						<div class="txt_wrap">
+							<strong class="tit">큐싱 범죄 주의보</strong>
+							<p class="txt">
+								공유 킥보드 등 사용하면서 <br />
+								QR코드를 자주 사용하는 <br />
+								청소년이 주 타겟으로 확인
+							</p>
+						</div>
+						<button type="button"><span>바로가기</span></button>
+					</div>
+					<!-- // home_qrfishing -->
+
+					<div class="home_guide">
+						<div class="txt_wrap">
+							<strong class="tit">이용 가이드</strong>
+							<p class="txt">내 휴대폰을 안전하게 보호 할 수<br />
+								있는 방법을 알아볼까요</p>
+						</div>
+						<div class="img"></div>
+					</div>
+					<!-- // home_guide -->
+
+				</div>
+				<!-- // homeNew -->
+
+				<div class="main_notice">
+					<div><span>공지사항</span></div>
+					<div><span>자주 묻는 질문</span></div>
+					<div><span>이용 안내</span></div>
+				</div>
+
+
+				<div class="main_footer">
+					<!-- <div class="f_logo">
+						<svg id="footer_logo" class="img_logo" data-name="img_logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 230.9515 58.6165">
+							<path transform="translate(-181.9035 -391.1745)" d="M241.6073,449.7068H229.9008l-5.3516-10.4522L211.755,414.1692l-12.7934,25.0854L193.61,449.7068H181.9035l5.3516-10.4522,24.5-48.08,24.5008,48.08Z"></path>
+							<path transform="translate(-181.9035 -391.1745)" d="M288.5161,391.2578V401.71H264.5179v48.081H254.0656V401.71h-23.999V391.2578Z"></path>
+							<path transform="translate(-181.9035 -391.1745)" d="M347.9673,420.4405a29.266,29.266,0,1,1-29.2664-29.266A29.2979,29.2979,0,0,1,347.9673,420.4405Zm-10.4522,0a18.8138,18.8138,0,1,0-18.8142,18.8141A18.8422,18.8422,0,0,0,337.5151,420.4405Z"></path>
+							<path transform="translate(-181.9035 -391.1745)" d="M412.8551,391.2578V449.791l-10.4522-8.0277-37.6284-29.0155V449.791H354.3223V391.4254l10.4522,8.0273,37.6284,29.0155V391.1745Z"></path>
+						</svg>
+					</div> -->
+
+					<p><strong>서비스 제공사 : (주)아톤</strong> | <span>개인정보처리방침</span></p>
+
+					<p>
+						서비스 가입/ 해지문의<br />
+						<span>080-123-4567(무료)</span> │ <span>aaa@atoncorp.com</span><br />
+						(평일) 09:00~18:00 (점심시간 12:00~13:00)
+					</p>
+
+					<p>* 본 서비스는 가입 즉시 서비스가 개시되는 상품으로 청약철회가 불가능합니다. (전자상거래 등에서의 소비자보호에 관한 법률 제17조 2항 5호에 따라 디지털 콘텐츠의 제공이 개시된 경우 청약철회를 제공하지 않습니다.)</p>
+
+					<p>* 서비스를 이용할 때 가입한 요금제에 따라 데이터 요금이 발생할 수 있습니다.</p>
+				</div>
+				<!-- // main_footer -->
+				
+			</div>
+			
+		</section><!-- // container -->
+		
+	</div><!-- // container_wrap -->
+
+
+	<!-- <div class="footer_wrap">
+		<div class="btnGroup">
+			<div>
+				<button type="button" class="btn line" disabled=""><span>취소</span></button>
+			</div>
+			<div>
+				<button type="button" class="btn fill"><span>확인</span></button>
+			</div>
+		</div>
+	</div> -->
+	<!-- // footer_wrap (하단 고정 영역) -->
+
+</div><!-- // wrap -->
+
+
+
+
+
+
+<!-- 도움말 팝업 -->
+<div class="layer help" id="test1111" style="display:none;">
+	<div class="layer_inner">
+		<div class="layer_content">
+			<p>
+				유료회원의 경우 실시간 감시 이용 가능합니다.<br />
+				실시간 감시 대상 : 휴대폰 검사, APP 검사
+			</p>
+		</div>
+		
+		<div class="close"><button type="button"><span>닫기</span></button></div>
+	</div>
+</div><!-- // layer help -->
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="../../js/slick.js"></script>
+<script src="../../js/temp.js"></script>
+
+<script>
+$(document).ready(function(){
+	/* gallery main */
+	function mainContentSlick(){
+		$('.main_security .list').slick({
+			dots: true,
+			dotsClass: "main_slide_dot",
+			infinite: true,
+			arrows: false,
+			centerMode: true,
+			centerPadding : '18px'
+		});
+	}
+	mainContentSlick();
+
+
+	/* 보안 캠페인 슬릭 */
+	function mainContentSlick2(){
+		$('.main_campain .list').slick({
+			dots: true,
+			dotsClass: "main_slide_dot",
+			infinite: true,
+			arrows: false,
+			centerMode: true,
+			centerPadding : '18px'
+		});
+	}
+	mainContentSlick2();
+	/* // 보안 캠페인 슬릭 */
+
+
+	function mainBenefitSlick(){
+		$('.mainBenefit .list').slick({
+			dots: true,
+			dotsClass: "main_slide_dot",
+			infinite: true,
+			arrows: false,
+		});
+	}
+	mainBenefitSlick();
+})
+
+
+
+/* 
+let btnTooltip = document.querySelector("button.tooltip");
+btnTooltip.addEventListener("click", function(event){
+	target = event.target;
+	let layerTooltip = document.querySelector("#test1111");
+	layerTooltip.style.display = "block";
+	let tempTop = btnTooltip.offsetTop;
+	console.log(tempTop)
+	layerTooltip.style.top = tempTop + btnTooltip.clientHeight + "px";
+})
+
+
+
+let layerHelp = document.querySelector(".layer.help");
+layerHelp.querySelector("button").addEventListener("click", function(){
+	this.closest(".layer").style.display = "none"
+})
+*/
+
+window.addEventListener("load", function(){
+    mainGraphBar(0);
+})
+</script>
+
+</body>
+</html>
