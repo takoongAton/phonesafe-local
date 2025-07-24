@@ -9,9 +9,15 @@
 	<link rel="stylesheet" type="text/css" href="../css/reset.css">
 	<link rel="stylesheet" type="text/css" href="../css/slick.css">
 	<link rel="stylesheet" type="text/css" href="../css/phonesafe_homepage.css">
-	
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=block" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;500;700&display=swap" rel="stylesheet">
+
+	<!-- font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" />
+	<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap" /> -->
+	<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=block" /> -->
+	<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;500;700&display=swap" /> -->
+	<!-- // font -->
 
 	<!-- <script src="https://www.google.com/recaptcha/api.js?render=6LdED-sqAAAAAFJh2-oS6cBFX12ckNGnzHuGl3oq" async defer></script> -->
 	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
@@ -232,7 +238,7 @@
 
 		<div class="unaccount_wrap">
 			<div class="tit"><strong>휴대폰안심 서비스 가입/해지</strong></div>
-			<p class="error_txt">현재 LG U+, KT 고객만 가입 가능합니다.</p>
+			<!-- <p class="error_txt">현재 LG U+, KT 고객만 가입 가능합니다.</p> -->
 
 			<div class="signTab">
 				<button type="button" class="active"><span>서비스 가입</span></button>
@@ -248,27 +254,58 @@
 							<strong>통신사 선택</strong>
 							<div class="check_wrap">
 								<label>
-									<input type="radio" name="telecom01" disabled />
+									<input type="radio" name="telecom01" checked />
 									<span class="checkmark"></span>
 									<span class="txt">SKT</span>
 								</label>
 								<label>
-									<input type="radio" name="telecom01" disabled/>
+									<input type="radio" name="telecom01" />
 									<span class="checkmark"></span>
 									<span class="txt">KT</span>
 								</label>
 								<label>
-									<input type="radio" name="telecom01" checked/>
+									<input type="radio" name="telecom01" />
 									<span class="checkmark"></span>
 									<span class="txt">LG U+</span>
 								</label>
-								<p class="txt">※ SKT, KT 는 추후 서비스 제공 예정입니다.</p>
+								<!-- <p class="txt">※ SKT, KT 는 추후 서비스 제공 예정입니다.</p> -->
 							</div>
 						</div>
 						
 					</div>
 					<!-- // telecoms -->
 
+					<div class="identify_wrap">
+						<div class="item">
+							<strong class="tit">주민등록번호<br>앞 7자리</strong>
+							<div class="ipt_set">
+								<div class="first_num"><input type="text" maxlength="6" placeholder=""></div>
+								<span class="dash">-</span>
+								<div class="last_num"><input type="text" maxlength="1" placeholder=""></div>
+							</div>
+						</div>
+						<!-- <p class="error_txt">올바른 휴대폰 번호를 입력하십시오.</p> -->
+					</div>
+		
+					<div class="phonenumber_wrap">
+						<div class="item">
+							<strong class="tit">휴대폰 번호</strong>
+							<div class="ipt_set">
+								<input type="text" maxlength="11" placeholder="휴대폰번호를 입력하세요.">
+							</div>
+							<button type="button" disabled><span>인증요청</span></button>	
+						</div>
+						<div class="item">
+							<strong class="tit">인증번호</strong>
+							<div class="ipt_set">
+								<input type="text" maxlength="6" placeholder="인증번호를 입력하세요.">
+								<span class="timer">00:00</span>
+							</div>
+							<!-- <button type="button" disabled><span>시간연장</span></button> -->
+						</div>
+						<!-- <p class="error_txt">올바른 휴대폰 번호를 입력하십시오.</p> -->
+					</div>
+					<!-- // phonenumber_wrap -->
 
 					<div class="agree_wrap">
 						<div class="row">
@@ -323,53 +360,18 @@
 						</div>
 					</div>
 					<!-- // agree_wrap -->
-
-
-					<div class="identify_wrap">
-						<div class="item">
-							<strong class="tit">주민등록번호<br>앞 7자리</strong>
-							<div class="ipt_set">
-								<div class="first_num"><input type="text" maxlength="6" placeholder=""></div>
-								<span class="dash">-</span>
-								<div class="last_num"><input type="text" maxlength="1" placeholder=""></div>
-							</div>
-						</div>
-						<!-- <p class="error_txt">올바른 휴대폰 번호를 입력하십시오.</p> -->
-					</div>
 		
-					<div class="phonenumber_wrap">
-						<div class="item">
-							<strong class="tit">휴대폰 번호</strong>
-							<div class="ipt_set">
-								<input type="text" placeholder="휴대폰번호를 입력하세요.">
-							</div>
-							<button type="button" disabled><span>인증요청</span></button>	
-						</div>
-						<div class="item">
-							<strong class="tit">인증번호</strong>
-							<div class="ipt_set">
-								<input type="text" placeholder="인증번호를 입력하세요.">
-								<span class="timer">00:00</span>
-							</div>
-							<button type="button" disabled><span>시간연장</span></button>
-						</div>
-						<!-- <p class="error_txt">올바른 휴대폰 번호를 입력하십시오.</p> -->
-					</div>
-		
-		
-					<div class="btn">
-						<button type="button" class="btn_xx"><strong>휴대폰안심 서비스 유료 가입하기</strong></button>
-					</div>
-					
-					
 		
 					<div class="guide_txt">
-						<p class="em">* 월 3,300원(부가세포함)의 유료 서비스로 사용 일 수 만큼 일할 계산되어 과금 됩니다.</p>
-						<!-- <p class="em">휴대폰안심 서비스는 월 3,300원(부가세포함)의 유료 서비스로 사용일 수 만큼 일할 계산되어  과금 됩니다.</p> -->
+						<p class="em">* 휴대폰안심 서비스는 월 3,300원(부가세포함)의 유료 서비스로 사용일 수 만큼 일할 계산되어  과금 됩니다.<br />
+							* 가입월에는 잔여 일수만큼 요금이 부과됩니다.</p>
 						<p class="txt">* 본 서비스는 가입 즉시 서비스가 개시되는 상품으로 청약철회가 불가능합니다.<br />
 							(전자상거래 등에서의 소비자보호에 관한 법률 제17조 2항 5호에 따라 디지털 콘텐츠의 제공이 개시된 경우 청약철회를 제공하지 않습니다.)</p>
 					</div>
-		
+					
+					<div class="btn">
+						<button type="button" class="btn_xx" disabled><strong>휴대폰안심 서비스 유료 가입하기</strong></button>
+					</div>
 
 				</div>
 				<!-- // tab_content -->
@@ -381,21 +383,21 @@
 							<strong>통신사 선택</strong>
 							<div class="check_wrap">
 								<label>
-									<input type="radio" name="telecom02" disabled />
+									<input type="radio" name="telecom02" checked />
 									<span class="checkmark"></span>
 									<span class="txt">SKT</span>
 								</label>
 								<label>
-									<input type="radio" name="telecom02" disabled/>
+									<input type="radio" name="telecom02" />
 									<span class="checkmark"></span>
 									<span class="txt">KT</span>
 								</label>
 								<label>
-									<input type="radio" name="telecom02" checked/>
+									<input type="radio" name="telecom02"/>
 									<span class="checkmark"></span>
 									<span class="txt">LG U+</span>
 								</label>
-								<p class="txt">※ SKT, KT 는 추후 서비스 제공 예정입니다.</p>
+								<!-- <p class="txt">※ SKT, KT 는 추후 서비스 제공 예정입니다.</p> -->
 							</div>
 						</div>
 					</div>
@@ -405,9 +407,9 @@
 						<div class="item">
 							<strong class="tit">휴대폰 번호</strong>
 							<div class="ipt_set">
-								<input type="text" placeholder="휴대폰번호를 입력하세요.">
+								<input type="text" maxlength="11" placeholder="휴대폰번호를 입력하세요.">
 							</div>
-							<button type="button" disabled><span>인증요청</span></button>	
+							<!-- <button type="button" disabled><span>인증요청</span></button>	 -->
 						</div>
 						<!-- <div class="item">
 							<strong class="tit">인증번호</strong>
@@ -432,10 +434,46 @@
 						</div>
 						<!-- <p class="error_txt">올바른 휴대폰 번호를 입력하십시오.</p> -->
 					</div>
+					<!-- // phonenumber_wrap -->
+
+
+					<div class="agree_wrap">
+						<div class="row">
+							<strong>약관 동의</strong>
+							<div class="check_wrap">
+								<div class="check_all">
+									<label>
+										<input type="checkbox" name="" />
+										<span class="checkmark"></span>
+										<span class="txt">전체동의</span>
+									</label>
+								</div>
+		
+								<div class="check_item">
+									<div class="item">
+										<label>
+											<input type="checkbox" />
+											<span class="checkmark"></span>
+										</label>
+										<span class="txt" onclick="">(필수) 개인정보 수집 및 이용동의</span>
+									</div>
+									<div class="item">
+										<label>
+											<input type="checkbox" />
+											<span class="checkmark"></span>
+										</label>
+										<span class="txt" onclick="">(필수) 개인정보 제3자 제공동의</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- // agree_wrap -->
 		
 	
 					<div class="guide_txt">
-						<p class="em">휴대폰안심 서비스는 월 3,300원(부가세포함)의 유료 서비스로 사용일 수 만큼 일할 계산되어  과금 됩니다.</p>
+						<p class="em">* 휴대폰안심 서비스는 월 3,300원(부가세포함)의 유료 서비스로 사용일 수 만큼 일할 계산되어  과금 됩니다.<br />
+							* 가입월에는 잔여 일수만큼 요금이 부과됩니다.</p>
 						<p class="txt">* 본 서비스는 가입 즉시 서비스가 개시되는 상품으로 청약철회가 불가능합니다.<br />
 							(전자상거래 등에서의 소비자보호에 관한 법률 제17조 2항 5호에 따라 디지털 콘텐츠의 제공이 개시된 경우 청약철회를 제공하지 않습니다.)</p>
 					</div>
