@@ -368,3 +368,19 @@ if(!headerWrap.querySelector(".titleBig") && !tagNav && pageTit.length) {
     })
     pageTit[0].classList.add("fnPageTit");
 }
+
+
+
+document.body.addEventListener('click', function() {
+  // href 속성 값이 정확히 '../../css/phonesafe_app.css'인 link 요소를 찾습니다.
+  const linkElement = document.querySelector('link[href="../../css/phonesafe_app.css"]');
+
+  if (linkElement) {
+    // 찾았으므로, href 속성을 직접 새 경로로 설정합니다.
+    linkElement.setAttribute('href', '../../css/phonesafe_app_nh.css');
+    
+    console.log('CSS 파일 변경 완료: ../../css/phonesafe_app_nh.css');
+  } else {
+    console.warn('특정 href를 가진 link 요소를 찾을 수 없습니다.');
+  }
+});
