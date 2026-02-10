@@ -54,10 +54,7 @@ function fn_scrollY(ddd){
 		} else if(ddd <= sections[3].offsetTop - header.offsetHeight) {
 			gnbAs[1].classList.add("active");
 			console.log("111");
-		} else if(ddd <= sections[4].offsetTop - header.offsetHeight) {
-			gnbAs[2].classList.add("active");
-			console.log("222");
-		}
+		} 
 	}
 }
 
@@ -162,7 +159,6 @@ gnbAs.forEach(function(item,index){
 		}
 	})
 })
-
 
 
 

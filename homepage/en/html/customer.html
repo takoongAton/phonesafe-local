@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-	<title>휴대폰 안심서비스 홈페이지</title>
+	<title>DefendUs Homepage</title>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 
 	<link rel="stylesheet" type="text/css" href="../css/reset.css">
 	<link rel="stylesheet" type="text/css" href="../css/slick.css">
-	<link rel="stylesheet" type="text/css" href="../css/phonesafe_homepage.css">
+	<link rel="stylesheet" type="text/css" href="../css/phonesafe_homepage_en.css">
 	
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=block" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;500;700&display=swap" rel="stylesheet">
@@ -17,24 +17,24 @@
 <body>
 <header>
 	<div class="inner">
-		<div class="logo"><h1><a href="#g"><strong>휴대폰안심</strong></a></h1></div>
+		<div class="logo"><h1><a href="#g"><strong>DefendUs</strong></a></h1></div>
 		<div class="nav">
 			<ul class="gnb" id="menu">
-				<li data-menuanchor="page2"><a href="./index.html#section0"><span>서비스 소개</span></a></li>
-				<li data-menuanchor="page3"><a href="./index.html#section2"><span>서비스 이용방법</span></a></li>
-				<li data-menuanchor="page4"><a href="./index.html#section3"><span>서비스 해지</span></a></li>
-				<li data-menuanchor="page5"><a href="notice_list.html"><span>공지사항</span></a></li>
-				<li data-menuanchor="page6"><a href="customer.html" class="active"><span>1:1 문의</span></a></li>
+				<li data-menuanchor="page2"><a href="./index.html#section0"><span>Service Overview</span></a></li>
+				<li data-menuanchor="page3"><a href="./index.html#section2"><span>How to Use</span></a></li>
+				<!-- <li data-menuanchor="page4"><a href="./index.html#section3"><span>서비스 해지/환불</span></a></li> -->
+				<li data-menuanchor="page5"><a href="notice_list.html"><span>Announcements</span></a></li>
+				<li data-menuanchor="page6"><a href="customer.html" class="active"><span>1:1 Inquiry</span></a></li>
 			</ul>
 			<div class="nav_lang">
 				<!-- <button type="button" class="btn_lang"><span class="txt">ENG</span></button> -->
 				<select class="btn_lang" onchange="switchLanguage(this.value)">
-					<option value="ko">KOR</option>
 					<option value="en">ENG</option>
+					<option value="ko">KOR</option>
 				</select>
 			</div>
 		</div>
-		<div class="btn_menu_toggle"><button type="button"><span>모바일 메뉴열기</span></button></div>
+		<div class="btn_menu_toggle"><button type="button"><span>Menu</span></button></div>
 	</div>
 </header>
 
@@ -42,8 +42,8 @@
 
 	<div class="visual">
 		<div class="visual_txt">
-			<h3>공지사항</h3>
-			<p class="txt">휴대폰안심 서비스의 다양한 소식을 알려드립니다. </p>
+			<h3>1:1 Inquiry</h3>
+			<!-- <p class="txt">휴대폰안심 서비스의 다양한 소식을 알려드립니다. </p> -->
 		</div>
 		<div class="bg"></div>
 	</div><!-- // visual -->
@@ -57,45 +57,46 @@
 				<div class="form_wrap">
 	
 					<div class="row">
-						<div class="tit"><strong>문의유형</strong></div>
+						<div class="tit"><strong>Inquiry Type</strong></div>
 						<div class="ipt_form">
 							<div class="ipt_wrap">
 								<div class="select_set">
 									<select name="" id="">
-										<option value="문의 유형을 선택하세요." selected="" disabled="" hidden="">문의 유형을 선택하세요.</option>
-										<option value="문의 유형 선택1">문의 유형 선택1</option>
-										<option value="문의 유형 선택2">문의 유형 선택2</option>
+										<option value="Select an inquiry type." selected="" disabled="" hidden="">Select an inquiry type.</option>
+										<option value="Service Subscription / Cancellation">Service Subscription / Cancellation</option>
+										<option value="Service Usage Inquiry">Service Usage Inquiry</option>
+										<option value="Other">Other</option>
 									</select>
 								</div>
 							</div>
 							<div class="form_alert">
-								<p class="em">문의유형을 선택해주세요.</p>
+								<p class="em">Please select an inquiry type.</p>
 							</div>
 						</div>
 					</div>
 	
 	
 					<div class="row">
-						<div class="tit"><strong>문의내용</strong></div>
+						<div class="tit"><strong>Subject</strong></div>
 						<div class="ipt_form">
 							<div class="ipt_wrap">
 								<div class="ipt_set">
-									<div><input type="text" placeholder="제목을 입력해주세요."></div>
+									<div><input type="text" placeholder="Enter a subject."></div>
 								</div>
 							</div>
 							<div class="form_alert">
-								<p class="em">제목을 입력해주세요.</p>
+								<p class="em">Please enter a subject.</p>
 							</div>
 
 							<div class="ipt_wrap">
 								<div class="textarea_set">
 									<div>
-										<textarea name="" id="" placeholder="문의 내용을 입력하세요."></textarea>
+										<textarea name="" id="" placeholder="Enter your message"></textarea>
 									</div>
 								</div>
 							</div>
 							<div class="form_alert">
-								<p class="em">문의 내용을 입력해주세요.</p>
+								<p class="em">Enter your message</p>
 							</div>
 						</div>
 					</div>
@@ -105,34 +106,34 @@
 						<div class="ipt_form">
 							<div class="ipt_wrap">
 								<div class="ipt_set">
-									<input type="text" placeholder="이메일을 입력하세요.">
+									<input type="text" placeholder="Enter your email">
 								</div>
 							</div>
 
 							<div class="form_alert">
-								<p class="em">이메일 형식을 확인해주세요.</p>
+								<p class="em">Enter your email</p>
 							</div>
 						</div>
 					</div>
 	
 					<div class="row">
-						<div class="tit"><strong>휴대폰번호</strong></div>
+						<div class="tit"><strong>Mobile Number</strong></div>
 						<div class="ipt_form">
 							<div class="ipt_wrap">								
-								<div class="select_set" style="width:180px;">
+								<div class="select_set" style="width:250px;">
 									<select name="" id="">
-										<option value="통신사" selected="" disabled="" hidden="">통신사</option>
+										<option value="통신사" selected="" disabled="" hidden="">Mobile Carrier</option>
 										<option value="SKT">SKT</option>
 										<option value="LG U+">LG U+</option>
 										<option value="KT">KT</option>
 									</select>
 								</div>
 								<div class="ipt_set">
-									<input type="text" placeholder="휴대폰번호를 입력하세요.">
+									<input type="text" placeholder="Enter your Mobile Number">
 								</div>
 							</div>
 							<div class="form_alert">
-								<p class="em">휴대폰번호를 입력해주세요.</p>
+								<p class="em">Enter your Mobile Number</p>
 							</div>
 						</div>
 					</div>
@@ -146,12 +147,12 @@
 								<input type="checkbox" class="agree all" checked="">
 								<span class="checkmark"></span>
 							</label>
-							<button type="button" class="btn_popup"><span class="txt">개인정보 수집 및 이용동의</span></button>
+							<button type="button" class="btn_popup"><span class="txt">I agree to the collection and use of personal information</span></button>
 						</div>
 					
 						<div class="btn_group">
 							<div>
-								<button type="button"><span>문의하기</span></button>
+								<button type="button"><span>Submit</span></button>
 							</div>
 						</div>
 					</div>
@@ -176,20 +177,19 @@
 <div class="footer_wrap">
 	<div class="footer">
 		<div class="inner">
-			<div class="row row1">
+			<!-- <div class="row row1">
 				<div class="private">
-					<span><a href="#g">서비스 이용약관</a></span>
-					<span style="font-size:21px; font-weight:bold;"><a href="https://www.atoncorp.com/privacy" target="_blank">개인정보처리방침</a></span>
+					<span><a href="#g">Terms of Use</a></span>
+					<span style="font-size:21px; font-weight:bold;"><a href="https://www.atoncorp.com/privacy" target="_blank">Privacy Policy</a></span>
 				</div>
-				<div class="co_name">(주)아톤</div>
-			</div>
+				<div class="co_name">ATON Inc.</div>
+			</div> -->
 			<div class="row row2">
 				<div class="co_info">
 					<address>
-								서울시 영등포구 여의대로108, 26층(파크원타워1)<br />
-								대표자명 : 김종서, 우길수<br />
-								사업자번호 : 107-81-71649
-							</address>
+						ATON Inc. (CEO JongSeo Kim, Gilsoo Woo)<br />
+						Business License :  107-81-71649
+					</address>
 					<dl>
 						<dt>TEL</dt>
 						<dd>02-786-4273</dd>
@@ -199,7 +199,7 @@
 						<dd>02-786-4274</dd>
 					</dl>
 				</div>
-				<div class="customer">
+				<!-- <div class="customer">
 					<dl>
 						<dt>고객센터 1800-1637</dt>
 						<dd>
@@ -207,7 +207,7 @@
 							(점심시간 제외,주말/공휴일 휴무) 
 						</dd>
 					</dl>
-				</div>
+				</div> -->
 			</div>
 			<div class="copyright">Copyright ⓒ 2023 ATON Inc. All rights reserved.</div>
 		</div>
@@ -219,10 +219,11 @@
 <div id="aside-nav" class="aside">
 	<div class="btn-close"><button type="button"><span>메뉴닫기</span></button></div>
 	<ul>
-		<li><a href="./index.html#section0">서비스 소개</a></li>
-		<li><a href="./index.html#section2">서비스 이용방법</a></li>
-		<li><a href="./index.html#section3">서비스 해지</a></li>
-		<li><a href="notice_list.html">공지사항</a></li>
+		<li><a href="./index.html#section0">Service Overview</a></li>
+		<li><a href="./index.html#section2">How to Use</a></li>
+		<!-- <li><a href="./index.html#section3">서비스 해지</a></li> -->
+		<li><a href="notice_list.html">Announcements</a></li>
+		<li><a href="customer.html">1:1 Inquiry</a></li>
 	</ul>
 </div>
 <!-- // aside -->
@@ -232,17 +233,22 @@
 <div class="layer privacy" id="" style="display:block;">
 	<div class="inner">
 		<div class="layer_header">
-			<h2>개인정보 수집 및 이용동의</h2>
+			<h2>Privacy Collection & Use Consent</h2>
 			<button type="button" class="btn_close"><span>닫기</span></button>
 		</div>
 		<div class="layer_content">
 
-			<div class="txt_content">
-				개인정보 수집 동의 관련 내용이 들어갑니다.<br />
-				내용이 들어갑니다.
-				내용이 들어갑니다.
-				내용이 들어갑니다.
-				체크박스 옆 텍스트 클릭시 팝업 뜸.
+			<div class="txt_content">ATON Inc. collects and uses personal information as outlined below in order to process and respond to 1:1 inquiries.We are committed to handling your personal information securely and with care.<br /><br />
+				1. Information Collected<br />
+				Email address<br />
+				Mobile carrier<br />
+				Phone number<br /><br />
+				2. Purpose of Collection and Use<br />
+				To review, process, and respond to 1:1 inquiries<br />
+				※ The collected information will not be used for any other purposes.<br /><br />
+				3. Retention Period<br />
+				Personal information will be retained for one (1) year from the date of submission.
+
 			</div>
 			<!-- // txt_content -->
 

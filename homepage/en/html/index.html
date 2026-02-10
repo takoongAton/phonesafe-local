@@ -1,40 +1,50 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-	<title>휴대폰 안심서비스 홈페이지</title>
+	<title>DefendUs Homepage</title>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 
 	<link rel="stylesheet" type="text/css" href="../css/reset.css">
 	<link rel="stylesheet" type="text/css" href="../css/slick.css">
-	<link rel="stylesheet" type="text/css" href="../css/phonesafe_homepage.css">
-	
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=block" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/phonesafe_homepage_en.css">
+
+	<!-- font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" />
+	<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap" /> -->
+	<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=block" /> -->
+	<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;500;700&display=swap" /> -->
+	<!-- // font -->
+
+	<!-- <script src="https://www.google.com/recaptcha/api.js?render=6LdED-sqAAAAAFJh2-oS6cBFX12ckNGnzHuGl3oq" async defer></script> -->
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
 
 <header class="home">
 	<div class="inner">
-		<div class="logo"><h1><a href="#g"><strong>휴대폰안심</strong></a></h1></div>
+		<div class="logo"><h1><a href="#g"><strong>DefendUs</strong></a></h1></div>
 		<div class="nav">
 			<ul class="gnb" id="menu">
-				<li data-menuanchor="page2"><a href="./index.html#section0" class="active"><span>서비스 소개</span></a></li>
-				<li data-menuanchor="page3"><a href="./index.html#section2"><span>서비스 이용방법</span></a></li>
-				<li data-menuanchor="page4"><a href="./index.html#section3"><span>서비스 가입/해지</span></a></li>
-				<li data-menuanchor="page5"><a href="notice_list.html"><span>공지사항</span></a></li>
+				<li data-menuanchor="page2"><a href="./index.html#section0" class="active"><span>Service Overview</span></a></li>
+				<li data-menuanchor="page3"><a href="./index.html#section2"><span>How to Use</span></a></li>
+				<!-- <li data-menuanchor="page4"><a href="./index.html#section3"><span>서비스 해지/환불</span></a></li> -->
+				<li data-menuanchor="page5"><a href="notice_list.html"><span>Announcements</span></a></li>
+				<li><a href="customer.html"><span>1:1 Inquiry</span></a></li>
 			</ul>
 			<div class="nav_lang">
 				<!-- <button type="button" class="btn_lang"><span class="txt">ENG</span></button> -->
 				<select class="btn_lang" onchange="switchLanguage(this.value)">
-					<option value="ko">KOR</option>
 					<option value="en">ENG</option>
+					<option value="ko">KOR</option>
 				</select>
 			</div>
 		</div>
-		<div class="btn_menu_toggle"><button type="button"><span>모바일 메뉴열기</span></button></div>
+		<div class="btn_menu_toggle"><button type="button"><span>Menu</span></button></div>
 	</div>
 </header>
 
@@ -44,12 +54,11 @@
 		<div class="main_visual_wrap">
 			<div class="main_txt">
 				<div class="tit">
-					<strong>휴대폰안심 서비스</strong>를 통해<br />
-					내 휴대폰을 보호하세요.
+					Protect Your Phone with <br />
+					<strong>DefendUs</strong>
 				</div>
-				<p class="txt">단말, 네트워크, App, 피싱까지 온/오프라인에서<br />
-					“실시간 보호”하고 피싱보상보험, 개인안심번호를 제공하는<br />
-				   사전/사후 모두 케어 가능한 보안 서비스</p>
+				<p class="txt">From device and network to apps and phishing, 
+					a comprehensive security service that delivers real-time protection, phishing insurance, and personal identity numbers, covering your mobile life before and after threats occur, both online and offline.</p>
 			</div>
 	
 			<div class="scroll_down">
@@ -66,19 +75,18 @@
 			<div class="phonesafe_slick_wrap">
 				<div class="item">
 					<div class="txtGroup">
-						<div class="tit"><strong>보안 검사</strong></div>
+						<div class="tit"><strong>Security Check</strong></div>
 						<div class="txt">
 							<p>
-								단말 보안상태, RAM 최적화,<br />
-								설치된 App의 위험 여부 확인
+								Check your device’s security status, optimize RAM performance, and identify potential risks from installed apps
 							</p>
 						</div>
 						<div class="hastag">
-							<span># 내 보안점수</span>
-							<span># 휴대폰 검사</span>
-							<span># App 검사</span>
-							<span># 휴대폰 최적화</span>
-							<span># 실시간 보안검사</span>
+							<span># MySecurityScore</span>
+							<span># DeviceScan</span>
+							<span># AppSecurity</span>
+							<span># Optimization</span>
+							<span># RealTimeSecurityScan</span>
 						</div>
 					</div>
 					<div class="imgGroup">
@@ -95,18 +103,17 @@
 				</div>
 				<div class="item">
 					<div class="txtGroup">
-						<div class="tit"><strong>네트워크 검사</strong></div>
+						<div class="tit"><strong>Network Check</strong></div>
 						<div class="txt">
 							<p>
-								공공, 개인 Wi-Fi 위험도 검사,<br />
-								내 위치 권한 허용을 통해 위험에 노출된 Wi-Fi 정보 확인
+								Scan public and private Wi-Fi networks for security risks, and identify potentially unsafe Wi-Fi connections using location-based analysis.
 							</p>
 						</div>
 						<div class="hastag">
-							<span># Wi-Fi 검사</span>
-							<span># Wi-Fi 위험지역</span>
-							<span># 연결 네트워크 정보 확인</span>
-							<span># 네트워크 보안</span>
+							<span># WiFiScan</span>
+							<span># WiFiRiskAlert</span>
+							<span># NetworkInfo</span>
+							<span># NetworkSecurity</span>
 						</div>
 					</div>
 					<div class="imgGroup">
@@ -121,21 +128,19 @@
 				</div>
 				<div class="item">
 					<div class="txtGroup">
-						<div class="tit"><strong>웹 검사</strong></div>
+						<div class="tit"><strong>Web Check</strong></div>
 						<div class="txt">
 							<p>
-								링크의 위험 요소를 확인<br />
-								실시간 탐지를 통해 위험한<br />
-								링크 감지
+								Check links for potential security risks,and detect malicious URLs in real time before you click
 							</p>
 						</div>
 						<div class="hastag">
-							<span># URL 검사</span>
-							<span># QR 검사</span>
-							<span># 세이프브라우징</span>
-							<span># 스미싱 탐지</span>
-							<span># 실시간 탐지</span>
-							<span># 위험한 링크 감지</span>
+							<span># URLScan</span>
+							<span># QRScan</span>
+							<span># SafeBrowsing</span>
+							<span># SmishingDetection</span>
+							<span># RealTimeDetection</span>
+							<span># MaliciousLinkAlert</span>
 						</div>
 					</div>
 					<div class="imgGroup">
@@ -151,21 +156,19 @@
 				</div>
 				<div class="item">
 					<div class="txtGroup">
-						<div class="tit"><strong>보안 사고 예방</strong></div>
+						<div class="tit"><strong>Security Incident Prevention</strong></div>
 						<div class="txt">
 							<p>
-								보안 리포트를 통해<br />
-								내 보안 상태 확인<br />
-								사고 후 보상까지 사후 관리 가능
+								Monitor your security status through detailed reports, and manage everything from prevention to post-incident recovery.
 							</p>
 						</div>
 						<div class="hastag">
-							<span># 내 보안점수</span>
-							<span># 리포트 발행</span>
-							<span># 0505 안심번호</span>
-							<span># 보안 사고 보상</span>
-							<span># 프라이버시 기능</span>
-							<span># 유료회원 피싱보험 자동 가입</span>
+							<span># MySecurityScore</span>
+							<span># SecurityReport</span>
+							<span># 0505SafeNumber</span>
+							<span># IncidentCompensation</span>
+							<span># PrivacyProtection</span>
+							<span># PhishingInsurance</span>
 						</div>
 					</div>
 					<div class="imgGroup">
@@ -192,215 +195,43 @@
 		<div class="store_wrap">
 			<div class="inner">
 				<div class="txt_wrap">
-					<p class="txt">이 모든 서비스 이용을 위해<br />
-						지금 바로 <strong>PASS앱을 설치</strong>하고<br />
-						가입해 보세요.</p>
-					<p class="small_txt">현재 LG U+고객만 가입 가능합니다.</p>
+					<p class="txt">
+						To access all services, <br />
+						<strong>install DefendUs</strong> and sign up today
+					</p>
 				</div>
-				<div class="btn_group">
-					<button type="button"><span><img src="../images/ico_download_aos.png" alt="Google Play"></span></button>
-					<button type="button"><span><img src="../images/ico_download_ios.png" alt="App Store"></span></button>
+				<!-- // txt_wrap -->
+
+				<div class="app_group_wrap">
+					<div class="app_group">
+						<!-- <p class="small_txt">휴대폰안심 앱은<br /> KT, LG U+ 고객만 이용 가능합니다.</p> -->
+						<div class="app_store">
+							<div class="icon"><img src="../images/img_app01.png" alt="휴대폰안심앱"></div>
+							<div class="btn_group">
+								<button type="button"><span><img src="../images/ico_download_aos.png" alt="Google Play"></span></button>
+								<button type="button"><span><img src="../images/ico_download_ios.png" alt="App Store"></span></button>
+							</div>
+						</div>
+						<!-- // app_store -->
+					</div>
+					<!-- // app_group -->
+	
+					<div class="app_group">
+						<p class="small_txt"><strong>LG U+ customers can also access the service through the U+ PASS app.</strong></p>
+						<div class="app_store">
+							<div class="icon"><img src="../images/img_app02.png" alt="PASS앱"></div>
+							<div class="btn_group">
+								<button type="button"><span><img src="../images/ico_download_aos.png" alt="Google Play"></span></button>
+								<button type="button"><span><img src="../images/ico_download_ios.png" alt="App Store"></span></button>
+							</div>
+						</div><!-- // app_store -->
+					</div>
+					<!-- // app_group -->
 				</div>
+				<!-- // app_group_wrap -->
 			</div>
 		</div>
 	</div><!-- // #section2 -->
-
-	<div class="section" id="section3">
-
-		<div class="unaccount_wrap">
-			<div class="tit"><strong>휴대폰안심 서비스 가입/해지</strong></div>
-			<p class="error_txt">현재 LG U+ 고객만 가입 가능합니다.</p>
-
-			<div class="signTab">
-				<button type="button" class="active"><span>서비스 가입</span></button>
-				<button type="button"><span>서비스 해지</span></button>
-			</div>
-
-
-			<div class="sign_wrap">
-				<div class="tab_content">
-
-					<div class="telecoms">
-						<div class="row">
-							<strong>통신사 선택</strong>
-							<div class="check_wrap">
-								<label>
-									<input type="radio" name="telecom01" disabled />
-									<span class="checkmark"></span>
-									<span class="txt">SKT</span>
-								</label>
-								<label>
-									<input type="radio" name="telecom01" disabled/>
-									<span class="checkmark"></span>
-									<span class="txt">KT</span>
-								</label>
-								<label>
-									<input type="radio" name="telecom01" checked/>
-									<span class="checkmark"></span>
-									<span class="txt">LG U+</span>
-								</label>
-								<p class="txt">※ SKT, KT 는 추후 서비스 제공 예정입니다.</p>
-							</div>
-						</div>
-						
-					</div>
-					<!-- // telecoms -->
-		
-					<div class="phonenumber_wrap">
-						<div class="item">
-							<strong class="tit">휴대폰 번호</strong>
-							<div class="ipt_set">
-								<input type="text">
-							</div>
-							<button type="button" disabled><span>인증요청</span></button>	
-						</div>
-						<div class="item">
-							<strong class="tit">인증번호</strong>
-							<div class="ipt_set">
-								<input type="text">
-								<span class="timer">00:00</span>
-							</div>
-							<button type="button" disabled><span>시간연장</span></button>
-						</div>
-						<!-- <p class="error_txt">올바른 휴대폰 번호를 입력하십시오.</p> -->
-					</div>
-		
-		
-					<div class="agree_wrap">
-						<div class="row">
-							<strong>약관 동의</strong>
-							<div class="check_wrap">
-								<div class="check_all">
-									<label>
-										<input type="checkbox" name="" />
-										<span class="checkmark"></span>
-										<span class="txt">전체동의</span>
-									</label>
-								</div>
-		
-								<div class="check_item">
-									<div class="item">
-										<label>
-											<input type="checkbox" />
-											<span class="checkmark"></span>
-										</label>
-										<span class="txt" onclick="">서비스 이용약관(유료)</span>
-									</div>
-									<div class="item">
-										<label>
-											<input type="checkbox" />
-											<span class="checkmark"></span>
-										</label>
-										<span class="txt" onclick="">개인정보 수집 및 이용동의</span>
-									</div>
-									<div class="item">
-										<label>
-											<input type="checkbox" />
-											<span class="checkmark"></span>
-										</label>
-										<span class="txt" onclick="">개인정보 제3자 제공동의</span>
-									</div>
-									<div class="item">
-										<label>
-											<input type="checkbox" />
-											<span class="checkmark"></span>
-										</label>
-										<span class="txt" onclick="">LGU+ 개인정보 제3자 제공동의</span>
-									</div>
-									<div class="item">
-										<label>
-											<input type="checkbox" />
-											<span class="checkmark"></span>
-										</label>
-										<span class="txt" onclick="">알림 및 마케팅 수신동의</span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- // agree_wrap -->
-					
-		
-					<div class="guide_txt">
-						<p class="em">휴대폰안심 서비스는 월 3,300원(부가세포함)의 유료 서비스로 사용일 수 만큼 일할 계산되어  과금 됩니다.</p>
-						<p class="txt">* 본 서비스는 가입 즉시 서비스가 개시되는 상품으로 청약철회가 불가능합니다.<br />
-							(전자상거래 등에서의 소비자보호에 관한 법률 제17조 2항 5호에 따라 디지털 콘텐츠의 제공이 개시된 경우 청약철회를 제공하지 않습니다.)</p>
-					</div>
-		
-					<div class="btn">
-						<button type="button" class="btn_xx"><strong>휴대폰안심 서비스 유료 가입하기</strong></button>
-					</div>
-
-				</div>
-				<!-- // tab_content -->
-
-				<div class="tab_content">
-
-					<div class="telecoms">
-						<div class="row">
-							<strong>통신사 선택</strong>
-							<div class="check_wrap">
-								<label>
-									<input type="radio" name="telecom02" disabled />
-									<span class="checkmark"></span>
-									<span class="txt">SKT</span>
-								</label>
-								<label>
-									<input type="radio" name="telecom02" disabled/>
-									<span class="checkmark"></span>
-									<span class="txt">KT</span>
-								</label>
-								<label>
-									<input type="radio" name="telecom02" checked/>
-									<span class="checkmark"></span>
-									<span class="txt">LG U+</span>
-								</label>
-								<p class="txt">※ SKT, KT 는 추후 서비스 제공 예정입니다.</p>
-							</div>
-						</div>
-					</div>
-					<!-- // telecoms -->
-		
-					<div class="phonenumber_wrap">
-						<div class="item">
-							<strong class="tit">휴대폰 번호</strong>
-							<div class="ipt_set">
-								<input type="text">
-							</div>
-							<button type="button" disabled><span>인증요청</span></button>	
-						</div>
-						<div class="item">
-							<strong class="tit">인증번호</strong>
-							<div class="ipt_set">
-								<input type="text">
-								<span class="timer">00:00</span>
-							</div>
-							<button type="button" disabled><span>시간연장</span></button>
-						</div>
-						<!-- <p class="error_txt">올바른 휴대폰 번호를 입력하십시오.</p> -->
-					</div>
-		
-	
-					<div class="guide_txt">
-						<p class="em">휴대폰안심 서비스는 월 3,300원(부가세포함)의 유료 서비스로 사용일 수 만큼 일할 계산되어  과금 됩니다.</p>
-						<p class="txt">* 본 서비스는 가입 즉시 서비스가 개시되는 상품으로 청약철회가 불가능합니다.<br />
-							(전자상거래 등에서의 소비자보호에 관한 법률 제17조 2항 5호에 따라 디지털 콘텐츠의 제공이 개시된 경우 청약철회를 제공하지 않습니다.)</p>
-					</div>
-		
-					<div class="btn">
-						<button type="button" class="btn_xx"><strong>휴대폰안심 서비스 유료 해지하기</strong></button>
-					</div>
-
-				</div>
-				<!-- // tab_content -->
-
-			</div>
-			<!-- // sign_wrap -->
-
-		</div>
-		<!-- // unaccount_wrap -->
-		
-	</div><!-- // #section3 -->
 
 
 	<div class="section" id="section4">
@@ -408,19 +239,18 @@
 		<div class="footer_wrap">
 			<div class="footer">
 				<div class="inner">
-					<div class="row row1">
+					<!-- <div class="row row1">
 						<div class="private">
-							<span><a href="#g">서비스 이용약관</a></span>
-							<span style="font-size:21px; font-weight:bold;"><a href="https://www.atoncorp.com/privacy" target="_blank">개인정보처리방침</a></span>
+							<span><a href="#g">Terms of Use</a></span>
+							<span style="font-size:21px; font-weight:bold;"><a href="https://www.atoncorp.com/privacy" target="_blank">Privacy Policy</a></span>
 						</div>
-						<div class="co_name">(주)아톤</div>
-					</div>
+						<div class="co_name">ATON Inc.</div>
+					</div> -->
 					<div class="row row2">
 						<div class="co_info">
 							<address>
-								서울시 영등포구 여의대로108, 26층(파크원타워1)<br />
-								대표자명 : 김종서, 우길수<br />
-								사업자번호 : 107-81-71649
+								ATON Inc. (CEO JongSeo Kim, Gilsoo Woo)<br />
+								Business License :  107-81-71649
 							</address>
 							<dl>
 								<dt>TEL</dt>
@@ -431,7 +261,7 @@
 								<dd>02-786-4274</dd>
 							</dl>
 						</div>
-						<div class="customer">
+						<!-- <div class="customer">
 							<dl>
 								<dt>고객센터 1800-1637</dt>
 								<dd>
@@ -439,7 +269,7 @@
 									(점심시간 제외,주말/공휴일 휴무) 
 								</dd>
 							</dl>
-						</div>
+						</div> -->
 					</div>
 					<div class="copyright">Copyright ⓒ 2023 ATON Inc. All rights reserved.</div>
 				</div>
@@ -563,8 +393,8 @@
 (시행일) 본 약관은 2023년 12월 20일부터 시행합니다.
 
 			</div>
-			
 
+			
 		</div>
 	</div>
 </div>
@@ -576,10 +406,11 @@
 <div id="aside-nav" class="aside">
 	<div class="btn-close"><button type="button"><span>메뉴닫기</span></button></div>
 	<ul>
-		<li><a href="./index.html#section0">서비스 소개</a></li>
-		<li><a href="./index.html#section2">서비스 이용방법</a></li>
-		<li><a href="./index.html#section3">서비스 해지</a></li>
-		<li><a href="notice_list.html">공지사항</a></li>
+		<li><a href="./index.html#section0">Service Overview</a></li>
+		<li><a href="./index.html#section2">How to Use</a></li>
+		<!-- <li><a href="./index.html#section3">서비스 해지</a></li> -->
+		<li><a href="notice_list.html">Announcements</a></li>
+		<li><a href="customer.html">1:1 Inquiry</a></li>
 	</ul>
 </div>
 <!-- // aside -->
@@ -587,7 +418,7 @@
 
 
 
-<div class="layer alert">
+<div class="layer alert" style="display:none;">
 	<div class="inner">
 		<div class="layer_content">
 			<p class="txt">이미 가입되어있는 번호입니다.</p>
@@ -597,6 +428,64 @@
 		</div>
 	</div>
 </div>
+
+
+
+
+<div class="layer privacy_agree" id="privacy_agree01" style="display:none;">
+	<div class="inner">
+		<!-- <div class="layer_header">
+			<h2>KT MVNO 개인정보 3자 제공 동의</h2>
+		</div> -->
+		<button type="button" class="btn_close"><span>닫기</span></button>
+		<div class="layer_content">
+
+			<div class="privacy_agree_wrap">
+				<div class="tit">
+					KT MVNO(알뜰폰) 이용 고객은 추가 약관 동의가 필요합니다.<br />
+					아래 약관 확인 후 동의해 주세요.
+				</div>
+
+				<div class="checkbox_wrap">
+					<input type="checkbox" checked disabled><!-- 기능상 필요 없으면 삭제해도 됨. -->
+					<span class="checkmark"><img src="../images/ico_check_s_on.png" alt=""></span>
+					<span class="txt">(필수) KT MVNO 개인정보 3자 제공 동의</span>
+				</div>
+			</div>
+			<!-- // privacy_agree_wrap -->
+
+
+			<div class="txt_content">
+				&lt;주식회사 ATON&gt;(이하 “회사”라 함)은 정보주체의 자유와 권리 보호를 위해 ⌜개인정보 보호법⌟ 및 관계 법령이 정한 바를 준수하여, 적법하게 개인정보를 처리하고 안전 하게 관리하고 있습니다. 이에 ⌜개인정보 보호법⌟ 제30조에 따라 정보주체에게 개인정보 처리에 관한 절차 및 기준을 안내하고, 이와 관련한 고충을 신속하고 원할하게 처리 할 수 있도록 하기 위하여 다음과 같이 개인정보 처리방침을 수립・공개 합니다.
+
+				<strong>제1조 (개인정보의 수집 및 이용)</strong>
+				가. 회사는 인증서 발급/재발급/삭제 등 서비스 제공을 위하여 아래와 같은 목적으로 개인정보를 수집·이용하고 있습니다. 회사는 관련법령에 따라SK텔레콤 주식회사, 주식회사 케이티, 주식회사 엘지유플러스, 서비스 이용기관(인증서를 이용하여 이용자의 전자서명정보와 전자서명검증정보의 합치성을 확인하려는 자)으로부터 제공 받거나 이용자로부터 직접 동의를 받아 개인정보를 수집·이용합니다.
+				
+				* 수집하거나 제공 받은 개인정보가 정보수정으로 수정된 경우에는 변경된 정보를 포함합니다.
+				
+				나. 회사는 법령에 따라 동의 없이 수집할 수 있는 자동생성정보(로그기록 및 서비스 계약이행 과정에서 자동적으로 생성되는 정보) 등을 상기 목적 범위 내에서 수집하여 이용할 수 있습니다. 또 고객이 선택동의사항에 대하여 동의할 경우 해당 개인정보를 해당 목적 범위 내에서 이용할 수 있습니다.
+				
+				다. 회사는 서비스 제공을 위하여 SK텔레콤 주식회사, 주식회사 케이티, 주식회사 엘지유플러스, 서비스 이용기관 등 제휴사 타 기관으로부터 제공 받는 개인정보를 관련법령을 준수하여 처리하고 보호합니다
+				
+				가. 회사는 인증서 발급/재발급/삭제 등 서비스 제공을 위하여 아래와 같은 목적으로 개인정보를 수집·이용하고 있습니다. 회사는 관련법령에 따라SK텔레콤 주식회사, 주식회사 케이티, 주식회사 엘지유플러스, 서비스 이용기관(인증서를 이용하여 이용자의 전자서명정보와 전자서명검증정보의 합치성을 확인하려는 자)으로부터 제공 받거나 이용자로부터 직접 동의를 받아 개인정보를 수집·이용합니다.
+
+				<strong>제1조 (개인정보의 수집 및 이용)</strong>
+				가. 회사는 인증서 발급/재발급/삭제 등 서비스 제공을 위하여 아래와 같은 목적으로 개인정보를 수집·이용하고 있습니다. 회사는 관련법령에 따라SK텔레콤 주식회사, 주식회사 케이티, 주식회사 엘지유플러스, 서비스 이용기관(인증서를 이용하여 이용자의 전자서명정보와 전자서명검증정보의 합치성을 확인하려는 자)으로부터 제공 받거나 이용자로부터 직접 동의를 받아 개인정보를 수집·이용합니다.
+				
+				* 수집하거나 제공 받은 개인정보가 정보수정으로 수정된 경우에는 변경된 정보를 포함합니다.
+				
+				나. 회사는 법령에 따라 동의 없이 수집할 수 있는 자동생성정보(로그기록 및 서비스 계약이행 과정에서 자동적으로 생성되는 정보) 등을 상기 목적 범위 내에서 수집하여 이용할 수 있습니다. 또 고객이 선택동의사항에 대하여 동의할 경우 해당 개인정보를 해당 목적 범위 내에서 이용할 수 있습니다.
+				
+				다. 회사는 서비스 제공을 위하여 SK텔레콤 주식회사, 주식회사 케이티, 주식회사 엘지유플러스, 서비스 이용기관 등 제휴사 타 기관으로부터 제공 받는 개인정보를 관련법령을 준수하여 처리하고 보호합니다
+				
+				가. 회사는 인증서 발급/재발급/삭제 등 서비스 제공을 위하여 아래와 같은 목적으로 개인정보를 수집·이용하고 있습니다. 회사는 관련법령에 따라SK텔레콤 주식회사, 주식회사 케이티, 주식회사 엘지유플러스, 서비스 이용기관(인증서를 이용하여 이용자의 전자서명정보와 전자서명검증정보의 합치성을 확인하려는 자)으로부터 제공 받거나 이용자로부터 직접 동의를 받아 개인정보를 수집·이용합니다.
+			</div>
+
+			<div class="btn"><button type="button"><span>약관 동의 및 인증번호 요청</span></button></div>
+		</div>
+	</div>
+</div>
+<!-- // layer -->
 
 
 
@@ -659,20 +548,46 @@ document.querySelectorAll(".check_item div.item label + span.txt").forEach(funct
 
 
 /* alert 테스트 (상황에 맞게 수정해서 적용해주세요) */
-let alertLayer = document.querySelector(".layer.alert");
-if(alertLayer) {
-    const computedStyle = window.getComputedStyle(alertLayer);
-    const displayValue = computedStyle.getPropertyValue('display');
-	if(displayValue != "none") {
-		document.querySelector("body").style.overflowY = "hidden";
-		document.querySelector("body").style.height = "100vh";
-		let btnClose = alertLayer.querySelector(".btn_close");
-		btnClose.addEventListener("click", function(){
-			document.querySelector("body").removeAttribute("style")
-		})
-	}
-}
+// let alertLayer = document.querySelector(".layer.alert");
+// if(alertLayer) {
+//     const computedStyle = window.getComputedStyle(alertLayer);
+//     const displayValue = computedStyle.getPropertyValue('display');
+// 	if(displayValue != "none") {
+// 		document.querySelector("body").style.overflowY = "hidden";
+// 		document.querySelector("body").style.height = "100vh";
+// 		let btnClose = alertLayer.querySelector(".btn_close");
+// 		btnClose.addEventListener("click", function(){
+// 			document.querySelector("body").removeAttribute("style")
+// 		})
+// 	}
+// }
 /* alert 테스트 */
+</script>
+
+
+<script>
+let privacy_agree = document.querySelector(".privacy_agree");
+privacy_agree.querySelector(".btn button").addEventListener("click", function(item){
+	alert("약관 동의 및 인증번호 요청");
+	privacy_agree.style.display = "none";
+	scrollUnFixed();
+})
+
+let testBtn = document.querySelector(".unaccount_wrap .tit"); // '휴대폰안심 가입/해지 텍스트' 를 버튼으로 테스트함.
+testBtn.addEventListener("click", function(){
+	privacy_agree.style.display = "block";
+	scrollFixed();
+})
+
+function scrollFixed(){
+	console.log("scrollY" + scrollY)
+	document.querySelector("html").style.overflowY = "hidden";
+	document.querySelector("html").style.height = "100%";
+}
+
+function scrollUnFixed(){
+	document.querySelector("html").removeAttribute("style");
+}
 </script>
 </body>
 </html>
