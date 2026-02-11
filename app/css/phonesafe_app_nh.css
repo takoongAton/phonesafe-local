@@ -1480,3 +1480,47 @@ div.select_filter div.select select {width:auto; height:37px; padding-right:18px
 .homeNew .home_guide div.txt_wrap p.txt {margin-top:4px; font-size:14px; line-height:20px; }
 /* // 홈 이용 가이드 */
 /* // 홈 250410 */
+
+
+
+
+/* DefendPlus 메인 */
+.home_info_wrap {padding:0 18px; background:url('../images/web/img_home_bg.png') no-repeat center / 100% 229px;;}
+.home_info_wrap .home_txt_wrap {display:flex; justify-content:flex-start; align-items:center; gap:12px;}
+.home_info_wrap .home_txt_wrap div.img {width:117px; height:121px; min-width:117px;}
+.home_info_wrap .home_txt_wrap div.txt_wrap {display:flex; flex-direction:column;}
+.home_info_wrap .home_txt_wrap div.txt_wrap p {color:#1F2933; font-size:13px; line-height:18px;}
+.home_info_wrap .home_txt_wrap div.txt_wrap strong {display:block; color:#1F2933; font-size:16px; line-height:1.375em;}
+
+.home_input_url_wrap {display:flex; flex-direction:column; gap:17px; padding:19px 14px 18px; background-color:#0196A2; border-radius:14px;}
+.home_input_url_wrap div.txt {display:flex; align-items:center; gap:8px;}
+.home_input_url_wrap div.txt span.ico {display:inline-block; width:16px; height:16px;}
+.home_input_url_wrap div.txt p {color:#fff; font-size:13px; line-height:1.461538em; font-weight:bold;}
+.home_input_url_wrap .inner {position:relative; height:40px; background-color: #fff; border-radius:8px; overflow:hidden;}
+.home_input_url_wrap input {height:100%; padding-left:1em; padding-right:60px; border:0 none; font-size:13px;}
+.home_input_url_wrap input::placeholder {color:#999; font-size:inherit;}
+.home_input_url_wrap div.btns {display:flex; align-items:center; position:absolute; top:50%; right:10px; transform: translateY(-50%); background-color:#fff;}
+.home_input_url_wrap div.btns button {width:24px; height:24px; background-color:#fff;}
+.home_input_url_wrap div.btns button + button {}
+
+
+.state_list_wrap {padding:0 18px;}
+.state_list_wrap .state_list {display:flex; flex-direction:column; gap:12px; width:100%; margin-top:24px;}
+.state_list_wrap .state_list div.item {display:flex; justify-content:space-between; align-items:center; height:62px; padding:0 14px; border-radius:14px; box-shadow:0 2px 6px rgba(0,0,0,0.16);}
+.state_list_wrap .state_list div.item div.name {display:flex; align-items:center; gap:8px;}
+.state_list_wrap .state_list div.item div.name span.ico {display:inline-block; width:24px; height:24px;;}
+.state_list_wrap .state_list div.item div.name span.txt {display:inline-block; font-size:16px; line-height:1.5em; font-weight:500;}
+.state_list_wrap .state_list div.item div.state {display:flex; flex-direction:column; align-items:flex-end;}
+.state_list_wrap .state_list div.item div.state div {display:flex; align-items:center; gap:4px;}
+.state_list_wrap .state_list div.item div.state div span.ico {display:inline-block; width:18px; height:18px;}
+.state_list_wrap .state_list div.item div.state div strong.txt {display:inline-block; font-size:16px; line-height:1.5em;}
+.state_list_wrap .state_list div.item div.state span.txt {display:inline-block; color:#9B9B9B; font-size:13px; line-height:1.461538em;}
+
+.defendPlus_alert {display:flex; align-items:flex-start; gap:4px; position:relative; margin-top:12px; padding:0 18px; color:#9B9B9B; font-size:12px;}
+
+@media screen and (min-width: 480px) {
+	.home_info_wrap .home_txt_wrap {justify-content:center;}
+	.home_info_wrap .home_txt_wrap div.txt_wrap {gap:6px;}
+	.home_info_wrap .home_txt_wrap div.txt_wrap br {display:none;}
+}
+/* // DefendPlus 메인 */
