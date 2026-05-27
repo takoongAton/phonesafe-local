@@ -14,7 +14,7 @@ div.page_header button.btn_back {position:absolute; top:50%; left:20px; transfor
 .subTit p.txt {display:flex; justify-content:center; align-items:center; height:36px; padding:0 20px; color:#999; font-size:14px; line-height:17px; font-weight:400;}
 
 .install_app_top {display:flex; flex-direction:column; justify-content:center; align-items:center; width:100%; padding:23px 0; text-align:center;}
-.install_app_top div.video video {width:192px; height:192px; background-color:transparent;}
+.install_app_top div.video video {width:192px; height:192px; background-color: transparent !important; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
 .install_app_top div.txt_wrap {display:flex; flex-direction:column; gap:5px 0;}
 .install_app_top div.txt_wrap strong {color:#000; font-size:16px; line-height:19px; font-weight:600;}
 .install_app_top div.txt_wrap p.txt {color:#999; font-size:14px; line-height:1.21428em; font-weight:400;}
