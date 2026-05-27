@@ -1,0 +1,105 @@
+.header_wrap div.tab_type2 {display:flex; justify-content:space-between; align-items:center; gap:8px; width:100%; padding:14px 20px;}
+.header_wrap div.tab_type2 button {width:100%; height:32px; border:1px solid #888; border-radius:6px; background-color:#fff;}
+.header_wrap div.tab_type2 button span {position:relative; top:-1px; color:#888; font-size:14px;}
+.header_wrap div.tab_type2 button.active {border-color:#000; background-color:#000;}
+.header_wrap div.tab_type2 button.active span {color:#fff; font-weight:bold;}
+
+
+/* 디펜더스 상단 뒤로가기 */
+div.page_header {display:flex; justify-content:center; align-items:center; gap:10px; position:relative; height:48px; padding:0 20px;}
+div.page_header p.tit strong {display:inline-block; height:24px; font-size:16px; line-height:24px;}
+div.page_header button.btn_back {position:absolute; top:50%; left:20px; transform: translateY(-50%); width:24px; height:24px;}
+/* // 디펜더스 상단 뒤로가기 */
+
+.subTit p.txt {display:flex; justify-content:center; align-items:center; height:36px; padding:0 20px; color:#999; font-size:14px; line-height:17px; font-weight:400;}
+
+.install_app_top {display:flex; flex-direction:column; justify-content:center; align-items:center; width:100%; padding:23px 0; text-align:center;}
+.install_app_top div.video video {width:192px; height:192px;}
+.install_app_top div.txt_wrap {display:flex; flex-direction:column; gap:5px 0;}
+.install_app_top div.txt_wrap strong {color:#000; font-size:16px; line-height:19px; font-weight:600;}
+.install_app_top div.txt_wrap p.txt {color:#999; font-size:14px; line-height:1.21428em; font-weight:400;}
+
+
+
+/* 앱 검색 */
+.input_search_wrap {position:relative; padding:12px 20px;}
+.input_search_wrap .input_search {display:flex; justify-content:space-between; align-items:center; position:relative; width:100%; height:40px; border-bottom:2px solid #333;}
+.input_search_wrap .input_search input {width:100%; height:100%; padding-left:0.5em; padding-right:60px; border:0 none; font-size:16px;}
+.input_search_wrap .input_search input::placeholder {color:#ddd;}
+.input_search_wrap .input_search div.btns {position:absolute; top:50%; right:0; transform: translateY(-50%); background-color:#fff;}
+.input_search_wrap .input_search div.btns button {width:24px; height:24px; background-color:#fff;}
+/* // 앱 검색 */
+
+
+
+/* 설치 앱 */
+.install_app_search_wrap {display:flex; flex-direction:column; gap:20px 0; width:100%; padding:0 20px 20px;}
+.defendplus_table {width:100%;}
+.defendplus_table th,
+.defendplus_table td {line-height:1em;}
+.defendplus_table th {padding:10px 24px; background-color:#F5F5F5; border:1px solid #ddd; border-width:1px 0px; font-weight:normal; text-align:left;}
+.defendplus_table th span {color:#999;}
+.defendplus_table td {padding:10px 24px; background-color:#fff; border:1px solid #ddd; border-width:1px 0px;}
+.defendplus_table th span,
+.defendplus_table td span {font-size:14px; line-height:17px;} 
+.defendplus_table td span {color:#000;}
+.defendplus_table td span.em {color:#0196A2; font-weight:bold;}
+/* // 설치 앱 */
+
+
+
+
+/* 안내사항 */
+.alert_info_wrap {padding:16.5px 20px}
+.alert_info {display:flex; flex-direction:column; gap:12px 0; width:100%;  padding:16px; background-color:#fff; border-radius:12px;}
+.alert_info strong {display:block; color:#000; font-size:14px; line-height:17px; font-weight:700;}
+.alert_info ol {display:flex; flex-direction:column; gap:4px 0; width:100%;}
+.alert_info ol li {display:flex; align-items:flex-start; gap:0 4px;}
+.alert_info ol li span.num {display:inline-block; color:#000; font-size:14px; line-height:17px; font-weight:400;}
+.alert_info ol li p.txt {flex:1; color:#000; font-size:14px; line-height:17px; font-weight:400;}
+/* // 안내사항 */
+
+.btn_default {height:48px; background-color:#0196A2; border-radius:12px;}
+.btn_default span {display:block; color:#fff; font-size: 18px; font-weight: 400; line-height:48px;}
+
+
+
+
+/* 앱 패널 리스트 */
+ul.applist_wrap {display:flex; flex-direction:column; gap:12px 0; width:100%; padding:24px 20px;}
+
+
+/* 앱 패널 */
+.app_info_panel {display:flex; gap:0 8px; position:relative; padding:16px; background-color:#fff; border-radius:14px}
+.app_info_panel div.app_path {width:36px; height:36px; min-width:36px;}
+.app_info_panel div.app_path img {min-width:36px;}
+.app_info_panel div.app_info {flex:1;}
+.app_info_panel div.app_info span.app_name {color:#000; font-size:16px; line-height:22px; font-weight:700; letter-spacing:-0.02em;}
+.app_info_panel div.app_info div.pkg_ver {display:flex; flex-direction:column; gap:6px 0;}
+.app_info_panel div.app_info div.pkg_ver p.package {color:#999; font-size:14px; line-height:17px; font-weight:400; letter-spacing:0;}
+.app_info_panel button.btn_set {position:absolute; top:12px; right:12px; width:24px; height:24px;}
+/* // 앱 패널 */
+
+
+/* 앱 상세 정보 */
+.app_detail_wrap {display:flex; flex-direction:column; gap:12px 0; width:100%; padding:24px 20px;}
+
+.app_detail_list {display:flex; flex-direction:column; gap:12px 0; width:100%;}
+.app_detail_table {}
+.app_detail_table div.app_detail_title {padding:10px 24px; background-color:#000;}
+.app_detail_table div.app_detail_title strong {display:block; height:100%; color:#fff; font-size:14px; line-height:17px; font-weight:700;}
+.app_detail_table table {width:100%;}
+.app_detail_table table th,
+.app_detail_table table td {padding:10px 24px; border:1px solid #ddd; border-width:1px 0; line-height:1em;}
+.app_detail_table table th {background-color:#E2F3F5;}
+
+.app_detail_table table th span,
+.app_detail_table table td span {color:#000; font-size:14px; line-height:17px; font-weight:400;}
+.app_detail_table table td span.em {color:#0196A2; font-weight:bold;}
+
+.app_detail_table table th.left {text-align:left; padding-left:24px;}
+.app_detail_table table td.center {text-align:center;}
+.app_detail_table table td.right {text-align:right;}
+.app_detail_table table td button.btn_more {width:auto; color:#0196A2; line-height:1em;}
+.app_detail_table table td button.btn_more span {display:inline-block; color:#0196A2; border-bottom:1px solid #0196A2;}
+/* // 앱 상세 정보 */
