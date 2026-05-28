@@ -33,7 +33,7 @@ div.page_header button.btn_back {position:absolute; top:50%; left:20px; transfor
 
 
 /* 설치 앱 */
-.install_app_search_wrap {display:flex; flex-direction:column; gap:20px 0; width:100%; padding:0 20px 20px;}
+.install_app_search_wrap {display:flex; flex-direction:column; gap:12px 0; width:100%; padding:0 20px 12px;}
 .defendplus_table {width:100%;}
 .defendplus_table th,
 .defendplus_table td {line-height:1em;}
@@ -104,3 +104,9 @@ ul.applist_wrap {display:flex; flex-direction:column; gap:12px 0; width:100%; pa
 .app_detail_table table td button.btn_more {width:auto; color:#0196A2; line-height:1em;}
 .app_detail_table table td button.btn_more span {display:inline-block; color:#0196A2; border-bottom:1px solid #0196A2;}
 /* // 앱 상세 정보 */
+
+
+
+
+/* 위로 */
+.btn_top {position:fixed; right:20px; bottom:24px; width:36px; height:36px; border-radius:100%; box-shadow:0 2px 4px rgba(0,0,0,0.25);}
