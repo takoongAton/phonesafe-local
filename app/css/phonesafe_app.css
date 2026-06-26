@@ -1506,7 +1506,7 @@ div.select_filter div.select select {width:auto; height:37px; padding-right:18px
 .state_list_wrap .state_list div.item div.state div strong.txt {display:inline-block; font-size:16px; line-height:1.5em;}
 .state_list_wrap .state_list div.item div.state span.txt {display:inline-block; color:#9B9B9B; font-size:13px; line-height:1.461538em;}
 
-.defendPlus_alert {display:flex; align-items:flex-start; gap:4px; position:relative; margin-top:12px; padding:0 18px; color:#9B9B9B; font-size:12px;}
+.defendPlus_alert {display:flex; align-items:flex-start; gap:4px; position:relative; margin-top:12px; padding:0 18px 18px; color:#9B9B9B; font-size:12px;}
 
 @media screen and (min-width: 480px) {
 	.home_info_wrap .home_txt_wrap {justify-content:center;}
