@@ -1,0 +1,6 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="btn_top_close" transform="translate(-2.5 -0.5)">
+<path d="M22.5 4.5L6.5 20.5" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<path d="M6.5 4.5L22.5 20.5" stroke="black" stroke-width="2" stroke-linecap="round"/>
+</g>
+</svg>

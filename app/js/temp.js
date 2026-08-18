@@ -370,7 +370,7 @@ if(!headerWrap.querySelector(".titleBig") && !tagNav && pageTit.length) {
 }
 
 
-
+/*
 document.body.addEventListener('click', function() {
   // href 속성 값이 정확히 '../../css/phonesafe_app.css'인 link 요소를 찾습니다.
   const linkElement = document.querySelector('link[href="../../css/phonesafe_app.css"]');
@@ -383,4 +383,5 @@ document.body.addEventListener('click', function() {
   } else {
     console.warn('특정 href를 가진 link 요소를 찾을 수 없습니다.');
   }
-});
+})
+*/

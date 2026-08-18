@@ -96,6 +96,10 @@ input[data-switch]:checked + label:after {right:2px; transform:translate(0,-50%)
 .header_wrap div.temp button:first-of-type {left:18px;}
 .header_wrap div.temp button:last-of-type {right:18px;}
 .header_wrap div.temp button span {display:block; width:24px; height:24px;}
+.header_wrap div.temp div.util {position:absolute; top:0; left:18px;;}
+.header_wrap div.temp div.util button {position:static;}
+.header_wrap div.temp div.tools {display:flex; position:absolute; right:18px; top:0; gap:0 8px;}
+.header_wrap div.temp div.tools button {position:static;}
 /* 공통 임시 */
 
 /* 공통 header */
@@ -900,3 +904,161 @@ pre.privacy .privacy_table_wrap table {width:auto;}
 .privacy_ver .select_item select {box-sizing:border-box; position:relative; height:30px; padding:0 2em 0 1em; background-color:transparent; border:1px solid #ddd; color:#333; font-size:0.875em;}
 .privacy_ver button {width:auto; height:30px; padding:0 1em; background-color:#333; border-radius:1px; color:#fff; font-size:0.875em;}
 /* // 개인정보처리방침 버전 보기 */
+
+
+
+/* ================================================================
+   혜택 - 쿠폰 (Figma : 혜택_쿠폰받기_메뉴 펼침)
+   ================================================================ */
+
+/* GNB 혜택 탭 (아이콘 + 신규 표시 점) */
+.header_wrap nav.benefit {padding-right:18px;}
+.header_wrap nav div ul li button span.benefit {display:inline-flex; align-items:center; gap:4px; height:36px;}
+.header_wrap nav div ul li button span.benefit i.ico {display:inline-block; width:16px; height:16px;}
+.header_wrap nav div ul li button span.benefit i.ico img {display:block; width:100%; height:100%; opacity:0.4;}
+.header_wrap nav div ul li button.active span.benefit i.ico img {opacity:1;}
+.header_wrap nav div ul li button span.benefit em.dot {display:inline-block; align-self:flex-start; width:6px; height:6px; margin:9px 0 0 2px; background-color:#ff595c; border-radius:50%;}
+/* // GNB 혜택 탭 */
+
+/* 펼침·접힘 버튼 */
+div.subResurtTit div.info button.btn_toggle {width:24px; height:24px;}
+div.subResurtTit div.info button.btn_toggle span,
+div.subResurtTit div.info button.btn_toggle img {display:block; width:24px; height:24px;}
+div.subResurtTit div.info button.btn_toggle.off img {transform:rotate(180deg);}
+/* // 펼침·접힘 버튼 */
+
+/* 편의점 쿠폰 목록 */
+.coupon_list {padding:0 18px;}
+.coupon_list .inner {display:flex; align-items:center; gap:24px; padding:18px; background-color:#fff; border-radius:12px;}
+.coupon_list .inner .item {display:flex; flex-direction:column; align-items:center; gap:2px; position:relative; flex:1 1 0; min-width:0;}
+.coupon_list .inner .item + .item::before {content:""; display:block; position:absolute; top:50%; left:-12px; width:1px; height:165px; background-color:#f8f8f8; transform:translateY(-50%);}
+.coupon_list .inner .item .thum {display:flex; justify-content:center; align-items:center; width:100%; height:80px; background-color:#fff; border:1px solid #e7e7e7; border-radius:12px; overflow:hidden;}
+.coupon_list .inner .item .thum img {display:block; max-width:70px; width:auto; max-height:70px; height:auto;}
+.coupon_list .inner .item .thum img {width:78px; height:78px;}
+.coupon_list .inner .item .brand {display:block; width:100%; color:#000; font-size:14px; line-height:20px; text-align:center; word-break:keep-all;}
+.coupon_list .inner .item .price {display:block; width:100%; color:#000; font-size:16px; line-height:23px; font-weight:bold; text-align:center;}
+.coupon_list .inner .item button {width:100%; height:30px; margin-top:6px; padding:0 6px; background-color:#fff; border:1px solid #888; border-radius:18px;}
+.coupon_list .inner .item button span {color:#000; font-size:14px; font-weight:bold; white-space:nowrap;}
+
+.coupon_list .inner .item.disabled img {filter: grayscale(1);}
+.coupon_list .inner .item.disabled .brand,
+.coupon_list .inner .item.disabled .price {color:#888;}
+.coupon_list .inner .item.disabled button,
+.coupon_list .inner .item.disabled button:disabled {background-color:#ededed !important; border-color:#ededed !important;}
+.coupon_list .inner .item.disabled button span,
+.coupon_list .inner .item.disabled button span:disabled {color:#888;}
+/* // 편의점 쿠폰 목록 */
+
+/* 쿠폰 이용 안내 */
+.coupon_guide_wrap {padding:0 18px;}
+.coupon_guide_wrap .inner {display:flex; justify-content:center; align-items:flex-start; gap:4px; padding:18px; background-color:#fff; border-radius:12px;}
+.coupon_guide_wrap .inner .item {display:flex; flex-direction:column; align-items:center; gap:8px; flex:0 1 80px; min-width:0;}
+.coupon_guide_wrap .inner .item .thum {display:flex; justify-content:center; align-items:center; width:60px; height:60px; border-radius:12px;}
+.coupon_guide_wrap .inner .item .thum img {display:block;}
+.coupon_guide_wrap .inner .item .thum.coupon img {width:28.571px; height:20px;}
+.coupon_guide_wrap .inner .item .thum.shop img {width:26px; height:26px;}
+.coupon_guide_wrap .inner .item .thum.barcode img {width:26.889px; height:22px;}
+.coupon_guide_wrap .inner .item .tit {display:block; width:100%; color:#000; font-size:14px; line-height:20px; font-weight:bold; text-align:center; word-break:keep-all;}
+.coupon_guide_wrap .inner .item .txt {width:100%; color:#888; font-size:10px; line-height:14px; text-align:center; word-break:keep-all;}
+.coupon_guide_wrap .inner .arrow {display:flex; justify-content:center; align-items:center; flex:0 0 15px; width:15px; height:60px;}
+.coupon_guide_wrap .inner .arrow img {display:block; width:15px; height:18px;}
+/* // 쿠폰 이용 안내 */
+
+/* 유의사항 */
+.coupon_notice_wrap {padding:0 18px 18px;}
+.coupon_notice_wrap .inner {padding:18px; background-color:#fff; border-radius:12px;}
+.coupon_notice_wrap .inner dl + dl {margin-top:12px;}
+.coupon_notice_wrap .inner dl dt {color:#000; font-size:14px; line-height:20px; font-weight:bold;}
+.coupon_notice_wrap .inner dl dd {position:relative; margin-top:4px; padding-left:9px; color:#888; font-size:12px; line-height:17px; word-break:keep-all;}
+.coupon_notice_wrap .inner dl dd::before {content:"·"; display:block; position:absolute; top:0; left:0;}
+/* // 유의사항 */
+
+/* 펼침·접힘 시 숨김 */
+.coupon_guide_wrap.hide,
+.coupon_notice_wrap.hide {display:none;}
+/* // 펼침·접힘 시 숨김 */
+
+/* // 혜택 - 쿠폰 */
+
+
+
+
+/* ================================================================
+   혜택 - 쿠폰함 (Figma : 혜택_쿠폰함 / 쿠폰선택 / 쿠폰없음 / 이용내역)
+   ================================================================ */
+
+/* 보유 / 이용내역 서브 탭 */
+.sub_tab_wrap {display:flex; justify-content:space-between; align-items:center; gap:10px; height:60px; padding:0 18px;}
+.sub_tab_wrap > div {display:flex; align-items:center; gap:4px;}
+.sub_tab_wrap > div button {width:68px; height:28px; background-color:#fff; border:1px solid #888; border-radius:30px;}
+.sub_tab_wrap > div button span {color:#999; font-size:14px; font-weight:500;}
+.sub_tab_wrap > div button.active {background-color:#020202; border-color:#020202;}
+.sub_tab_wrap > div button.active span {color:#fff; font-weight:bold;}
+.sub_tab_wrap > p {color:#888; font-size:11px; line-height:16px; text-align:right; white-space:nowrap;}
+/* // 보유 / 이용내역 서브 탭 */
+
+/* 쿠폰 브랜드 아이콘 (36x36) */
+.my_coupon_list .item .brand,
+.my_coupon_history .item .brand,
+.layer.coupon .brand {display:flex; justify-content:center; align-items:center; flex:0 0 36px; width:36px; height:36px; background-color:#fff;}
+.my_coupon_list .item .brand img,
+.my_coupon_history .item .brand img,
+.layer.coupon .brand img {display:block;}
+/* // 쿠폰 브랜드 아이콘 */
+
+/* 보유 쿠폰 목록 */
+.my_coupon_list {padding:0 18px 18px;}
+.my_coupon_list .inner .item {padding-bottom:18px; background-color:#fff; border-radius:12px;}
+.my_coupon_list .inner .item + .item {margin-top:10px;}
+.my_coupon_list .inner .item .head {display:flex; align-items:center; gap:8px; height:60px; padding:0 18px;}
+.my_coupon_list .inner .item .head .price {color:#000; font-size:14px; line-height:20px; font-weight:bold;}
+.my_coupon_list .inner .item .barcode {display:flex; flex-direction:column; align-items:center; gap:4px; width:200px; margin:0 auto;}
+.my_coupon_list .inner .item .barcode img {display:block; width:200px; height:60px;}
+.my_coupon_list .inner .item .barcode .num {color:#000; font-size:12px; line-height:17px; font-weight:500; word-spacing:5px;}
+.my_coupon_list .inner .item .barcode .date {color:#888; font-size:12px; line-height:17px;}
+/* // 보유 쿠폰 목록 */
+
+/* 이용내역 필터 */
+div.subResurtTit.filter {height:49px; align-items:flex-start;}
+div.subResurtTit.filter div.info div.select select {width:96px; height:32px; padding:0 22px 0 8px; background-color:#f8f8f8; background-position:right 2px center; border-bottom:1px solid #000; font-size:14px;}
+/* // 이용내역 필터 */
+
+/* 쿠폰 이용내역 목록 */
+.my_coupon_history {padding:0 18px 18px;}
+.my_coupon_history .inner .item {display:flex; justify-content:space-between; align-items:center; gap:8px; height:60px; padding:0 18px; background-color:#fff; border-radius:12px;}
+.my_coupon_history .inner .item + .item {margin-top:10px;}
+.my_coupon_history .inner .item .info {display:flex; align-items:center; gap:8px; min-width:0;}
+.my_coupon_history .inner .item .txt_wrap {display:flex; flex-direction:column; gap:2px; min-width:0;}
+.my_coupon_history .inner .item .txt_wrap .price {overflow:hidden; color:#000; font-size:14px; line-height:20px; font-weight:bold; white-space:nowrap; text-overflow:ellipsis;}
+.my_coupon_history .inner .item .txt_wrap .date {overflow:hidden; color:#888; font-size:11px; line-height:16px; white-space:nowrap; text-overflow:ellipsis;}
+.my_coupon_history .inner .item .used,
+.my_coupon_history .inner .item .expired {flex:0 0 auto; color:#000; font-size:12px; line-height:17px; font-weight:bold; white-space:nowrap;}
+/* // 쿠폰 이용내역 목록 */
+
+/* 쿠폰 없음 */
+.content_wrap .content_mid.empty {display:flex; flex-direction:column;}
+.coupon_error {display:flex; flex-direction:column; justify-content:center; align-items:center; flex:1; padding:0 18px; text-align:center;}
+.coupon_error .ico {display:flex; justify-content:center; align-items:center; width:54px; height:54px;}
+.coupon_error .ico img {display:block; width:48.3px; height:auto;}
+.coupon_error .txt_wrap {margin-top:20px;}
+.coupon_error .txt_wrap strong {display:block; color:#000; font-size:18px; line-height:26px; font-weight:bold;}
+.coupon_error .txt_wrap p {margin-top:9px; color:#999; font-size:16px; line-height:23px;}
+.coupon_error button {width:120px; height:30px; margin-top:17px; background-color:#ededed; border-radius:15px;}
+.coupon_error button span.txt {color:#000; font-size:12px;}
+/* // 쿠폰 없음 */
+
+/* 쿠폰 바코드 레이어 팝업 */
+.layer.coupon div.dim {background-color:rgba(0,0,0,0.4);}
+.layer.coupon .layer_inner {position:fixed; top:50%; left:50%; width:calc(100% - 36px); max-width:324px; padding-bottom:18px; background-color:#fff; border-radius:12px; transform:translate(-50%,-50%); z-index:1000;}
+.layer.coupon .layer_inner .head {display:flex; justify-content:space-between; align-items:center; gap:8px; height:60px; padding:0 18px;}
+.layer.coupon .layer_inner .head > div {display:flex; align-items:center; gap:8px; min-width:0;}
+.layer.coupon .layer_inner .head .price {overflow:hidden; color:#000; font-size:14px; line-height:20px; font-weight:bold; white-space:nowrap; text-overflow:ellipsis;}
+.layer.coupon .layer_inner .head button.close {flex:0 0 24px; width:24px; height:24px;}
+.layer.coupon .layer_inner .head button.close img {display:block; width:24px; height:24px;}
+.layer.coupon .layer_inner .barcode {display:flex; flex-direction:column; align-items:center; gap:4px; padding:0 18px;}
+.layer.coupon .layer_inner .barcode img {display:block; width:100%; height:86.4px;}
+.layer.coupon .layer_inner .barcode .num {color:#000; font-size:12px; line-height:17px; font-weight:500; word-spacing:5px;}
+.layer.coupon .layer_inner .barcode .date {color:#888; font-size:12px; line-height:17px;}
+/* // 쿠폰 바코드 레이어 팝업 */
+
+/* // 혜택 - 쿠폰함 */
