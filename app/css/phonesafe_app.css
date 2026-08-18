@@ -1612,7 +1612,7 @@ div.subResurtTit div.info button.btn_toggle.off img {transform:rotate(180deg);}
 .sub_tab_wrap {display:flex; justify-content:space-between; align-items:center; gap:10px; height:60px; padding:0 18px;}
 .sub_tab_wrap > div {display:flex; align-items:center; gap:4px;}
 .sub_tab_wrap > div button {width:68px; height:28px; background-color:#fff; border:1px solid #888; border-radius:30px;}
-.sub_tab_wrap > div button span {color:#999; font-size:14px; font-weight:500;}
+.sub_tab_wrap > div button span {display:block; color:#999; font-size:14px; font-weight:500;}
 .sub_tab_wrap > div button.active {background-color:#020202; border-color:#020202;}
 .sub_tab_wrap > div button.active span {color:#fff; font-weight:bold;}
 .sub_tab_wrap > p {color:#888; font-size:11px; line-height:16px; text-align:right; white-space:nowrap;}
