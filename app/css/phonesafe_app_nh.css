@@ -1191,9 +1191,13 @@ pre.privacy .privacy_table_wrap table {width:auto;}
 
 
 /* 회원 탈퇴 안내 텍스트 */
-.signout_alert {padding:0 24px;}
-.signout_alert li p {position:relative; padding-left:0.6125em; color:#8A939E; font-size:12px; line-height:1.5em;}
+.signout_alert_wrap {display:flex; flex-direction:column; gap:4px; margin:0 18px; padding:18px; background-color:#fff; border-radius:16px;}
+.signout_alert_wrap .signout_alert {display:flex; flex-direction:column; gap:4px; width:100%; padding:0;}
+.signout_alert_wrap .signout_alert li p {color:#888;}
+.signout_alert {padding:0 18px;}
+.signout_alert li p {position:relative; padding-left:0.6125em; color:#999; font-size:12px; line-height:1.5em;}
 .signout_alert li p::before {content:"·"; position:absolute; top:0; left:0; color:inherit; font-size:inherit; line-height:inherit; font-weight:bold;}
+.signout_alert.em li p {color:#ED1E19;}
 /* // 회원 탈퇴 안내 텍스트 */
 
 
@@ -1552,6 +1556,8 @@ div.select_filter div.select select {width:auto; height:37px; padding-right:18px
 /* // GNB 혜택 탭 */
 
 /* 펼침·접힘 버튼 */
+div.subResurtTit div.info button {width:24px; height:24px;}
+div.subResurtTit div.info button img {display:block; width:24px; height:24px;}
 div.subResurtTit div.info button.btn_toggle {width:24px; height:24px;}
 div.subResurtTit div.info button.btn_toggle span,
 div.subResurtTit div.info button.btn_toggle img {display:block; width:24px; height:24px;}
@@ -1693,3 +1699,12 @@ div.subResurtTit.filter div.info div.select select {width:96px; height:32px; pad
 /* // 쿠폰 바코드 레이어 팝업 */
 
 /* // 혜택 - 쿠폰함 */
+
+
+/* 회원탈퇴 타이틀 */
+div.subsignout_tit {display:flex; justify-content:space-between; align-items:center; gap:10px; min-height:60px; padding:0 18px;}
+div.subsignout_tit p.tit {display:inline-flex; align-items:center; white-space:nowrap; padding:18px 0;}
+div.subsignout_tit span.icon {display:inline-block; width:24px; height:24px;}
+div.subsignout_tit span.icon + strong {margin-left:5px;}
+div.subsignout_tit div.info {display:flex; align-items:center; font-size:14px;}
+div.subsignout_tit div.info button {width:24px; height:24px;;}
