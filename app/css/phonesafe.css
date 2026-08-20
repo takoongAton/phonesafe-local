@@ -925,8 +925,8 @@ div.subResurtTit div.info button {width:24px; height:24px;}
 div.subResurtTit div.info button img {display:block; width:24px; height:24px;}
 div.subResurtTit div.info button.btn_toggle {width:24px; height:24px;}
 div.subResurtTit div.info button.btn_toggle span,
-div.subResurtTit div.info button.btn_toggle img {display:block; width:24px; height:24px; transform:rotate(180deg);}
-div.subResurtTit div.info button.btn_toggle.off img {transform:rotate(0deg);}
+div.subResurtTit div.info button.btn_toggle img {display:block; width:24px; height:24px;}
+div.subResurtTit div.info button.btn_toggle.off img {transform:rotate(180deg);}
 /* // 펼침·접힘 버튼 */
 
 /* 편의점 쿠폰 목록 */
@@ -1044,7 +1044,7 @@ div.subResurtTit.filter div.info div.select select {width:96px; height:32px; pad
 .coupon_error .txt_wrap strong {display:block; color:#000; font-size:18px; line-height:26px; font-weight:bold;}
 .coupon_error .txt_wrap p {margin-top:9px; color:#999; font-size:16px; line-height:23px;}
 .coupon_error button {width:120px; height:30px; margin-top:17px; background-color:#ededed; border-radius:15px;}
-.coupon_error button span.txt {color:#000; font-size:12px;}
+.coupon_error button span.txt {display:block; color:#000; font-size:12px; line-height:1;}
 /* // 쿠폰 없음 */
 
 /* 쿠폰 바코드 레이어 팝업 */
