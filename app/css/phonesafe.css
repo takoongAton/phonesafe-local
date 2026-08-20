@@ -698,7 +698,7 @@ div.subResurtTit div.date span select {border:none;}
 .service_more div.service_item ul::after {content:""; display:block; height:0; clear:both;}
 .service_more div.service_item ul li span {display:inline-block;}
 .service_more div.service_item ul li span.icon {width:24px; height:24px;}
-.service_more div.service_item ul li span.txt {margin-top:8px;}
+.service_more div.service_item ul li span.txt {margin-top:8px; font-size:14px;}
 /* // 더보기 메인 */
 
 /* 0505 안심번호 */

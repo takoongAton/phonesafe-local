@@ -864,11 +864,12 @@ div.subResurtTit.eng {height:auto; flex-direction:column; justify-content:flex-s
 .service_more div.service_item {padding:0 18px;}
 .service_more div.service_item div.tit {display:flex; align-items:center; height:60px;}
 .service_more div.service_item ul {}
-.service_more div.service_item ul li {display:flex; flex-direction:column; justify-content:center; align-items:center; float:left; width:50%; height:84px;}
+.service_more div.service_item ul li {display:flex; flex-direction:column; justify-content:center; align-items:center; float:left; width:50%; height:76px;}
 .service_more div.service_item ul::after {content:""; display:block; height:0; clear:both;}
 .service_more div.service_item ul li span {display:inline-block;}
 .service_more div.service_item ul li span.icon {width:24px; height:24px;}
-.service_more div.service_item ul li span.txt {margin-top:8px;}
+.service_more div.service_item ul li span.txt {margin-top:8px; font-size:14px;}
+.service_more div.service_item + div.version {margin-top:20px;}
 .service_more div.version {padding:22px 18px; background-color:#F8F9FB; font-size:0;}
 .service_more div.version div + div {margin-top:10px;}
 .service_more div.version strong {display:inline-block; position:relative; width:74px; margin-right:0.75em; padding-right:0.75em; font-size:12px; line-height:1em;}
