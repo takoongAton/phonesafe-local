@@ -106,7 +106,7 @@
 							<strong>쿠폰 이용 안내</strong>
 						</p>
 						<div class="info">
-							<button type="button" class="btn_toggle"><span><img src="../../images/coupon/ico_arrow_up.svg" alt="접기"></span></button>
+							<button type="button" class="btn_toggle"><span><img src="../../images/coupon/ico_arrow_updown.svg" alt="접기"></span></button>
 						</div>
 					</div>
 
@@ -145,7 +145,7 @@
 							<strong>유의사항</strong>
 						</p>
 						<div class="info">
-							<button type="button" class="btn_toggle"><span><img src="../../images/coupon/ico_arrow_up.svg" alt="접기"></span></button>
+							<button type="button" class="btn_toggle"><span><img src="../../images/coupon/ico_arrow_updown.svg" alt="접기"></span></button>
 						</div>
 					</div>
 
@@ -215,7 +215,7 @@ couponToggles.forEach(function(btn){
 		let panel = btn.closest(".subResurtTit").nextElementSibling;
 		if(!panel) return;
 
-		btn.classList.toggle("off");
+		btn.classList.toggle("active");
 		panel.classList.toggle("hide");
 		btn.querySelector("img").alt = btn.classList.contains("off") ? "펼치기" : "접기";
 	})
