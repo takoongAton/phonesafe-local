@@ -1560,8 +1560,8 @@ div.subResurtTit div.info button {width:24px; height:24px;}
 div.subResurtTit div.info button img {display:block; width:24px; height:24px;}
 div.subResurtTit div.info button.btn_toggle {width:24px; height:24px;}
 div.subResurtTit div.info button.btn_toggle span,
-div.subResurtTit div.info button.btn_toggle img {display:block; width:24px; height:24px;}
-div.subResurtTit div.info button.btn_toggle.off img {transform:rotate(180deg);}
+div.subResurtTit div.info button.btn_toggle img {display:block; width:24px; height:24px; transform:rotate(180deg);}
+div.subResurtTit div.info button.btn_toggle.off img {transform:rotate(0deg);}
 /* // 펼침·접힘 버튼 */
 
 /* 편의점 쿠폰 목록 */
