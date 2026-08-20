@@ -1577,13 +1577,11 @@ div.subResurtTit div.info button.btn_toggle.active img {transform:rotateX(180deg
 .coupon_list .inner .item button {width:100%; height:30px; margin-top:6px; padding:0 6px; background-color:#fff; border:1px solid #888; border-radius:18px;}
 .coupon_list .inner .item button span {display:block; color:#000; font-size:14px; font-weight:bold; white-space:nowrap;}
 
-.coupon_list .inner .item.disabled img {filter: grayscale(1);}
+/* .coupon_list .inner .item.disabled img {filter: grayscale(1);} */
 .coupon_list .inner .item.disabled .brand,
 .coupon_list .inner .item.disabled .price {color:#888;}
-.coupon_list .inner .item.disabled button,
-.coupon_list .inner .item.disabled button:disabled {background-color:#ededed !important; border-color:#ededed !important;}
-.coupon_list .inner .item.disabled button span,
-.coupon_list .inner .item.disabled button span:disabled {color:#888;}
+.coupon_list .inner .item button:disabled {background-color:#ededed !important; border-color:#ededed !important;}
+.coupon_list .inner .item button:disabled span {color:#888;}
 /* // 편의점 쿠폰 목록 */
 
 /* 쿠폰 이용 안내 */
@@ -1703,8 +1701,10 @@ div.subResurtTit.filter div.info div.select select {width:96px; height:32px; pad
 
 /* 회원탈퇴 타이틀 */
 div.subsignout_tit {display:flex; justify-content:space-between; align-items:center; gap:10px; min-height:60px; padding:0 18px;}
+div.subsignout_tit.link {cursor:pointer;}
 div.subsignout_tit p.tit {display:inline-flex; align-items:center; white-space:nowrap; padding:18px 0;}
 div.subsignout_tit span.icon {display:inline-block; width:24px; height:24px;}
 div.subsignout_tit span.icon + strong {margin-left:5px;}
 div.subsignout_tit div.info {display:flex; align-items:center; font-size:14px;}
 div.subsignout_tit div.info button {width:24px; height:24px;;}
+div.subsignout_tit div.info div.btn_link {width:24px; height:24px;}

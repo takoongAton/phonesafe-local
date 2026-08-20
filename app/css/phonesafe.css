@@ -1066,8 +1066,10 @@ div.subResurtTit.filter div.info div.select select {width:96px; height:32px; pad
 
 /* 회원탈퇴 타이틀 */
 div.subsignout_tit {display:flex; justify-content:space-between; align-items:center; gap:10px; min-height:60px; padding:0 18px;}
+div.subsignout_tit.link {cursor:pointer;}
 div.subsignout_tit p.tit {display:inline-flex; align-items:center; white-space:nowrap; padding:18px 0;}
 div.subsignout_tit span.icon {display:inline-block; width:24px; height:24px;}
 div.subsignout_tit span.icon + strong {margin-left:5px;}
 div.subsignout_tit div.info {display:flex; align-items:center; font-size:14px;}
 div.subsignout_tit div.info button {width:24px; height:24px;;}
+div.subsignout_tit div.info div.btn_link {width:24px; height:24px;}
