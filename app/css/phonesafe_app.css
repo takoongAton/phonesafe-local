@@ -869,11 +869,11 @@ div.subResurtTit.eng {height:auto; flex-direction:column; justify-content:flex-s
 .service_more div.service_item ul li span {display:inline-block;}
 .service_more div.service_item ul li span.icon {width:24px; height:24px;}
 .service_more div.service_item ul li span.txt {margin-top:8px;}
-.service_more div.version {padding:21px 18px; background-color:#F8F9FB; font-size:0;}
+.service_more div.version {padding:22px 18px; background-color:#F8F9FB; font-size:0;}
 .service_more div.version div + div {margin-top:10px;}
 .service_more div.version strong {display:inline-block; position:relative; width:74px; margin-right:0.75em; padding-right:0.75em; font-size:12px; line-height:1em;}
 .service_more div.version strong::after {content:""; display:block; position:absolute; top:50%; right:0; width:0; height:80%; border-left:1px solid #000; transform:translateY(-50%);}
-.service_more div.version span.txt {display:inline-block; position:relative; font-size:12px; line-height:1em;}
+.service_more div.version span.txt {display:inline-block; position:relative; font-size:12px; line-height:1.41666em;}
 .service_more div.version button {display:inline-block; width:auto; color:#999999;}
 .service_more div.version button span {color:#999; font-size:12px; border-bottom:1px solid #999;}
 .service_more div.version button a {color:#999999;}
