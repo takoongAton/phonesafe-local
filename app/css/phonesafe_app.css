@@ -1639,6 +1639,10 @@ div.subResurtTit div.info button.btn_toggle.active img {transform:rotateX(180deg
 .my_coupon_list .inner .item .head {display:flex; align-items:center; gap:8px; height:60px; padding:0 18px;}
 .my_coupon_list .inner .item .head .price {color:#000; font-size:14px; line-height:20px; font-weight:bold;}
 .my_coupon_list .inner .item .barcode {display:flex; flex-direction:column; align-items:center; gap:4px; width:200px; margin:0 auto;}
+.my_coupon_list .inner .item .barcode .balance {display:flex; justify-content:flex-end; gap:4px; width:100%;}
+.my_coupon_list .inner .item .barcode .balance span.tit {color:#000; font-size:12px; line-height:17px;}
+.my_coupon_list .inner .item .barcode .balance p.sum {color:#009DDF; font-size:12px; line-height:17px;}
+.my_coupon_list .inner .item .barcode .balance p.sum strong {font-weight:bold;}
 .my_coupon_list .inner .item .barcode img {display:block; width:200px; height:60px;}
 .my_coupon_list .inner .item .barcode .num {color:#000; font-size:12px; line-height:17px; font-weight:500; word-spacing:5px;}
 .my_coupon_list .inner .item .barcode .date {color:#888; font-size:12px; line-height:17px;}
@@ -1651,14 +1655,24 @@ div.subResurtTit.filter div.info div.select select {width:96px; height:32px; pad
 
 /* 쿠폰 이용내역 목록 */
 .my_coupon_history {padding:0 18px 18px;}
-.my_coupon_history .inner .item {display:flex; justify-content:space-between; align-items:center; gap:8px; height:60px; padding:0 18px; background-color:#fff; border-radius:12px;}
+.my_coupon_history .inner .item {display:flex; justify-content:space-between; align-items:center; gap:8px; height:80px; padding:0 18px; background-color:#fff; border-radius:12px;}
 .my_coupon_history .inner .item + .item {margin-top:10px;}
 .my_coupon_history .inner .item .info {display:flex; align-items:center; gap:8px; min-width:0;}
 .my_coupon_history .inner .item .txt_wrap {display:flex; flex-direction:column; gap:2px; min-width:0;}
 .my_coupon_history .inner .item .txt_wrap .price {overflow:hidden; color:#000; font-size:14px; line-height:20px; font-weight:bold; white-space:nowrap; text-overflow:ellipsis;}
 .my_coupon_history .inner .item .txt_wrap .date {overflow:hidden; color:#888; font-size:11px; line-height:16px; white-space:nowrap; text-overflow:ellipsis;}
-.my_coupon_history .inner .item .used,
-.my_coupon_history .inner .item .expired {flex:0 0 auto; color:#000; font-size:12px; line-height:17px; font-weight:bold; white-space:nowrap;}
+.my_coupon_history .inner .item .txt_wrap .balance {display:flex; align-items:center; gap:2px; font-size:11px;}
+.my_coupon_history .inner .item .txt_wrap .balance span.tit {color:#888;}
+.my_coupon_history .inner .item .txt_wrap .balance p.sum {color:#009ddf;}
+.my_coupon_history .inner .item .txt_wrap .balance p.sum strong {}
+
+.my_coupon_history .inner .item .tag_wrap {display:inline-flex; align-items:center; width:74px;}
+.my_coupon_history .inner .item .tag_wrap .tag_state {display:inline-flex; justify-content:center; align-items:center; width:50px; height:20px; border-radius:4px;}
+.my_coupon_history .inner .item .tag_wrap .tag_state.in-use {background-color:#009ddf;;}
+.my_coupon_history .inner .item .tag_wrap .tag_state.used {background-color:#020202;}
+.my_coupon_history .inner .item .tag_wrap .tag_state.expired {background-color:#999999;}
+.my_coupon_history .inner .item .tag_wrap .tag_state span.txt {position:relative; top:-1px; color:#fff; font-size:11px; line-height:1; font-weight:bold;}
+.my_coupon_history .inner .item .tag_wrap span.arrow {display:inline-block; width:24px; height:24px;}
 /* // 쿠폰 이용내역 목록 */
 
 /* 쿠폰 없음 */
@@ -1682,6 +1696,15 @@ div.subResurtTit.filter div.info div.select select {width:96px; height:32px; pad
 .layer.coupon .layer_inner .head button.close {flex:0 0 24px; width:24px; height:24px;}
 .layer.coupon .layer_inner .head button.close img {display:block; width:24px; height:24px;}
 .layer.coupon .layer_inner .barcode {display:flex; flex-direction:column; align-items:center; gap:4px; padding:0 18px;}
+
+/* 바코드 상단 잔액 표시 */
+.layer.coupon .layer_inner .barcode .balance {display:flex; justify-content:flex-end; gap:4px; width:100%;}
+.layer.coupon .layer_inner .barcode .balance span.tit {color:#000; font-size:12px; line-height:17px;}
+.layer.coupon .layer_inner .barcode .balance p.sum {color:#009DDF; font-size:12px; line-height:17px;}
+.layer.coupon .layer_inner .barcode .balance p.sum strong {font-weight:bold;}
+.layer.coupon .layer_inner .barcode .balance p.sum span {}
+/* // 바코드 상단 잔액 표시 */
+
 .layer.coupon .layer_inner .barcode img {display:block; width:100%; height:86.4px;}
 .layer.coupon .layer_inner .barcode .num {color:#000; font-size:12px; line-height:17px; font-weight:500; word-spacing:5px;}
 .layer.coupon .layer_inner .barcode .date {color:#888; font-size:12px; line-height:17px;}
@@ -1699,3 +1722,75 @@ div.subsignout_tit span.icon + strong {margin-left:5px;}
 div.subsignout_tit div.info {display:flex; align-items:center; font-size:14px;}
 div.subsignout_tit div.info button {width:24px; height:24px;;}
 div.subsignout_tit div.info div.btn_link {width:24px; height:24px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 혜택_쿠폰함_이용내역_상세_사용중 */
+.my_coupon_history_detail {display:flex; flex-direction:column; gap:20px; width:100%; padding:20px 18px;}
+.my_coupon_history_detail div.title {padding:18.5px 0;}
+.my_coupon_history_detail div.title strong {display:block; color:#000; font-size:16px; line-height:23px; font-weight:bold;}
+
+.detail_state_content {padding:12px 18px; border-radius:12px; background-color:#fff;}
+.detail_state_content .detail_state_item {display:flex; justify-content:space-between; padding:11px 0;}
+.detail_state_content .detail_state_item div.info {display:flex; justify-content:space-between; align-items:center; gap:8px;}
+.detail_state_content .detail_state_item div.info span.brand {width:36px; min-width:36px; height:36px;}
+.detail_state_content .detail_state_item div.info div.txt_wrap {flex:1;}
+.detail_state_content .detail_state_item div.info div.txt_wrap strong.price {color:#000; font-size:14PX; line-height:20PX;}
+
+
+.detail_state_content .detail_state_item div.info div.txt_wrap .balance {display:flex; align-items:center; gap:3px; font-size:11px;}
+.detail_state_content .detail_state_item div.info div.txt_wrap .balance span.tit {color:#888;}
+.detail_state_content .detail_state_item div.info div.txt_wrap .balance p.sum {color:#009ddf;}
+.detail_state_content .detail_state_item div.info div.txt_wrap .balance p.sum strong {}
+
+
+.detail_state_content .detail_state_item .tag_wrap {display:inline-flex; align-items:center;}
+.detail_state_content .detail_state_item .tag_wrap .tag_state {display:inline-flex; justify-content:center; align-items:center; width:50px; height:20px; border-radius:4px;}
+.detail_state_content .detail_state_item .tag_wrap .tag_state.in-use {background-color:#009ddf;;}
+.detail_state_content .detail_state_item .tag_wrap .tag_state.used {background-color:#020202;}
+.detail_state_content .detail_state_item .tag_wrap .tag_state.expired {background-color:#999999;}
+.detail_state_content .detail_state_item .tag_wrap .tag_state span.txt {position:relative; top:-1px; color:#fff; font-size:11px; line-height:1; font-weight:bold;}
+
+
+.detail_date_wrap {display:flex; flex-direction:column; gap:2px; padding:11px 0; border-top:1px solid #E7E7E7;}
+.detail_date_wrap dl {display:flex; justify-content:space-between; align-items:center; font-size:11px; line-height:16px;;}
+.detail_date_wrap dl span {display:inline-block;}
+.detail_date_wrap dl dt span {color:#888; font-weight:400;}
+.detail_date_wrap dl dd span {color:#000; font-weight: 500;}
+
+
+/* 상세 이용내역 - 사용 내역 */
+.detail_calc_wrap {}
+.detail_calc_wrap .detail_calc_content {padding:12px 18px; border-radius:12px; background-color:#fff;}
+.detail_calc_wrap .used_history_list {display:flex; flex-direction:column; gap:2px; width:100%; padding:11px 0;}
+.detail_calc_wrap .used_history_list .date_item {display:flex; justify-content:space-between;}
+.detail_calc_wrap .used_history_list .date_item span {font-size:11px;}
+.detail_calc_wrap .used_history_list .date_item span.date {width:33.2%; color:#888;}
+.detail_calc_wrap .used_history_list .date_item span.brand {flex:1; color:#999;}
+.detail_calc_wrap .used_history_list .date_item span.used {color:#000; font-weight:500;}
+.detail_calc_wrap .used_history_sum {padding:11px 0; border-top:1px solid #e7e7e7;}
+.detail_calc_wrap .used_history_sum .sum_item {display:flex; justify-content:space-between; font-size:14px; line-height:20px;}
+.detail_calc_wrap .used_history_sum .sum_item span.txt {}
+.detail_calc_wrap .used_history_sum .sum_item span.sum { font-weight:bold;}
+/* // 상세 이용내역 - 사용 내역 */
+
+/* // 혜택_쿠폰함_이용내역_상세_사용중 */
