@@ -1673,6 +1673,8 @@ div.subResurtTit.filter div.info div.select select {width:96px; height:32px; pad
 .my_coupon_history .inner .item .tag_wrap .tag_state.expired {background-color:#999999;}
 .my_coupon_history .inner .item .tag_wrap .tag_state span.txt {position:relative; top:-1px; color:#fff; font-size:11px; line-height:1; font-weight:bold;}
 .my_coupon_history .inner .item .tag_wrap span.arrow {display:inline-block; width:24px; height:24px;}
+
+.my_coupon_history p.my_coupon_history_alert {margin-top:12px; color:#999; font-size:12px; line-height:17px; text-align:center;}
 /* // 쿠폰 이용내역 목록 */
 
 /* 쿠폰 없음 */
