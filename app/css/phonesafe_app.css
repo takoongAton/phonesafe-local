@@ -1656,6 +1656,7 @@ div.subResurtTit.filter div.info div.select select {width:96px; height:32px; pad
 /* 쿠폰 이용내역 목록 */
 .my_coupon_history {padding:0 18px 18px;}
 .my_coupon_history .inner .item {display:flex; justify-content:space-between; align-items:center; gap:8px; height:80px; padding:0 18px; background-color:#fff; border-radius:12px;}
+.my_coupon_history .inner .item.active {cursor:pointer;}
 .my_coupon_history .inner .item + .item {margin-top:10px;}
 .my_coupon_history .inner .item .info {display:flex; align-items:center; gap:8px; min-width:0;}
 .my_coupon_history .inner .item .txt_wrap {display:flex; flex-direction:column; gap:2px; min-width:0;}
